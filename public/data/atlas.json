@@ -1,0 +1,6636 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "generatedAt": "2026-07-17T17:00:00.000Z",
+    "scope": "FR deep · ES/IT/PT first pass"
+  },
+  "nodes": [
+    {
+      "id": "entity:station-f",
+      "kind": "entity",
+      "entityType": "incubator",
+      "name": "Station F",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Startup campus in Paris's 13th arrondissement, often cited as the world's largest startup facility.",
+      "tags": [
+        "campus",
+        "incubator",
+        "paris"
+      ],
+      "sources": [
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:bpifrance",
+      "kind": "entity",
+      "entityType": "public_institution",
+      "name": "Bpifrance",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French public investment bank co-owned by Caisse des Dépôts and EPIC Bpifrance Group.",
+      "tags": [
+        "public-finance",
+        "deeptech",
+        "ai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.bpifrance.com/",
+          "title": "Bpifrance",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Bpifrance",
+          "title": "Wikipedia: Bpifrance",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:la-french-tech",
+      "kind": "entity",
+      "entityType": "public_institution",
+      "name": "La French Tech",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French government mission supporting startup ecosystem structuring and growth in France and abroad.",
+      "tags": [
+        "policy",
+        "startups",
+        "government"
+      ],
+      "sources": [
+        {
+          "url": "https://lafrenchtech.gouv.fr/",
+          "title": "La French Tech",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:france-digitale",
+      "kind": "entity",
+      "entityType": "community",
+      "name": "France Digitale",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Association of French tech entrepreneurs and investors representing startups and VCs.",
+      "tags": [
+        "lobby",
+        "startups",
+        "investors"
+      ],
+      "sources": [
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:inria",
+      "kind": "entity",
+      "entityType": "public_institution",
+      "name": "Inria",
+      "country": "FR",
+      "city": "Rocquencourt",
+      "summary": "French national research institute for digital science and technology, historically IRIA/INRIA.",
+      "tags": [
+        "research",
+        "computer-science",
+        "ai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.inria.fr/en",
+          "title": "Inria",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/French_Institute_for_Research_in_Computer_Science_and_Automation",
+          "title": "Wikipedia: Inria",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:cnrs",
+      "kind": "entity",
+      "entityType": "public_institution",
+      "name": "CNRS",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French National Centre for Scientific Research, Europe's largest public research organisation.",
+      "tags": [
+        "research",
+        "science"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnrs.fr/",
+          "title": "CNRS",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/French_National_Centre_for_Scientific_Research",
+          "title": "Wikipedia: CNRS",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:cnil",
+      "kind": "entity",
+      "entityType": "public_institution",
+      "name": "CNIL",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French data protection authority overseeing personal data collection, storage, and use.",
+      "tags": [
+        "privacy",
+        "regulation",
+        "gdpr"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cnil.fr/",
+          "title": "CNIL",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Commission_nationale_de_l%27informatique_et_des_libert%C3%A9s",
+          "title": "Wikipedia: CNIL",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:anr",
+      "kind": "entity",
+      "entityType": "public_institution",
+      "name": "ANR",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French National Research Agency funding competitive research projects including AI programmes.",
+      "tags": [
+        "funding",
+        "research"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anr.fr/",
+          "title": "ANR",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:pepr-ia",
+      "kind": "entity",
+      "entityType": "public_institution",
+      "name": "PEPR IA",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French Priority Research Programme and Equipment initiative focused on artificial intelligence.",
+      "tags": [
+        "research",
+        "ai",
+        "policy"
+      ],
+      "sources": [
+        {
+          "url": "https://www.pepr-ia.fr/",
+          "title": "PEPR IA",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:hi-paris",
+      "kind": "entity",
+      "entityType": "university",
+      "name": "Hi! PARIS",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Interdisciplinary AI and data science centre backed by Institut Polytechnique de Paris and HEC Paris.",
+      "tags": [
+        "ai",
+        "research",
+        "education"
+      ],
+      "sources": [
+        {
+          "url": "https://www.hi-paris.fr/",
+          "title": "Hi! PARIS",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:miai-grenoble",
+      "kind": "entity",
+      "entityType": "university",
+      "name": "MIAI Grenoble Alpes",
+      "country": "FR",
+      "city": "Grenoble",
+      "summary": "Multidisciplinary Institute in Artificial Intelligence at Université Grenoble Alpes.",
+      "tags": [
+        "ai",
+        "research",
+        "grenoble"
+      ],
+      "sources": [
+        {
+          "url": "https://www.miai.grenoble-alpes.fr/",
+          "title": "MIAI Grenoble Alpes",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:eu-ai-office",
+      "kind": "entity",
+      "entityType": "public_institution",
+      "name": "European AI Office",
+      "country": "EU",
+      "city": "Brussels",
+      "summary": "European Commission body supporting implementation and enforcement of the EU AI Act.",
+      "tags": [
+        "regulation",
+        "eu",
+        "ai-act"
+      ],
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+          "title": "European AI Office",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:eu-ai-act",
+      "kind": "entity",
+      "entityType": "public_institution",
+      "name": "EU AI Act framework",
+      "country": "EU",
+      "city": "Brussels",
+      "summary": "EU regulatory framework on artificial intelligence addressing AI risks across the Single Market.",
+      "tags": [
+        "regulation",
+        "eu",
+        "ai-act"
+      ],
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI Act",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://artificialintelligenceact.eu/",
+          "title": "AI Act portal",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Artificial_Intelligence_Act",
+          "title": "Wikipedia: AI Act",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:eurohpc-ju",
+      "kind": "entity",
+      "entityType": "public_institution",
+      "name": "EuroHPC Joint Undertaking",
+      "country": "EU",
+      "city": "Luxembourg",
+      "summary": "EU joint undertaking building and operating world-class supercomputing and AI compute infrastructure.",
+      "tags": [
+        "hpc",
+        "compute",
+        "eu"
+      ],
+      "sources": [
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/",
+          "title": "EuroHPC JU",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:polytechnique",
+      "kind": "entity",
+      "entityType": "university",
+      "name": "École Polytechnique",
+      "country": "FR",
+      "city": "Palaiseau",
+      "summary": "French grande école specializing in science and engineering; founding member of IP Paris.",
+      "tags": [
+        "education",
+        "engineering",
+        "ai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.polytechnique.edu/",
+          "title": "École Polytechnique",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/%C3%89cole_polytechnique",
+          "title": "Wikipedia: École polytechnique",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:telecom-paris",
+      "kind": "entity",
+      "entityType": "university",
+      "name": "Télécom Paris",
+      "country": "FR",
+      "city": "Palaiseau",
+      "summary": "Engineering grande école focused on digital technologies, member of Institut Polytechnique de Paris.",
+      "tags": [
+        "education",
+        "telecom",
+        "ai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.telecom-paris.fr/",
+          "title": "Télécom Paris",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:ens-psl",
+      "kind": "entity",
+      "entityType": "university",
+      "name": "ENS PSL",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "École normale supérieure within Paris Sciences et Lettres University, strong in fundamental research.",
+      "tags": [
+        "education",
+        "research"
+      ],
+      "sources": [
+        {
+          "url": "https://www.ens.psl.eu/",
+          "title": "ENS PSL",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:psl",
+      "kind": "entity",
+      "entityType": "university",
+      "name": "PSL University",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Collegiate research university in Paris with 11 constituent schools including ENS.",
+      "tags": [
+        "education",
+        "research"
+      ],
+      "sources": [
+        {
+          "url": "https://psl.eu/",
+          "title": "PSL",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Paris_Sciences_et_Lettres_University",
+          "title": "Wikipedia: PSL",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:hec-paris",
+      "kind": "entity",
+      "entityType": "university",
+      "name": "HEC Paris",
+      "country": "FR",
+      "city": "Jouy-en-Josas",
+      "summary": "French business school and grande école partnering on AI and entrepreneurship programmes.",
+      "tags": [
+        "education",
+        "business",
+        "ai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.hec.edu/",
+          "title": "HEC Paris",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/HEC_Paris",
+          "title": "Wikipedia: HEC Paris",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:centralesupelec",
+      "kind": "entity",
+      "entityType": "university",
+      "name": "CentraleSupélec",
+      "country": "FR",
+      "city": "Gif-sur-Yvette",
+      "summary": "Engineering grande école within Université Paris-Saclay and Institut Polytechnique de Paris.",
+      "tags": [
+        "education",
+        "engineering"
+      ],
+      "sources": [
+        {
+          "url": "https://www.centralesupelec.fr/",
+          "title": "CentraleSupélec",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:mistral-ai",
+      "kind": "entity",
+      "entityType": "frontier_lab",
+      "name": "Mistral AI",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French AI company founded in 2023 that develops large language models, including open-weight releases.",
+      "tags": [
+        "llm",
+        "open-weights",
+        "frontier"
+      ],
+      "sources": [
+        {
+          "url": "https://mistral.ai/",
+          "title": "Mistral AI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Mistral_AI",
+          "title": "Wikipedia: Mistral AI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:kyutai",
+      "kind": "entity",
+      "entityType": "frontier_lab",
+      "name": "Kyutai",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris open-science AI lab aiming to build and democratize AGI through open research.",
+      "tags": [
+        "open-science",
+        "research",
+        "llm"
+      ],
+      "sources": [
+        {
+          "url": "https://kyutai.org/",
+          "title": "Kyutai",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:hugging-face",
+      "kind": "entity",
+      "entityType": "frontier_lab",
+      "name": "Hugging Face",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "ML platform and transformers library company with major Paris engineering presence and open model hub.",
+      "tags": [
+        "open-source",
+        "models",
+        "platform"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/",
+          "title": "Hugging Face",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+          "title": "Wikipedia: Hugging Face",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:h-company",
+      "kind": "entity",
+      "entityType": "frontier_lab",
+      "name": "H Company",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris AI lab building models, agents, and products for task automation; raised a large 2024 seed round.",
+      "tags": [
+        "agents",
+        "models",
+        "frontier"
+      ],
+      "sources": [
+        {
+          "url": "https://www.hcompany.ai/",
+          "title": "H Company",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:dust",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Dust",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris company building AI agent platforms for enterprise workflows; Series A led by Sequoia.",
+      "tags": [
+        "agents",
+        "enterprise",
+        "saas"
+      ],
+      "sources": [
+        {
+          "url": "https://dust.tt/",
+          "title": "Dust",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:photoroom",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Photoroom",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris AI photo-editing company offering background removal and product imagery tools.",
+      "tags": [
+        "vision",
+        "consumer",
+        "saas"
+      ],
+      "sources": [
+        {
+          "url": "https://www.photoroom.com/",
+          "title": "Photoroom",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:nabla",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Nabla",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris healthtech company building AI clinical assistants for physicians and care teams.",
+      "tags": [
+        "health",
+        "nlp",
+        "clinical"
+      ],
+      "sources": [
+        {
+          "url": "https://www.nabla.com/",
+          "title": "Nabla",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:lighton",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "LightOn",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris company developing large language models and generative AI infrastructure for enterprises.",
+      "tags": [
+        "llm",
+        "enterprise"
+      ],
+      "sources": [
+        {
+          "url": "https://www.lighton.ai/",
+          "title": "LightOn",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:bioptimus",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Bioptimus",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris biology foundation-model company applying AI to life sciences research.",
+      "tags": [
+        "biotech",
+        "foundation-models"
+      ],
+      "sources": [
+        {
+          "url": "https://www.bioptimus.com/",
+          "title": "Bioptimus",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:gladia",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Gladia",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris audio AI company providing speech-to-text and audio understanding APIs.",
+      "tags": [
+        "speech",
+        "audio",
+        "api"
+      ],
+      "sources": [
+        {
+          "url": "https://gladia.io/",
+          "title": "Gladia",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:dataiku",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Dataiku",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French-American AI and machine learning platform company founded in Paris in 2013.",
+      "tags": [
+        "mlops",
+        "platform",
+        "enterprise"
+      ],
+      "sources": [
+        {
+          "url": "https://www.dataiku.com/",
+          "title": "Dataiku",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Dataiku",
+          "title": "Wikipedia: Dataiku",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:giskard",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Giskard",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris company building testing and quality tools for AI and machine learning systems.",
+      "tags": [
+        "ml-testing",
+        "trustworthy-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.giskard.ai/",
+          "title": "Giskard",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:probabl",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Probabl",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris open-source ML company tied to the scikit-learn ecosystem and probabilistic tooling.",
+      "tags": [
+        "open-source",
+        "ml",
+        "scikit-learn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.probabl.ai/",
+          "title": "Probabl",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:flexai",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "FlexAI",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris AI infrastructure company focused on flexible GPU and training compute access.",
+      "tags": [
+        "infra",
+        "gpu",
+        "compute"
+      ],
+      "sources": [
+        {
+          "url": "https://www.flex.ai/",
+          "title": "FlexAI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:poolside",
+      "kind": "entity",
+      "entityType": "frontier_lab",
+      "name": "Poolside",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris-based company building foundation models specialized for software engineering.",
+      "tags": [
+        "codegen",
+        "foundation-models"
+      ],
+      "sources": [
+        {
+          "url": "https://www.poolside.ai/",
+          "title": "Poolside",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:adaptive-ml",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Adaptive ML",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris company offering tools to customize and adapt large language models for enterprises.",
+      "tags": [
+        "fine-tuning",
+        "llm",
+        "enterprise"
+      ],
+      "sources": [
+        {
+          "url": "https://www.adaptive-ml.com/",
+          "title": "Adaptive ML",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:craft-ai",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Craft AI",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris company providing AI platforms and decision automation for industrial and business use.",
+      "tags": [
+        "industrial-ai",
+        "platform"
+      ],
+      "sources": [
+        {
+          "url": "https://www.craft.ai/",
+          "title": "Craft AI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:illuin",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Illuin Technology",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris AI services and products firm specializing in NLP and computer vision solutions.",
+      "tags": [
+        "nlp",
+        "vision",
+        "services"
+      ],
+      "sources": [
+        {
+          "url": "https://www.illuin.tech/",
+          "title": "Illuin Technology",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:outmind",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Outmind",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris startup building AI knowledge assistants for enterprise document and workspace search.",
+      "tags": [
+        "enterprise-search",
+        "rag"
+      ],
+      "sources": [
+        {
+          "url": "https://www.outmind.ai/",
+          "title": "Outmind",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:synapse-medicine",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Synapse Medicine",
+      "country": "FR",
+      "city": "Bordeaux",
+      "summary": "French healthtech company providing clinical decision support for medication and prescriptions.",
+      "tags": [
+        "health",
+        "clinical",
+        "pharma"
+      ],
+      "sources": [
+        {
+          "url": "https://www.synapse-medicine.com/",
+          "title": "Synapse Medicine",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:prophesee",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Prophesee",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris company developing event-based neuromorphic vision sensors and software.",
+      "tags": [
+        "vision",
+        "hardware",
+        "neuromorphic"
+      ],
+      "sources": [
+        {
+          "url": "https://www.prophesee.ai/",
+          "title": "Prophesee",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:shift-technology",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Shift Technology",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris insurtech AI company focused on fraud detection and claims automation.",
+      "tags": [
+        "insurtech",
+        "fraud",
+        "enterprise"
+      ],
+      "sources": [
+        {
+          "url": "https://www.shift-technology.com/",
+          "title": "Shift Technology",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:artefact",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Artefact",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris data and AI consultancy helping enterprises deploy analytics and generative AI.",
+      "tags": [
+        "consulting",
+        "data",
+        "enterprise"
+      ],
+      "sources": [
+        {
+          "url": "https://www.artefact.com/",
+          "title": "Artefact",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:contentsquare",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Contentsquare",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French AI company analysing digital experience and user behaviour on websites and apps.",
+      "tags": [
+        "analytics",
+        "ux",
+        "enterprise"
+      ],
+      "sources": [
+        {
+          "url": "https://www.contentsquare.com/",
+          "title": "Contentsquare",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Contentsquare",
+          "title": "Wikipedia: Contentsquare",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:pigment",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Pigment",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris business-planning platform using data and AI for enterprise financial planning.",
+      "tags": [
+        "fp&a",
+        "saas",
+        "enterprise"
+      ],
+      "sources": [
+        {
+          "url": "https://www.pigment.com/",
+          "title": "Pigment",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:pennylane",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Pennylane",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris financial-operations platform for SMEs combining accounting tools with automation.",
+      "tags": [
+        "fintech",
+        "accounting",
+        "saas"
+      ],
+      "sources": [
+        {
+          "url": "https://www.pennylane.com/",
+          "title": "Pennylane",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:qonto",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Qonto",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French neobank (Olinda) serving freelancers and SMEs with business banking and spend tools.",
+      "tags": [
+        "fintech",
+        "neobank",
+        "sme"
+      ],
+      "sources": [
+        {
+          "url": "https://qonto.com/",
+          "title": "Qonto",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Qonto",
+          "title": "Wikipedia: Qonto",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:alan",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Alan",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris digital health insurer offering health coverage and care navigation products.",
+      "tags": [
+        "health",
+        "insurtech"
+      ],
+      "sources": [
+        {
+          "url": "https://www.alan.com/",
+          "title": "Alan",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:ledger",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Ledger",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris company making hardware wallets and security products for digital assets.",
+      "tags": [
+        "crypto",
+        "security",
+        "hardware"
+      ],
+      "sources": [
+        {
+          "url": "https://www.ledger.com/",
+          "title": "Ledger",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:mirakl",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Mirakl",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French e-commerce software company providing marketplace platforms for retailers and brands.",
+      "tags": [
+        "marketplace",
+        "e-commerce",
+        "saas"
+      ],
+      "sources": [
+        {
+          "url": "https://www.mirakl.com/",
+          "title": "Mirakl",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Mirakl",
+          "title": "Wikipedia: Mirakl",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:partech",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Partech",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris-based venture capital firm investing across early and growth stages in Europe and beyond.",
+      "tags": [
+        "vc",
+        "early-stage"
+      ],
+      "sources": [
+        {
+          "url": "https://www.partechpartners.com/",
+          "title": "Partech",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:alven",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Alven",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris early-stage venture firm backing European software and technology startups.",
+      "tags": [
+        "vc",
+        "seed"
+      ],
+      "sources": [
+        {
+          "url": "https://www.alven.co/",
+          "title": "Alven",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:elaia",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Elaia",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris venture capital firm investing in deeptech and digital startups from seed onward.",
+      "tags": [
+        "vc",
+        "deeptech"
+      ],
+      "sources": [
+        {
+          "url": "https://www.elaia.com/",
+          "title": "Elaia",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:serena",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Serena",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris venture capital firm investing in European technology companies across stages.",
+      "tags": [
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.serena.vc/",
+          "title": "Serena",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:breega",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Breega",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris venture capital firm funding early-stage European tech startups.",
+      "tags": [
+        "vc",
+        "seed"
+      ],
+      "sources": [
+        {
+          "url": "https://breega.com/",
+          "title": "Breega",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:kima",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Kima Ventures",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris seed fund known for high-volume early investments in French and European startups.",
+      "tags": [
+        "vc",
+        "seed"
+      ],
+      "sources": [
+        {
+          "url": "https://www.kima.vc/",
+          "title": "Kima Ventures",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:eurazeo",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Eurazeo",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris private equity and growth investment group with venture and tech growth strategies.",
+      "tags": [
+        "pe",
+        "growth"
+      ],
+      "sources": [
+        {
+          "url": "https://www.eurazeo.com/",
+          "title": "Eurazeo",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Eurazeo",
+          "title": "Wikipedia: Eurazeo",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:hexa",
+      "kind": "entity",
+      "entityType": "accelerator",
+      "name": "Hexa",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris venture studio and accelerator formerly known as eFounders, building SaaS startups.",
+      "tags": [
+        "studio",
+        "saas"
+      ],
+      "sources": [
+        {
+          "url": "https://www.hexa.com/",
+          "title": "Hexa",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:the-family",
+      "kind": "entity",
+      "entityType": "accelerator",
+      "name": "The Family",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris startup community and investment platform supporting European founders.",
+      "tags": [
+        "community",
+        "accelerator"
+      ],
+      "sources": [
+        {
+          "url": "https://www.thefamily.co/",
+          "title": "The Family",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:frst",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Frst",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris early-stage venture firm investing in ambitious European technology founders.",
+      "tags": [
+        "vc",
+        "seed"
+      ],
+      "sources": [
+        {
+          "url": "https://frst.vc/",
+          "title": "Frst",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:isai",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "ISAI",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris venture capital firm founded by French tech entrepreneurs investing in software companies.",
+      "tags": [
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.isai.fr/",
+          "title": "ISAI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:xange",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "XAnge",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris venture capital firm investing in digital and deeptech startups across Europe.",
+      "tags": [
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.xange.fr/",
+          "title": "XAnge",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:daphni",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Daphni",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris venture fund investing in European tech with an open community of limited partners.",
+      "tags": [
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.daphni.com/",
+          "title": "Daphni",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:50-partners",
+      "kind": "entity",
+      "entityType": "accelerator",
+      "name": "50 Partners",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris accelerator and investment programme run by experienced French tech entrepreneurs.",
+      "tags": [
+        "accelerator"
+      ],
+      "sources": [
+        {
+          "url": "https://www.50partners.fr/",
+          "title": "50 Partners",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:raise",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Raise",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris investment group spanning venture, private equity, and impact strategies.",
+      "tags": [
+        "vc",
+        "pe"
+      ],
+      "sources": [
+        {
+          "url": "https://www.raise.co/",
+          "title": "Raise",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:ring",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Ring Capital",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris growth equity firm backing European scale-ups in software and tech-enabled services.",
+      "tags": [
+        "growth"
+      ],
+      "sources": [
+        {
+          "url": "https://www.ringcap.com/",
+          "title": "Ring Capital",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:korelya",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Korelya Capital",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris growth fund investing in European tech companies with links to Asian markets.",
+      "tags": [
+        "growth"
+      ],
+      "sources": [
+        {
+          "url": "https://www.korelya.com/",
+          "title": "Korelya Capital",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:educapital",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Educapital",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris venture fund specializing in education technology and lifelong learning startups.",
+      "tags": [
+        "edtech",
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.educapital.vc/",
+          "title": "Educapital",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:agoranov",
+      "kind": "entity",
+      "entityType": "incubator",
+      "name": "Agoranov",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris public research-linked incubator supporting deeptech and scientific startups.",
+      "tags": [
+        "incubator",
+        "deeptech"
+      ],
+      "sources": [
+        {
+          "url": "https://www.agoranov.com/",
+          "title": "Agoranov",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:numa",
+      "kind": "entity",
+      "entityType": "accelerator",
+      "name": "Numa",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris innovation campus and accelerator programmes for startups and corporate innovation.",
+      "tags": [
+        "accelerator",
+        "campus"
+      ],
+      "sources": [
+        {
+          "url": "https://www.numa.co/",
+          "title": "Numa",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:accel",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Accel",
+      "country": "EU",
+      "city": "London",
+      "summary": "Global venture firm with European offices; active investor in European tech including France.",
+      "tags": [
+        "vc",
+        "growth"
+      ],
+      "sources": [
+        {
+          "url": "https://www.accel.com/",
+          "title": "Accel",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Accel_(company)",
+          "title": "Wikipedia: Accel",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:index-ventures",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Index Ventures",
+      "country": "EU",
+      "city": "London",
+      "summary": "European venture capital firm with offices in London, San Francisco, and elsewhere.",
+      "tags": [
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.indexventures.com/",
+          "title": "Index Ventures",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Index_Ventures",
+          "title": "Wikipedia: Index Ventures",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:antler",
+      "kind": "entity",
+      "entityType": "accelerator",
+      "name": "Antler",
+      "country": "EU",
+      "city": "Paris",
+      "summary": "Global early-stage investor and venture builder with a Paris programme for founders.",
+      "tags": [
+        "accelerator",
+        "seed"
+      ],
+      "sources": [
+        {
+          "url": "https://www.antler.co/",
+          "title": "Antler",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:entrepreneur-first",
+      "kind": "entity",
+      "entityType": "accelerator",
+      "name": "Entrepreneur First",
+      "country": "EU",
+      "city": "Paris",
+      "summary": "Talent investor helping individuals form deeptech startups; operates a Paris programme.",
+      "tags": [
+        "accelerator",
+        "talent"
+      ],
+      "sources": [
+        {
+          "url": "https://joinef.com/",
+          "title": "Entrepreneur First",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Entrepreneurs_First",
+          "title": "Wikipedia: Entrepreneurs First",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:plug-and-play",
+      "kind": "entity",
+      "entityType": "accelerator",
+      "name": "Plug and Play",
+      "country": "EU",
+      "city": "Paris",
+      "summary": "Global innovation platform and accelerator with programmes connecting startups and corporates.",
+      "tags": [
+        "accelerator"
+      ],
+      "sources": [
+        {
+          "url": "https://www.plugandplaytechcenter.com/",
+          "title": "Plug and Play",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:starburst",
+      "kind": "entity",
+      "entityType": "accelerator",
+      "name": "Starburst",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Aerospace and defence innovation accelerator with a strong Paris presence.",
+      "tags": [
+        "aerospace",
+        "accelerator"
+      ],
+      "sources": [
+        {
+          "url": "https://www.starburst.aero/",
+          "title": "Starburst",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:techstars",
+      "kind": "entity",
+      "entityType": "accelerator",
+      "name": "Techstars",
+      "country": "EU",
+      "city": "Paris",
+      "summary": "Global startup accelerator providing capital and mentorship; runs European programmes.",
+      "tags": [
+        "accelerator"
+      ],
+      "sources": [
+        {
+          "url": "https://www.techstars.com/",
+          "title": "Techstars",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Techstars",
+          "title": "Wikipedia: Techstars",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:motier",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Motier Ventures",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris family office venture vehicle associated with the Mulliez family investing in tech.",
+      "tags": [
+        "vc",
+        "family-office"
+      ],
+      "sources": [
+        {
+          "url": "https://motier.fr/",
+          "title": "Motier Ventures",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:vivatech",
+      "kind": "entity",
+      "entityType": "event",
+      "name": "VivaTech",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Annual Paris technology conference founded by Publicis Groupe and Les Echos, focused on startups.",
+      "tags": [
+        "conference",
+        "startups"
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Viva_Technology",
+          "title": "Wikipedia: Viva Technology",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:dotai",
+      "kind": "entity",
+      "entityType": "event",
+      "name": "DotAI",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris artificial intelligence conference bringing together researchers, builders, and investors.",
+      "tags": [
+        "conference",
+        "ai"
+      ],
+      "sources": [
+        {
+          "url": "https://dotai.fr/",
+          "title": "DotAI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:big-data-paris",
+      "kind": "entity",
+      "entityType": "event",
+      "name": "Big Data Paris",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris trade event covering data, AI, and analytics for enterprises and vendors.",
+      "tags": [
+        "conference",
+        "data"
+      ],
+      "sources": [
+        {
+          "url": "https://www.bigdataparis.com/",
+          "title": "Big Data Paris",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:hello-tomorrow",
+      "kind": "entity",
+      "entityType": "event",
+      "name": "Hello Tomorrow",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Global deeptech summit and community connecting science-based startups with industry and capital.",
+      "tags": [
+        "deeptech",
+        "conference"
+      ],
+      "sources": [
+        {
+          "url": "https://hello-tomorrow.org/",
+          "title": "Hello Tomorrow",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:changenow",
+      "kind": "entity",
+      "entityType": "event",
+      "name": "ChangeNOW",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris summit focused on impact innovation and solutions for environmental and social challenges.",
+      "tags": [
+        "impact",
+        "conference"
+      ],
+      "sources": [
+        {
+          "url": "https://www.changenow.world/",
+          "title": "ChangeNOW",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:maddyness",
+      "kind": "entity",
+      "entityType": "media",
+      "name": "Maddyness",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French media outlet covering startups, innovation, and venture capital news.",
+      "tags": [
+        "media",
+        "startups"
+      ],
+      "sources": [
+        {
+          "url": "https://maddyness.com/",
+          "title": "Maddyness",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:frenchweb",
+      "kind": "entity",
+      "entityType": "media",
+      "name": "FrenchWeb",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French digital economy media covering tech companies, markets, and innovation.",
+      "tags": [
+        "media",
+        "tech"
+      ],
+      "sources": [
+        {
+          "url": "https://www.frenchweb.fr/",
+          "title": "FrenchWeb",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:journal-du-net",
+      "kind": "entity",
+      "entityType": "media",
+      "name": "Journal du Net",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French business and digital media brand covering internet economy and enterprise tech.",
+      "tags": [
+        "media",
+        "business"
+      ],
+      "sources": [
+        {
+          "url": "https://journaldunet.com/",
+          "title": "Journal du Net",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:roxanne-varza",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Roxanne Varza",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Director of Station F and a public figure in the French startup ecosystem.",
+      "tags": [
+        "person",
+        "station-f"
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Roxanne_Varza",
+          "title": "Wikipedia: Roxanne Varza",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:arthur-mensch",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Arthur Mensch",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Co-founder and CEO of Mistral AI; public figure in European AI research and policy debates.",
+      "tags": [
+        "person",
+        "mistral"
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Arthur_Mensch",
+          "title": "Wikipedia: Arthur Mensch",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://mistral.ai/",
+          "title": "Mistral AI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:xavier-niel",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Xavier Niel",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "French entrepreneur, Iliad founder, and major backer of Station F and Kyutai open-science lab.",
+      "tags": [
+        "person",
+        "investor"
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Xavier_Niel",
+          "title": "Wikipedia: Xavier Niel",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://kyutai.org/",
+          "title": "Kyutai",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:south-summit",
+      "kind": "entity",
+      "entityType": "event",
+      "name": "South Summit",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Madrid startup and innovation event connecting entrepreneurs, investors, and corporates.",
+      "tags": [
+        "conference",
+        "startups"
+      ],
+      "sources": [
+        {
+          "url": "https://www.southsummit.io/",
+          "title": "South Summit",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:k-fund",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "K Fund",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Madrid early-stage venture capital firm investing in Spanish and Southern European startups.",
+      "tags": [
+        "vc",
+        "seed"
+      ],
+      "sources": [
+        {
+          "url": "https://www.kfund.vc/",
+          "title": "K Fund",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:seaya",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Seaya Ventures",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Madrid venture capital firm investing in technology companies across Southern Europe and LatAm.",
+      "tags": [
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.seaya.com/",
+          "title": "Seaya",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:enisa-es",
+      "kind": "entity",
+      "entityType": "public_institution",
+      "name": "ENISA (Spain)",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Spanish public company providing financing and support instruments for innovative SMEs and startups.",
+      "tags": [
+        "public-finance",
+        "sme"
+      ],
+      "sources": [
+        {
+          "url": "https://www.enisa.es/",
+          "title": "ENISA España",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:cdti",
+      "kind": "entity",
+      "entityType": "public_institution",
+      "name": "CDTI",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Spanish Centre for the Development of Industrial Technology funding R&D and innovation projects.",
+      "tags": [
+        "public-finance",
+        "rd"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cdti.es/",
+          "title": "CDTI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:wayra",
+      "kind": "entity",
+      "entityType": "accelerator",
+      "name": "Wayra",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Telefónica open innovation and investment hub accelerating startups across multiple markets.",
+      "tags": [
+        "accelerator",
+        "corporate"
+      ],
+      "sources": [
+        {
+          "url": "https://www.wayra.com/",
+          "title": "Wayra",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:conector",
+      "kind": "entity",
+      "entityType": "accelerator",
+      "name": "Conector",
+      "country": "ES",
+      "city": "Barcelona",
+      "summary": "Spanish startup accelerator programme supporting early-stage founders with mentorship and capital.",
+      "tags": [
+        "accelerator"
+      ],
+      "sources": [
+        {
+          "url": "https://www.conector.com/",
+          "title": "Conector",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:mwc",
+      "kind": "entity",
+      "entityType": "event",
+      "name": "Mobile World Congress",
+      "country": "ES",
+      "city": "Barcelona",
+      "summary": "Annual mobile industry trade show held in Barcelona at Fira de Barcelona.",
+      "tags": [
+        "conference",
+        "mobile"
+      ],
+      "sources": [
+        {
+          "url": "https://www.mobileworldcongress.com/",
+          "title": "MWC",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/MWC_Barcelona",
+          "title": "Wikipedia: MWC Barcelona",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:4yfn",
+      "kind": "entity",
+      "entityType": "event",
+      "name": "4YFN",
+      "country": "ES",
+      "city": "Barcelona",
+      "summary": "Startup event co-located with MWC Barcelona focused on founders and early-stage companies.",
+      "tags": [
+        "conference",
+        "startups"
+      ],
+      "sources": [
+        {
+          "url": "https://www.4yfn.com/",
+          "title": "4YFN",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:multiverse-computing",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Multiverse Computing",
+      "country": "ES",
+      "city": "San Sebastián",
+      "summary": "Spanish company applying quantum and AI software to industry and financial use cases.",
+      "tags": [
+        "quantum",
+        "ai"
+      ],
+      "sources": [
+        {
+          "url": "https://multiversecomputing.com/",
+          "title": "Multiverse Computing",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:factorial",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Factorial",
+      "country": "ES",
+      "city": "Barcelona",
+      "summary": "Barcelona HR software company using automation and AI features for SME workforce management.",
+      "tags": [
+        "hr",
+        "saas"
+      ],
+      "sources": [
+        {
+          "url": "https://www.factorialhr.com/",
+          "title": "Factorial",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:seedtag",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Seedtag",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Spanish contextual advertising company using AI to analyse content for brand-safe ad placement.",
+      "tags": [
+        "adtech",
+        "ai",
+        "media"
+      ],
+      "sources": [
+        {
+          "url": "https://www.seedtag.com/",
+          "title": "Seedtag",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:cdp-venture-capital",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "CDP Venture Capital",
+      "country": "IT",
+      "city": "Rome",
+      "summary": "Italian venture capital platform linked to Cassa Depositi e Prestiti investing in national innovation.",
+      "tags": [
+        "vc",
+        "public"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cdpventurecapital.it/",
+          "title": "CDP Venture Capital",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:italian-tech-week",
+      "kind": "entity",
+      "entityType": "event",
+      "name": "Italian Tech Week",
+      "country": "IT",
+      "city": "Turin",
+      "summary": "Italian technology week event convening founders, investors, and policymakers.",
+      "tags": [
+        "conference"
+      ],
+      "sources": [
+        {
+          "url": "https://italiantechweek.com/",
+          "title": "Italian Tech Week",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:italian-tech-alliance",
+      "kind": "entity",
+      "entityType": "community",
+      "name": "Italian Tech Alliance",
+      "country": "IT",
+      "city": "Milan",
+      "summary": "Association of Italian tech startups and scale-ups advocating for the national ecosystem.",
+      "tags": [
+        "community",
+        "advocacy"
+      ],
+      "sources": [
+        {
+          "url": "https://www.italiantechalliance.com/",
+          "title": "Italian Tech Alliance",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:polihub",
+      "kind": "entity",
+      "entityType": "incubator",
+      "name": "PoliHub",
+      "country": "IT",
+      "city": "Milan",
+      "summary": "Innovation park and incubator of Politecnico di Milano supporting deeptech startups.",
+      "tags": [
+        "incubator",
+        "university"
+      ],
+      "sources": [
+        {
+          "url": "https://www.polihub.it/",
+          "title": "PoliHub",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:almawave",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Almawave",
+      "country": "IT",
+      "city": "Rome",
+      "summary": "Italian AI company specializing in natural language processing and conversational AI products.",
+      "tags": [
+        "nlp",
+        "enterprise"
+      ],
+      "sources": [
+        {
+          "url": "https://www.almawave.com/",
+          "title": "Almawave",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:expert-ai",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Expert.ai",
+      "country": "IT",
+      "city": "Modena",
+      "summary": "Italian AI company providing natural language understanding platforms for enterprises.",
+      "tags": [
+        "nlp",
+        "enterprise"
+      ],
+      "sources": [
+        {
+          "url": "https://www.expert.ai/",
+          "title": "Expert.ai",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:politecnico-milano",
+      "kind": "entity",
+      "entityType": "university",
+      "name": "Politecnico di Milano",
+      "country": "IT",
+      "city": "Milan",
+      "summary": "Italian technical university; parent institution of PoliHub innovation park.",
+      "tags": [
+        "education",
+        "engineering"
+      ],
+      "sources": [
+        {
+          "url": "https://www.polihub.it/",
+          "title": "PoliHub",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:web-summit",
+      "kind": "entity",
+      "entityType": "event",
+      "name": "Web Summit",
+      "country": "PT",
+      "city": "Lisbon",
+      "summary": "Annual technology conference held in Lisbon covering internet technology and venture capital.",
+      "tags": [
+        "conference"
+      ],
+      "sources": [
+        {
+          "url": "https://websummit.com/",
+          "title": "Web Summit",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Web_Summit",
+          "title": "Wikipedia: Web Summit",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:portugal-ventures",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Portugal Ventures",
+      "country": "PT",
+      "city": "Porto",
+      "summary": "Portuguese venture capital firm investing in science and technology-based startups.",
+      "tags": [
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.portugalventures.pt/",
+          "title": "Portugal Ventures",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:indico-capital",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Indico Capital Partners",
+      "country": "PT",
+      "city": "Lisbon",
+      "summary": "Lisbon venture capital firm investing in technology companies across Iberia and Europe.",
+      "tags": [
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.indicocapital.com/",
+          "title": "Indico Capital",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:unicorn-factory-lisboa",
+      "kind": "entity",
+      "entityType": "accelerator",
+      "name": "Unicorn Factory Lisboa",
+      "country": "PT",
+      "city": "Lisbon",
+      "summary": "Lisbon innovation hub and acceleration programmes for startups scaling from Portugal.",
+      "tags": [
+        "accelerator",
+        "hub"
+      ],
+      "sources": [
+        {
+          "url": "https://www.unicornfactorylisboa.com/",
+          "title": "Unicorn Factory Lisboa",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:faber",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Faber",
+      "country": "PT",
+      "city": "Lisbon",
+      "summary": "Portuguese early-stage venture firm investing in technology startups.",
+      "tags": [
+        "vc",
+        "seed"
+      ],
+      "sources": [
+        {
+          "url": "https://www.faber.vc/",
+          "title": "Faber",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:armilar",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Armilar Venture Partners",
+      "country": "PT",
+      "city": "Lisbon",
+      "summary": "Portuguese venture capital firm investing in technology and digital businesses.",
+      "tags": [
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.armilar.com/",
+          "title": "Armilar",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:beta-i",
+      "kind": "entity",
+      "entityType": "accelerator",
+      "name": "Beta-i",
+      "country": "PT",
+      "city": "Lisbon",
+      "summary": "Portuguese innovation consultancy and accelerator connecting startups with corporates.",
+      "tags": [
+        "accelerator"
+      ],
+      "sources": [
+        {
+          "url": "https://beta-i.com/",
+          "title": "Beta-i",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:outsystems",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "OutSystems",
+      "country": "PT",
+      "city": "Lisbon",
+      "summary": "Portuguese low-code and AI application development platform for enterprise software delivery.",
+      "tags": [
+        "low-code",
+        "enterprise",
+        "ai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.outsystems.com/",
+          "title": "OutSystems",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/OutSystems",
+          "title": "Wikipedia: OutSystems",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:unbabel",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Unbabel",
+      "country": "PT",
+      "city": "Lisbon",
+      "summary": "Lisbon AI translation company combining machine translation with human editing workflows.",
+      "tags": [
+        "nlp",
+        "translation"
+      ],
+      "sources": [
+        {
+          "url": "https://www.unbabel.com/",
+          "title": "Unbabel",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Unbabel",
+          "title": "Wikipedia: Unbabel",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "entity:feedzai",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Feedzai",
+      "country": "PT",
+      "city": "Coimbra",
+      "summary": "Portuguese data science company using ML to detect payment fraud in financial services.",
+      "tags": [
+        "fintech",
+        "fraud",
+        "ml"
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Feedzai",
+          "title": "Wikipedia: Feedzai",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:bpifrance-10b-ai-2029",
+      "kind": "assumption",
+      "statement": "By end-2029 Bpifrance will have deployed or committed roughly €10B in AI-related support as announced in early 2025.",
+      "status": "open",
+      "resolveBy": "2029-12-31",
+      "anchoredToEvent": {
+        "date": "2025-02-01",
+        "what": "Bpifrance public communications on a ~€10B AI support envelope through 2029"
+      },
+      "sources": [
+        {
+          "url": "https://presse.bpifrance.fr/",
+          "title": "Bpifrance Presse",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.bpifrance.com/",
+          "title": "Bpifrance",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:eu-gpai-obligations-live",
+      "kind": "assumption",
+      "statement": "GPAI provider obligations under the EU AI Act remain in force and materially shape EU model deployment practices through 2026.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2025-08-02",
+        "what": "EU AI Act GPAI obligations application date (August 2025)"
+      },
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI regulatory framework",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Artificial_Intelligence_Act",
+          "title": "Wikipedia: Artificial Intelligence Act",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:eu-high-risk-aug-2026",
+      "kind": "assumption",
+      "statement": "High-risk AI system obligations under the EU AI Act will apply from August 2026 without multi-year delay.",
+      "status": "open",
+      "resolveBy": "2026-08-31",
+      "anchoredToEvent": {
+        "date": "2026-08-02",
+        "what": "Scheduled application of high-risk AI Act obligations"
+      },
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI regulatory framework",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Artificial_Intelligence_Act",
+          "title": "Wikipedia: Artificial Intelligence Act",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:h-company-scale-after-220m",
+      "kind": "assumption",
+      "statement": "H Company will ship a widely used agent/product line within 24 months of its reported $220M 2024 seed financing.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2024-06-01",
+        "what": "H Company $220M seed financing announcements (2024)"
+      },
+      "sources": [
+        {
+          "url": "https://www.hcompany.ai/",
+          "title": "H Company",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/H_(company)",
+          "title": "Wikipedia: H (company) $220M seed",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:dust-enterprise-agents-lead",
+      "kind": "assumption",
+      "statement": "Dust remains among the leading Paris enterprise-agent platforms two years after its Sequoia-led Series A.",
+      "status": "open",
+      "resolveBy": "2027-06-30",
+      "anchoredToEvent": {
+        "date": "2024-01-01",
+        "what": "Dust Series A led by Sequoia (company communications)"
+      },
+      "sources": [
+        {
+          "url": "https://dust.tt/blog/dust-seriesa-sequoia-leading-ai-platform",
+          "title": "Dust Series A announcement",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://dust.tt/",
+          "title": "Dust",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:kyutai-open-releases",
+      "kind": "assumption",
+      "statement": "Kyutai will publish at least one notable open-weight research release used outside its founding sponsors by end-2026.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2023-11-01",
+        "what": "Kyutai founding as open-science lab backed by Niel / CMA CGM / Schmidt"
+      },
+      "sources": [
+        {
+          "url": "https://kyutai.org/",
+          "title": "Kyutai",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:mistral-eu-frontier-share",
+      "kind": "assumption",
+      "statement": "Mistral remains among the top European-controlled frontier LLM providers by global developer adoption through 2027.",
+      "status": "open",
+      "resolveBy": "2027-12-31",
+      "anchoredToEvent": {
+        "date": "2023-04-01",
+        "what": "Mistral AI founding and subsequent open-weight model releases"
+      },
+      "sources": [
+        {
+          "url": "https://mistral.ai/",
+          "title": "Mistral AI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Mistral_AI",
+          "title": "Wikipedia: Mistral AI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:hf-paris-hub-role",
+      "kind": "assumption",
+      "statement": "Hugging Face’s Paris engineering hub stays a core node for European open-model distribution through 2027.",
+      "status": "open",
+      "resolveBy": "2027-12-31",
+      "anchoredToEvent": {
+        "date": "2022-01-01",
+        "what": "Hugging Face continued growth of open model hub with Paris presence"
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/",
+          "title": "Hugging Face",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+          "title": "Wikipedia: Hugging Face",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:station-f-ai-density",
+      "kind": "assumption",
+      "statement": "Station F remains the densest physical AI-startup campus in continental Europe by resident AI companies through 2027.",
+      "status": "open",
+      "resolveBy": "2027-12-31",
+      "anchoredToEvent": {
+        "date": "2017-06-01",
+        "what": "Station F opening as world’s largest startup facility"
+      },
+      "sources": [
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:french-tech-next40-ai-share",
+      "kind": "assumption",
+      "statement": "AI-native companies will represent a rising share of La French Tech Next40/120 selections through the 2027 cohort.",
+      "status": "open",
+      "resolveBy": "2027-12-31",
+      "anchoredToEvent": {
+        "date": "2025-01-01",
+        "what": "Annual La French Tech Next40/120 programme cycles"
+      },
+      "sources": [
+        {
+          "url": "https://lafrenchtech.gouv.fr/",
+          "title": "La French Tech",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:inria-transfer-ai",
+      "kind": "assumption",
+      "statement": "Inria spin-outs and transfer programmes will continue to seed at least several AI startups per year through 2028.",
+      "status": "open",
+      "resolveBy": "2028-12-31",
+      "anchoredToEvent": {
+        "date": "1967-01-01",
+        "what": "Inria historical role in French computer-science research and transfer"
+      },
+      "sources": [
+        {
+          "url": "https://www.inria.fr/en",
+          "title": "Inria",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:cnil-genai-enforcement",
+      "kind": "assumption",
+      "statement": "CNIL enforcement and guidance will remain a binding constraint on French GenAI consumer products through 2027.",
+      "status": "open",
+      "resolveBy": "2027-12-31",
+      "anchoredToEvent": {
+        "date": "2018-05-25",
+        "what": "GDPR application and CNIL AI guidance activity"
+      },
+      "sources": [
+        {
+          "url": "https://www.cnil.fr/",
+          "title": "CNIL",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:pepr-ia-outputs",
+      "kind": "assumption",
+      "statement": "PEPR IA funded projects will produce measurable open research artefacts cited by FR AI startups by 2028.",
+      "status": "open",
+      "resolveBy": "2028-12-31",
+      "anchoredToEvent": {
+        "date": "2023-01-01",
+        "what": "Launch and funding of PEPR IA programme"
+      },
+      "sources": [
+        {
+          "url": "https://www.pepr-ia.fr/",
+          "title": "PEPR IA",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.anr.fr/",
+          "title": "ANR",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:eurohpc-training-access",
+      "kind": "assumption",
+      "statement": "EuroHPC AI-oriented compute allocations will be used by at least one major FR frontier lab by end-2026.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2024-01-01",
+        "what": "EuroHPC expansion of AI/HPC capacity for European researchers and industry"
+      },
+      "sources": [
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/",
+          "title": "EuroHPC JU",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:vivatech-ai-centrality",
+      "kind": "assumption",
+      "statement": "VivaTech 2026–2027 editions will keep generative AI as a headline theme with major FR lab presence.",
+      "status": "open",
+      "resolveBy": "2027-06-30",
+      "anchoredToEvent": {
+        "date": "2016-01-01",
+        "what": "VivaTech founding and annual Paris editions"
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Viva_Technology",
+          "title": "Wikipedia: Viva Technology",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:web-summit-lisbon-anchor",
+      "kind": "assumption",
+      "statement": "Web Summit remains Lisbon’s primary global tech gathering through at least the 2027 edition.",
+      "status": "open",
+      "resolveBy": "2027-11-30",
+      "anchoredToEvent": {
+        "date": "2016-01-01",
+        "what": "Web Summit relocation to Lisbon"
+      },
+      "sources": [
+        {
+          "url": "https://websummit.com/",
+          "title": "Web Summit",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Web_Summit",
+          "title": "Wikipedia: Web Summit",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:mwc-4yfn-ai-track",
+      "kind": "assumption",
+      "statement": "MWC/4YFN Barcelona will continue to host a material AI startup track through 2027.",
+      "status": "open",
+      "resolveBy": "2027-03-31",
+      "anchoredToEvent": {
+        "date": "2025-03-01",
+        "what": "MWC Barcelona and 4YFN annual events"
+      },
+      "sources": [
+        {
+          "url": "https://www.mobileworldcongress.com/",
+          "title": "MWC",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.4yfn.com/",
+          "title": "4YFN",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:spain-ai-native-raise",
+      "kind": "assumption",
+      "statement": "At least two Spanish AI-native startups beyond Multiverse Computing / Seedtag will raise €50M+ rounds by 2028.",
+      "status": "open",
+      "resolveBy": "2028-12-31",
+      "anchoredToEvent": {
+        "date": "2024-01-01",
+        "what": "Southern Europe first-pass AI startup financing landscape"
+      },
+      "sources": [
+        {
+          "url": "https://multiversecomputing.com/",
+          "title": "Multiverse Computing",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.seaya.com/",
+          "title": "Seaya",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:italy-cdp-ai-push",
+      "kind": "assumption",
+      "statement": "CDP Venture Capital will maintain dedicated AI/deeptech vehicles as a visible Italian capital channel through 2028.",
+      "status": "open",
+      "resolveBy": "2028-12-31",
+      "anchoredToEvent": {
+        "date": "2020-01-01",
+        "what": "CDP Venture Capital platform activity in Italian innovation"
+      },
+      "sources": [
+        {
+          "url": "https://www.cdpventurecapital.it/",
+          "title": "CDP Venture Capital",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:portugal-ai-exits",
+      "kind": "assumption",
+      "statement": "Portugal will record at least one AI-related exit or unicorn financing event involving a Lisbon/Porto company by 2028.",
+      "status": "open",
+      "resolveBy": "2028-12-31",
+      "anchoredToEvent": {
+        "date": "2021-03-01",
+        "what": "Feedzai unicorn classification and Portuguese tech scale-ups"
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Feedzai",
+          "title": "Wikipedia: Feedzai",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.outsystems.com/",
+          "title": "OutSystems",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:poolside-codegen-compete",
+      "kind": "assumption",
+      "statement": "Poolside models will be among the top European code-specialized foundation models by public evals by end-2027.",
+      "status": "open",
+      "resolveBy": "2027-12-31",
+      "anchoredToEvent": {
+        "date": "2023-01-01",
+        "what": "Poolside founding focus on software-engineering foundation models"
+      },
+      "sources": [
+        {
+          "url": "https://www.poolside.ai/",
+          "title": "Poolside",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:dataiku-enterprise-stickiness",
+      "kind": "assumption",
+      "statement": "Dataiku remains a top-tier enterprise ML platform vendor with French roots through 2027.",
+      "status": "open",
+      "resolveBy": "2027-12-31",
+      "anchoredToEvent": {
+        "date": "2019-12-01",
+        "what": "Dataiku unicorn financing and enterprise platform expansion"
+      },
+      "sources": [
+        {
+          "url": "https://www.dataiku.com/",
+          "title": "Dataiku",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Dataiku",
+          "title": "Wikipedia: Dataiku",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:photoroom-consumer-ai",
+      "kind": "assumption",
+      "statement": "Photoroom sustains profitable consumer/prosumer growth without a distressed down round through 2027.",
+      "status": "open",
+      "resolveBy": "2027-12-31",
+      "anchoredToEvent": {
+        "date": "2023-01-01",
+        "what": "Photoroom product-led growth in AI image editing"
+      },
+      "sources": [
+        {
+          "url": "https://www.photoroom.com/",
+          "title": "Photoroom",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:bioptimus-biology-models",
+      "kind": "assumption",
+      "statement": "Bioptimus will publish or commercialize a widely cited biology foundation model by end-2027.",
+      "status": "open",
+      "resolveBy": "2027-12-31",
+      "anchoredToEvent": {
+        "date": "2024-01-01",
+        "what": "Bioptimus launch as biology foundation-model company"
+      },
+      "sources": [
+        {
+          "url": "https://www.bioptimus.com/",
+          "title": "Bioptimus",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "assumption:france-digitale-policy-voice",
+      "kind": "assumption",
+      "statement": "France Digitale remains the primary private-sector lobby voice for French startups on EU AI policy through 2027.",
+      "status": "open",
+      "resolveBy": "2027-12-31",
+      "anchoredToEvent": {
+        "date": "2012-01-01",
+        "what": "France Digitale ongoing advocacy for French tech ecosystem"
+      },
+      "sources": [
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "principle:mistral-open-weight-europe",
+      "kind": "principle",
+      "statement": "European frontier labs can compete by releasing capable open-weight models rather than only closed APIs.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mistral_AI",
+          "title": "Wikipedia: Mistral AI",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "Mistral AI SAS is a French artificial intelligence (AI) company headquartered in Paris."
+    },
+    {
+      "id": "principle:kyutai-open-science-agi",
+      "kind": "principle",
+      "statement": "Open science is a viable institutional form for European AGI research laboratories.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://kyutai.org/",
+          "title": "Kyutai",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "Our mission is to build and democratize artificial general intelligence through open science."
+    },
+    {
+      "id": "principle:hf-share-models",
+      "kind": "principle",
+      "statement": "Shared model hubs lower the cost of building ML applications across ecosystems.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+          "title": "Wikipedia: Hugging Face",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "Its transformers library built for natural language processing applications and its platform"
+    },
+    {
+      "id": "principle:station-f-density",
+      "kind": "principle",
+      "statement": "Physical density of startups can itself be an ecosystem advantage.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "It is noted as the world's largest startup facility."
+    },
+    {
+      "id": "principle:bpifrance-public-capital",
+      "kind": "principle",
+      "statement": "Public investment banks are central capital actors in the French tech ecosystem.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bpifrance",
+          "title": "Wikipedia: Bpifrance",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "Bpifrance also known as the Banque publique d'investissement is a French public sector investment bank."
+    },
+    {
+      "id": "principle:french-tech-mission",
+      "kind": "principle",
+      "statement": "State coordination missions can structure national startup growth at home and abroad.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://lafrenchtech.gouv.fr/",
+          "title": "La French Tech",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "La mission French Tech est chargée de soutenir la structuration et la croissance de l’écosystème des start-up françaises, en France et à l’international."
+    },
+    {
+      "id": "principle:ai-act-first-framework",
+      "kind": "principle",
+      "statement": "The EU treats comprehensive AI risk regulation as a global leadership lever.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI Act",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "The AI Act is the first-ever legal framework on AI, which addresses the risks of AI and positions Europe to play a leading role globally."
+    },
+    {
+      "id": "principle:ai-act-common-framework",
+      "kind": "principle",
+      "statement": "A single EU AI legal framework is intended to govern AI across member states.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Artificial_Intelligence_Act",
+          "title": "Wikipedia: Artificial Intelligence Act",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "It establishes a common regulatory and legal framework for AI within the European Union (EU)."
+    },
+    {
+      "id": "principle:inria-digital-science",
+      "kind": "principle",
+      "statement": "National digital-science institutes anchor long-horizon French AI capability.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/French_Institute_for_Research_in_Computer_Science_and_Automation",
+          "title": "Wikipedia: Inria",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "The National Institute for Research in Digital Science and Technology (Inria) is a French national research institution focusing on computer science and applied mathematics."
+    },
+    {
+      "id": "principle:cnil-data-privacy",
+      "kind": "principle",
+      "statement": "Privacy regulators shape how AI systems may collect and process personal data in France.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Commission_nationale_de_l%27informatique_et_des_libert%C3%A9s",
+          "title": "Wikipedia: CNIL",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "whose mission is to ensure that data privacy law is applied to the collection, storage, and use of personal data."
+    },
+    {
+      "id": "principle:cnrs-public-research-scale",
+      "kind": "principle",
+      "statement": "Large public research bodies remain foundational to European scientific capacity.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/French_National_Centre_for_Scientific_Research",
+          "title": "Wikipedia: CNRS",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "is the largest public research body in Europe and the second largest research organisation in the world."
+    },
+    {
+      "id": "principle:h-company-automate-work",
+      "kind": "principle",
+      "statement": "Frontier agent labs frame value as automating complex human work.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://www.hcompany.ai/",
+          "title": "H Company",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "H Company builds models, agents, and products that automate tasks and simplify complex work."
+    },
+    {
+      "id": "principle:mistral-enterprise-platform",
+      "kind": "principle",
+      "statement": "Frontier model companies increasingly package open models into enterprise platforms.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://mistral.ai/",
+          "title": "Mistral AI",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "id": "principle:dataiku-paris-origin",
+      "kind": "principle",
+      "statement": "Enterprise AI platforms can scale globally while retaining French founding roots.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Dataiku",
+          "title": "Wikipedia: Dataiku",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "Dataiku is a French-American artificial intelligence (AI) and machine learning company which was founded in 2013 in Paris, France."
+    },
+    {
+      "id": "principle:vivatech-innovation-stage",
+      "kind": "principle",
+      "statement": "Large annual tech conferences concentrate capital, talent, and policy attention.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Viva_Technology",
+          "title": "Wikipedia: Viva Technology",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "Viva Technology, or VivaTech, is an annual technology conference, dedicated to innovation and startups, held in Paris, France."
+    },
+    {
+      "id": "principle:web-summit-lisbon",
+      "kind": "principle",
+      "statement": "Hosting a global tech summit can reposition a Southern European capital in venture networks.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Web_Summit",
+          "title": "Wikipedia: Web Summit",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "Web Summit is an annual technology conference held in Lisbon, Portugal."
+    },
+    {
+      "id": "principle:mwc-mobile-industry",
+      "kind": "principle",
+      "statement": "Industry trade shows remain primary distribution channels for mobile and adjacent AI products.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/MWC_Barcelona",
+          "title": "Wikipedia: MWC Barcelona",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "MWC Barcelona, formerly known as the Mobile World Congress, is an annual trade show intended for the mobile communications industry."
+    },
+    {
+      "id": "principle:outsystems-ai-apps",
+      "kind": "principle",
+      "statement": "Low-code vendors reposition around AI app and agent development platforms.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/OutSystems",
+          "title": "Wikipedia: OutSystems",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "OutSystems is an AI development platform designed for building, deploying, and managing AI apps and agents to accelerate enterprise development."
+    },
+    {
+      "id": "principle:feedzai-fraud-ml",
+      "kind": "principle",
+      "statement": "Real-time ML for payments fraud is a durable Southern European AI export niche.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Feedzai",
+          "title": "Wikipedia: Feedzai",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "Feedzai is a data science company that develops real-time machine learning tools to identify fraudulent payment transactions and minimize risk."
+    },
+    {
+      "id": "principle:arthur-mensch-mistral-ceo",
+      "kind": "principle",
+      "statement": "Founder-researchers are central public faces of Europe’s frontier AI labs.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Arthur_Mensch",
+          "title": "Wikipedia: Arthur Mensch",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "Arthur Mensch is a French artificial intelligence researcher and entrepreneur, best known as the co-founder and CEO of the Paris-based AI company Mistral AI."
+    },
+    {
+      "id": "principle:xavier-niel-builder-investor",
+      "kind": "principle",
+      "statement": "Operator-investors can underwrite both campuses and open-science labs in France.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Xavier_Niel",
+          "title": "Wikipedia: Xavier Niel",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "Xavier Niel is a French billionaire entrepreneur and investor."
+    },
+    {
+      "id": "principle:roxanne-varza-station-f",
+      "kind": "principle",
+      "statement": "Campus directors are ecosystem institutions in their own right.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Roxanne_Varza",
+          "title": "Wikipedia: Roxanne Varza",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "Roxanne Varza is Director of Station F, a startup campus, the world's biggest facility of its kind, based in Paris, France."
+    },
+    {
+      "id": "principle:polytechnique-science-engineering",
+      "kind": "principle",
+      "statement": "Grandes écoles remain primary talent pipelines for French deeptech and AI.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/%C3%89cole_polytechnique",
+          "title": "Wikipedia: École polytechnique",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "École polytechnique is a grande école located in Palaiseau, France. It specializes in science and engineering."
+    },
+    {
+      "id": "principle:eurazeo-aum-scale",
+      "kind": "principle",
+      "statement": "Large French multi-strategy investors bridge venture, growth, and buyout capital.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Eurazeo",
+          "title": "Wikipedia: Eurazeo",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "Eurazeo is a French private equity firm and investment group headquartered in Paris."
+    },
+    {
+      "id": "principle:techstars-mentor-capital",
+      "kind": "principle",
+      "statement": "Accelerators package capital with mentorship as a repeatable early-stage product.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Techstars",
+          "title": "Wikipedia: Techstars",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "The accelerator provides capital, mentorship, and other support for early-stage entrepreneurs."
+    },
+    {
+      "id": "principle:contentsquare-behaviour-ai",
+      "kind": "principle",
+      "statement": "Digital experience analytics is a French AI-software export category.",
+      "inferred": false,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Contentsquare",
+          "title": "Wikipedia: Contentsquare",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "quote": "Contentsquare is a French artificial intelligence company founded in 2012 by Jonathan Cherki."
+    },
+    {
+      "id": "entity:clarity-ai",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Clarity AI",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Madrid-based sustainability technology company using AI for ESG data and impact analytics.",
+      "tags": [
+        "esg",
+        "sustainability",
+        "spain"
+      ],
+      "sources": [
+        {
+          "url": "https://clarity.ai/",
+          "title": "Clarity AI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://startups.madrimasd.org/emprendedores/empresa/detalle/1528-clarity-ai/",
+          "title": "madri+d Startup Radar – Clarity AI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "principle:clarity-esg-ai",
+      "kind": "principle",
+      "statement": "Clarity AI applies machine learning to sustainability and ESG analytics for capital markets.",
+      "inferred": true,
+      "sources": [
+        {
+          "url": "https://clarity.ai/",
+          "title": "Clarity AI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://startups.madrimasd.org/emprendedores/empresa/detalle/1528-clarity-ai/",
+          "title": "madri+d Startup Radar – Clarity AI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "entity:roxanne-varza",
+      "to": "entity:station-f",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Roxanne_Varza",
+          "title": "Wikipedia: Roxanne Varza",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:arthur-mensch",
+      "to": "entity:mistral-ai",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Arthur_Mensch",
+          "title": "Wikipedia: Arthur Mensch",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:xavier-niel",
+      "to": "entity:station-f",
+      "rel": "FUNDS",
+      "sources": [
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:xavier-niel",
+      "to": "entity:kyutai",
+      "rel": "FUNDS",
+      "sources": [
+        {
+          "url": "https://kyutai.org/",
+          "title": "Kyutai",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:xavier-niel",
+      "to": "entity:kima",
+      "rel": "FUNDS",
+      "sources": [
+        {
+          "url": "https://www.kima.vc/",
+          "title": "Kima Ventures",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Xavier_Niel",
+          "title": "Wikipedia: Xavier Niel",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:station-f",
+      "to": "entity:hexa",
+      "rel": "HOSTS",
+      "sources": [
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:station-f",
+      "to": "entity:vivatech",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Viva_Technology",
+          "title": "Wikipedia: Viva Technology",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:station-f",
+      "to": "entity:la-french-tech",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://lafrenchtech.gouv.fr/",
+          "title": "La French Tech",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:numa",
+      "to": "entity:station-f",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.numa.co/",
+          "title": "Numa",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:agoranov",
+      "to": "entity:inria",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.agoranov.com/",
+          "title": "Agoranov",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.inria.fr/en",
+          "title": "Inria",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:polihub",
+      "to": "entity:politecnico-milano",
+      "rel": "SPUN_OUT_OF",
+      "sources": [
+        {
+          "url": "https://www.polihub.it/",
+          "title": "PoliHub",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:mwc",
+      "to": "entity:4yfn",
+      "rel": "HOSTS",
+      "sources": [
+        {
+          "url": "https://www.mobileworldcongress.com/",
+          "title": "MWC",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.4yfn.com/",
+          "title": "4YFN",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:hi-paris",
+      "to": "entity:polytechnique",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.hi-paris.fr/",
+          "title": "Hi! PARIS",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.polytechnique.edu/",
+          "title": "École Polytechnique",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:hi-paris",
+      "to": "entity:hec-paris",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.hi-paris.fr/",
+          "title": "Hi! PARIS",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.hec.edu/",
+          "title": "HEC Paris",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:ens-psl",
+      "to": "entity:psl",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.ens.psl.eu/",
+          "title": "ENS PSL",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://psl.eu/",
+          "title": "PSL",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:telecom-paris",
+      "to": "entity:polytechnique",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.telecom-paris.fr/",
+          "title": "Télécom Paris",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.polytechnique.edu/",
+          "title": "École Polytechnique",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:pepr-ia",
+      "to": "entity:anr",
+      "rel": "FUNDS",
+      "sources": [
+        {
+          "url": "https://www.pepr-ia.fr/",
+          "title": "PEPR IA",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.anr.fr/",
+          "title": "ANR",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:pepr-ia",
+      "to": "entity:inria",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.pepr-ia.fr/",
+          "title": "PEPR IA",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.inria.fr/en",
+          "title": "Inria",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:miai-grenoble",
+      "to": "entity:cnrs",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.miai.grenoble-alpes.fr/",
+          "title": "MIAI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.cnrs.fr/",
+          "title": "CNRS",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:eu-ai-office",
+      "to": "entity:eu-ai-act",
+      "rel": "SUPPORTS",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+          "title": "AI Office",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI Act",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:xavier-niel",
+      "to": "entity:mistral-ai",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mistral_AI",
+          "title": "Wikipedia: Mistral AI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Xavier_Niel",
+          "title": "Wikipedia: Xavier Niel",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:alven",
+      "to": "entity:dataiku",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Dataiku",
+          "title": "Wikipedia: Dataiku",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.alven.co/",
+          "title": "Alven",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:serena",
+      "to": "entity:dataiku",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Dataiku",
+          "title": "Wikipedia: Dataiku",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.serena.vc/",
+          "title": "Serena",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:bpifrance",
+      "to": "entity:la-french-tech",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.bpifrance.com/",
+          "title": "Bpifrance",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://presse.bpifrance.fr/",
+          "title": "Bpifrance Presse",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://lafrenchtech.gouv.fr/",
+          "title": "La French Tech",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:bpifrance",
+      "to": "entity:france-digitale",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.bpifrance.com/",
+          "title": "Bpifrance",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://presse.bpifrance.fr/",
+          "title": "Bpifrance Presse",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:bpifrance",
+      "to": "entity:inria",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.bpifrance.com/",
+          "title": "Bpifrance",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://presse.bpifrance.fr/",
+          "title": "Bpifrance Presse",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.inria.fr/en",
+          "title": "Inria",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:partech",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.partechpartners.com/",
+          "title": "Partech",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:alven",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.alven.co/",
+          "title": "Alven",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:elaia",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.elaia.com/",
+          "title": "Elaia",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:breega",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://breega.com/",
+          "title": "Breega",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:kima",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.kima.vc/",
+          "title": "Kima",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:eurazeo",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.eurazeo.com/",
+          "title": "Eurazeo",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:pennylane",
+      "to": "entity:hexa",
+      "rel": "SPUN_OUT_OF",
+      "sources": [
+        {
+          "url": "https://www.hexa.com/",
+          "title": "Hexa",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.pennylane.com/",
+          "title": "Pennylane",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:hexa",
+      "to": "entity:station-f",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.hexa.com/",
+          "title": "Hexa",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:index-ventures",
+      "to": "entity:accel",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.indexventures.com/",
+          "title": "Index Ventures",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.accel.com/",
+          "title": "Accel",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:seaya",
+      "to": "entity:south-summit",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.seaya.com/",
+          "title": "Seaya",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.southsummit.io/",
+          "title": "South Summit",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:k-fund",
+      "to": "entity:south-summit",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.kfund.vc/",
+          "title": "K Fund",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.southsummit.io/",
+          "title": "South Summit",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:wayra",
+      "to": "entity:mwc",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.wayra.com/",
+          "title": "Wayra",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.mobileworldcongress.com/",
+          "title": "MWC",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:cdp-venture-capital",
+      "to": "entity:italian-tech-alliance",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.cdpventurecapital.it/",
+          "title": "CDP Venture Capital",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.italiantechalliance.com/",
+          "title": "Italian Tech Alliance",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:portugal-ventures",
+      "to": "entity:web-summit",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.portugalventures.pt/",
+          "title": "Portugal Ventures",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://websummit.com/",
+          "title": "Web Summit",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:indico-capital",
+      "to": "entity:web-summit",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.indicocapital.com/",
+          "title": "Indico",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://websummit.com/",
+          "title": "Web Summit",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:armilar",
+      "to": "entity:web-summit",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.armilar.com/",
+          "title": "Armilar",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://websummit.com/",
+          "title": "Web Summit",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:faber",
+      "to": "entity:unicorn-factory-lisboa",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.faber.vc/",
+          "title": "Faber",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.unicornfactorylisboa.com/",
+          "title": "Unicorn Factory Lisboa",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:motier",
+      "to": "entity:la-french-tech",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://motier.fr/",
+          "title": "Motier",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://lafrenchtech.gouv.fr/",
+          "title": "La French Tech",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:entrepreneur-first",
+      "to": "entity:station-f",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://joinef.com/",
+          "title": "EF",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:antler",
+      "to": "entity:station-f",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.antler.co/",
+          "title": "Antler",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:50-partners",
+      "to": "entity:station-f",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.50partners.fr/",
+          "title": "50 Partners",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:techstars",
+      "to": "entity:station-f",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.techstars.com/",
+          "title": "Techstars",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:plug-and-play",
+      "to": "entity:vivatech",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.plugandplaytechcenter.com/",
+          "title": "Plug and Play",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Viva_Technology",
+          "title": "Wikipedia: Viva Technology",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:starburst",
+      "to": "entity:hello-tomorrow",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.starburst.aero/",
+          "title": "Starburst",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://hello-tomorrow.org/",
+          "title": "Hello Tomorrow",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:the-family",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.thefamily.co/",
+          "title": "The Family",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:xange",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.xange.fr/",
+          "title": "XAnge",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:enisa-es",
+      "to": "entity:cdti",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.enisa.es/",
+          "title": "ENISA",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.cdti.es/",
+          "title": "CDTI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:cdti",
+      "to": "entity:multiverse-computing",
+      "rel": "FUNDS",
+      "sources": [
+        {
+          "url": "https://www.cdti.es/",
+          "title": "CDTI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://multiversecomputing.com/",
+          "title": "Multiverse Computing",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:beta-i",
+      "to": "entity:unicorn-factory-lisboa",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://beta-i.com/",
+          "title": "Beta-i",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.unicornfactorylisboa.com/",
+          "title": "Unicorn Factory Lisboa",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:unicorn-factory-lisboa",
+      "to": "entity:outsystems",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.unicornfactorylisboa.com/",
+          "title": "Unicorn Factory Lisboa",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.outsystems.com/",
+          "title": "OutSystems",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:raise",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.raise.co/",
+          "title": "Raise",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:ring",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.ringcap.com/",
+          "title": "Ring Capital",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:korelya",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.korelya.com/",
+          "title": "Korelya",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:educapital",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.educapital.vc/",
+          "title": "Educapital",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:daphni",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.daphni.com/",
+          "title": "Daphni",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:frst",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://frst.vc/",
+          "title": "Frst",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:isai",
+      "to": "entity:france-digitale",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.isai.fr/",
+          "title": "ISAI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:seedtag",
+      "to": "entity:south-summit",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.seedtag.com/",
+          "title": "Seedtag",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.southsummit.io/",
+          "title": "South Summit",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:factorial",
+      "to": "entity:4yfn",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.factorialhr.com/",
+          "title": "Factorial",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.4yfn.com/",
+          "title": "4YFN",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:conector",
+      "to": "entity:4yfn",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.conector.com/",
+          "title": "Conector",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.4yfn.com/",
+          "title": "4YFN",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:mistral-ai",
+      "to": "entity:hugging-face",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://mistral.ai/",
+          "title": "Mistral AI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Mistral_AI",
+          "title": "Wikipedia: Mistral AI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://huggingface.co/",
+          "title": "Hugging Face",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+          "title": "Wikipedia: Hugging Face",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:lighton",
+      "to": "entity:hugging-face",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.lighton.ai/",
+          "title": "LightOn",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://huggingface.co/",
+          "title": "Hugging Face",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+          "title": "Wikipedia: Hugging Face",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:probabl",
+      "to": "entity:inria",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.probabl.ai/",
+          "title": "Probabl",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.inria.fr/en",
+          "title": "Inria",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:giskard",
+      "to": "entity:hugging-face",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.giskard.ai/",
+          "title": "Giskard",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://huggingface.co/",
+          "title": "Hugging Face",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+          "title": "Wikipedia: Hugging Face",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:poolside",
+      "to": "entity:hugging-face",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.poolside.ai/",
+          "title": "Poolside",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://huggingface.co/",
+          "title": "Hugging Face",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+          "title": "Wikipedia: Hugging Face",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:photoroom",
+      "to": "entity:hugging-face",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.photoroom.com/",
+          "title": "Photoroom",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://huggingface.co/",
+          "title": "Hugging Face",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+          "title": "Wikipedia: Hugging Face",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:italian-tech-alliance",
+      "to": "entity:italian-tech-week",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.italiantechalliance.com/",
+          "title": "Italian Tech Alliance",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://italiantechweek.com/",
+          "title": "Italian Tech Week",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:conector",
+      "to": "entity:south-summit",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.conector.com/",
+          "title": "Conector",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.southsummit.io/",
+          "title": "South Summit",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:maddyness",
+      "to": "entity:vivatech",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://maddyness.com/",
+          "title": "Maddyness",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Viva_Technology",
+          "title": "Wikipedia: Viva Technology",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:frenchweb",
+      "to": "entity:dotai",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.frenchweb.fr/",
+          "title": "FrenchWeb",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://dotai.fr/",
+          "title": "DotAI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:journal-du-net",
+      "to": "entity:big-data-paris",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://journaldunet.com/",
+          "title": "JDN",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.bigdataparis.com/",
+          "title": "Big Data Paris",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:hello-tomorrow",
+      "to": "entity:bpifrance",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://hello-tomorrow.org/",
+          "title": "Hello Tomorrow",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.bpifrance.com/",
+          "title": "Bpifrance",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://presse.bpifrance.fr/",
+          "title": "Bpifrance Presse",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:changenow",
+      "to": "entity:station-f",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.changenow.world/",
+          "title": "ChangeNOW",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:flexai",
+      "to": "entity:eurohpc-ju",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.flex.ai/",
+          "title": "FlexAI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/",
+          "title": "EuroHPC",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:adaptive-ml",
+      "to": "entity:hugging-face",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.adaptive-ml.com/",
+          "title": "Adaptive ML",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://huggingface.co/",
+          "title": "Hugging Face",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+          "title": "Wikipedia: Hugging Face",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:h-company",
+      "to": "entity:la-french-tech",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.hcompany.ai/",
+          "title": "H Company",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://lafrenchtech.gouv.fr/",
+          "title": "La French Tech",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:dust",
+      "to": "entity:la-french-tech",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://dust.tt/",
+          "title": "Dust",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://lafrenchtech.gouv.fr/",
+          "title": "La French Tech",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:mistral-ai",
+      "to": "entity:la-french-tech",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://mistral.ai/",
+          "title": "Mistral AI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Mistral_AI",
+          "title": "Wikipedia: Mistral AI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://lafrenchtech.gouv.fr/",
+          "title": "La French Tech",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:web-summit",
+      "to": "entity:unicorn-factory-lisboa",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://websummit.com/",
+          "title": "Web Summit",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.unicornfactorylisboa.com/",
+          "title": "Unicorn Factory Lisboa",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:expert-ai",
+      "to": "entity:italian-tech-alliance",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.expert.ai/",
+          "title": "Expert.ai",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.italiantechalliance.com/",
+          "title": "Italian Tech Alliance",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:almawave",
+      "to": "entity:italian-tech-alliance",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.almawave.com/",
+          "title": "Almawave",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.italiantechalliance.com/",
+          "title": "Italian Tech Alliance",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:centralesupelec",
+      "to": "entity:hi-paris",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.centralesupelec.fr/",
+          "title": "CentraleSupélec",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.hi-paris.fr/",
+          "title": "Hi! PARIS",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:telecom-paris",
+      "to": "entity:hi-paris",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.telecom-paris.fr/",
+          "title": "Télécom Paris",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.hi-paris.fr/",
+          "title": "Hi! PARIS",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:anr",
+      "to": "entity:cnrs",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.anr.fr/",
+          "title": "ANR",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.cnrs.fr/",
+          "title": "CNRS",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:cnil",
+      "to": "entity:eu-ai-act",
+      "rel": "SUPPORTS",
+      "sources": [
+        {
+          "url": "https://www.cnil.fr/",
+          "title": "CNIL",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI Act",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:gladia",
+      "to": "entity:hugging-face",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://gladia.io/",
+          "title": "Gladia",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://huggingface.co/",
+          "title": "Hugging Face",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+          "title": "Wikipedia: Hugging Face",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:outmind",
+      "to": "entity:dust",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.outmind.ai/",
+          "title": "Outmind",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://dust.tt/",
+          "title": "Dust",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:illuin",
+      "to": "entity:artefact",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.illuin.tech/",
+          "title": "Illuin",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.artefact.com/",
+          "title": "Artefact",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:craft-ai",
+      "to": "entity:dataiku",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.craft.ai/",
+          "title": "Craft AI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.dataiku.com/",
+          "title": "Dataiku",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:synapse-medicine",
+      "to": "entity:nabla",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.synapse-medicine.com/",
+          "title": "Synapse Medicine",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.nabla.com/",
+          "title": "Nabla",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:ledger",
+      "to": "entity:qonto",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.ledger.com/",
+          "title": "Ledger",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://qonto.com/",
+          "title": "Qonto",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:mirakl",
+      "to": "entity:contentsquare",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.mirakl.com/",
+          "title": "Mirakl",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.contentsquare.com/",
+          "title": "Contentsquare",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:pigment",
+      "to": "entity:pennylane",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.pigment.com/",
+          "title": "Pigment",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.pennylane.com/",
+          "title": "Pennylane",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:shift-technology",
+      "to": "entity:alan",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.shift-technology.com/",
+          "title": "Shift Technology",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.alan.com/",
+          "title": "Alan",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:prophesee",
+      "to": "entity:inria",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.prophesee.ai/",
+          "title": "Prophesee",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.inria.fr/en",
+          "title": "Inria",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:bioptimus",
+      "to": "entity:cnrs",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.bioptimus.com/",
+          "title": "Bioptimus",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.cnrs.fr/",
+          "title": "CNRS",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:mistral-ai",
+      "to": "principle:mistral-open-weight-europe",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://mistral.ai/",
+          "title": "Mistral AI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Mistral_AI",
+          "title": "Wikipedia: Mistral AI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:kyutai",
+      "to": "principle:kyutai-open-science-agi",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://kyutai.org/",
+          "title": "Kyutai",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:hugging-face",
+      "to": "principle:hf-share-models",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://huggingface.co/",
+          "title": "Hugging Face",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+          "title": "Wikipedia: Hugging Face",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:station-f",
+      "to": "principle:station-f-density",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:bpifrance",
+      "to": "principle:bpifrance-public-capital",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://www.bpifrance.com/",
+          "title": "Bpifrance",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://presse.bpifrance.fr/",
+          "title": "Bpifrance Presse",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:la-french-tech",
+      "to": "principle:french-tech-mission",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://lafrenchtech.gouv.fr/",
+          "title": "La French Tech",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:eu-ai-act",
+      "to": "principle:ai-act-first-framework",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI Act",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:eu-ai-office",
+      "to": "principle:ai-act-common-framework",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI Act",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:inria",
+      "to": "principle:inria-digital-science",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://www.inria.fr/en",
+          "title": "Inria",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:cnil",
+      "to": "principle:cnil-data-privacy",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://www.cnil.fr/",
+          "title": "CNIL",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:cnrs",
+      "to": "principle:cnrs-public-research-scale",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://www.cnrs.fr/",
+          "title": "CNRS",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:h-company",
+      "to": "principle:h-company-automate-work",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://www.hcompany.ai/",
+          "title": "H Company",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:arthur-mensch",
+      "to": "principle:arthur-mensch-mistral-ceo",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Arthur_Mensch",
+          "title": "Wikipedia: Arthur Mensch",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:xavier-niel",
+      "to": "principle:xavier-niel-builder-investor",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Xavier_Niel",
+          "title": "Wikipedia: Xavier Niel",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:roxanne-varza",
+      "to": "principle:roxanne-varza-station-f",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Roxanne_Varza",
+          "title": "Wikipedia: Roxanne Varza",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:outsystems",
+      "to": "principle:outsystems-ai-apps",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://www.outsystems.com/",
+          "title": "OutSystems",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:feedzai",
+      "to": "principle:feedzai-fraud-ml",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Feedzai",
+          "title": "Wikipedia: Feedzai",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:dataiku",
+      "to": "principle:dataiku-paris-origin",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://www.dataiku.com/",
+          "title": "Dataiku",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:vivatech",
+      "to": "principle:vivatech-innovation-stage",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Viva_Technology",
+          "title": "Wikipedia: Viva Technology",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:web-summit",
+      "to": "principle:web-summit-lisbon",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://websummit.com/",
+          "title": "Web Summit",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:mwc",
+      "to": "principle:mwc-mobile-industry",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/MWC_Barcelona",
+          "title": "Wikipedia: MWC",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:polytechnique",
+      "to": "principle:polytechnique-science-engineering",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://www.polytechnique.edu/",
+          "title": "École Polytechnique",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:eurazeo",
+      "to": "principle:eurazeo-aum-scale",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://www.eurazeo.com/",
+          "title": "Eurazeo",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:techstars",
+      "to": "principle:techstars-mentor-capital",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://www.techstars.com/",
+          "title": "Techstars",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:contentsquare",
+      "to": "principle:contentsquare-behaviour-ai",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://www.contentsquare.com/",
+          "title": "Contentsquare",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:mistral-ai",
+      "to": "principle:mistral-enterprise-platform",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://mistral.ai/",
+          "title": "Mistral AI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Mistral_AI",
+          "title": "Wikipedia: Mistral AI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:bpifrance-10b-ai-2029",
+      "to": "entity:bpifrance",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.bpifrance.com/",
+          "title": "Bpifrance",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://presse.bpifrance.fr/",
+          "title": "Bpifrance Presse",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:eu-gpai-obligations-live",
+      "to": "entity:eu-ai-act",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI Act",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:eu-high-risk-aug-2026",
+      "to": "entity:eu-ai-act",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI Act",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:h-company-scale-after-220m",
+      "to": "entity:h-company",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.hcompany.ai/",
+          "title": "H Company",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:dust-enterprise-agents-lead",
+      "to": "entity:dust",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://dust.tt/",
+          "title": "Dust",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:kyutai-open-releases",
+      "to": "entity:kyutai",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://kyutai.org/",
+          "title": "Kyutai",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:mistral-eu-frontier-share",
+      "to": "entity:mistral-ai",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://mistral.ai/",
+          "title": "Mistral AI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Mistral_AI",
+          "title": "Wikipedia: Mistral AI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:hf-paris-hub-role",
+      "to": "entity:hugging-face",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://huggingface.co/",
+          "title": "Hugging Face",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+          "title": "Wikipedia: Hugging Face",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:station-f-ai-density",
+      "to": "entity:station-f",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:french-tech-next40-ai-share",
+      "to": "entity:la-french-tech",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://lafrenchtech.gouv.fr/",
+          "title": "La French Tech",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:inria-transfer-ai",
+      "to": "entity:inria",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.inria.fr/en",
+          "title": "Inria",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:cnil-genai-enforcement",
+      "to": "entity:cnil",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.cnil.fr/",
+          "title": "CNIL",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:pepr-ia-outputs",
+      "to": "entity:pepr-ia",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.pepr-ia.fr/",
+          "title": "PEPR IA",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:eurohpc-training-access",
+      "to": "entity:eurohpc-ju",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/",
+          "title": "EuroHPC",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:vivatech-ai-centrality",
+      "to": "entity:vivatech",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Viva_Technology",
+          "title": "Wikipedia: Viva Technology",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:web-summit-lisbon-anchor",
+      "to": "entity:web-summit",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://websummit.com/",
+          "title": "Web Summit",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:mwc-4yfn-ai-track",
+      "to": "entity:mwc",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.mobileworldcongress.com/",
+          "title": "MWC",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.4yfn.com/",
+          "title": "4YFN",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:spain-ai-native-raise",
+      "to": "entity:multiverse-computing",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://multiversecomputing.com/",
+          "title": "Multiverse Computing",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:italy-cdp-ai-push",
+      "to": "entity:cdp-venture-capital",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.cdpventurecapital.it/",
+          "title": "CDP Venture Capital",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:portugal-ai-exits",
+      "to": "entity:feedzai",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Feedzai",
+          "title": "Wikipedia: Feedzai",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:poolside-codegen-compete",
+      "to": "entity:poolside",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.poolside.ai/",
+          "title": "Poolside",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:dataiku-enterprise-stickiness",
+      "to": "entity:dataiku",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.dataiku.com/",
+          "title": "Dataiku",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:photoroom-consumer-ai",
+      "to": "entity:photoroom",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.photoroom.com/",
+          "title": "Photoroom",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:bioptimus-biology-models",
+      "to": "entity:bioptimus",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.bioptimus.com/",
+          "title": "Bioptimus",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:france-digitale-policy-voice",
+      "to": "entity:france-digitale",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:eu-gpai-obligations-live",
+      "to": "principle:ai-act-first-framework",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI Act",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:eu-high-risk-aug-2026",
+      "to": "principle:ai-act-common-framework",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI Act",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:mistral-eu-frontier-share",
+      "to": "principle:mistral-open-weight-europe",
+      "rel": "SUPPORTS",
+      "sources": [
+        {
+          "url": "https://mistral.ai/",
+          "title": "Mistral AI",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Mistral_AI",
+          "title": "Wikipedia: Mistral AI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:kyutai-open-releases",
+      "to": "principle:kyutai-open-science-agi",
+      "rel": "SUPPORTS",
+      "sources": [
+        {
+          "url": "https://kyutai.org/",
+          "title": "Kyutai",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:station-f-ai-density",
+      "to": "principle:station-f-density",
+      "rel": "SUPPORTS",
+      "sources": [
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia: Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:bpifrance-10b-ai-2029",
+      "to": "principle:bpifrance-public-capital",
+      "rel": "SUPPORTS",
+      "sources": [
+        {
+          "url": "https://www.bpifrance.com/",
+          "title": "Bpifrance",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://presse.bpifrance.fr/",
+          "title": "Bpifrance Presse",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:cnil-genai-enforcement",
+      "to": "principle:cnil-data-privacy",
+      "rel": "SUPPORTS",
+      "sources": [
+        {
+          "url": "https://www.cnil.fr/",
+          "title": "CNIL",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:h-company-scale-after-220m",
+      "to": "principle:h-company-automate-work",
+      "rel": "SUPPORTS",
+      "sources": [
+        {
+          "url": "https://www.hcompany.ai/",
+          "title": "H Company",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:cnil",
+      "to": "assumption:eu-gpai-obligations-live",
+      "rel": "SUPPORTS",
+      "sources": [
+        {
+          "url": "https://www.cnil.fr/",
+          "title": "CNIL",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI Act",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:france-digitale",
+      "to": "assumption:eu-high-risk-aug-2026",
+      "rel": "SUPPORTS",
+      "sources": [
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI Act",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:station-f",
+      "to": "entity:numa",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.numa.co/",
+          "title": "Numa",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:bpifrance-10b-ai-2029",
+      "to": "entity:bpifrance",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://presse.bpifrance.fr/",
+          "title": "Bpifrance Presse",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:eu-gpai-obligations-live",
+      "to": "entity:eu-ai-act",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI regulatory framework",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:eu-high-risk-aug-2026",
+      "to": "entity:eu-ai-act",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI regulatory framework",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:h-company-scale-after-220m",
+      "to": "entity:h-company",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://www.hcompany.ai/",
+          "title": "H Company",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:dust-enterprise-agents-lead",
+      "to": "entity:dust",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://dust.tt/",
+          "title": "Dust",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:kyutai-open-releases",
+      "to": "entity:kyutai",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://kyutai.org/",
+          "title": "Kyutai",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:mistral-eu-frontier-share",
+      "to": "entity:mistral-ai",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://mistral.ai/",
+          "title": "Mistral AI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:hf-paris-hub-role",
+      "to": "entity:hugging-face",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://huggingface.co/",
+          "title": "Hugging Face",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:station-f-ai-density",
+      "to": "entity:station-f",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:french-tech-next40-ai-share",
+      "to": "entity:la-french-tech",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://lafrenchtech.gouv.fr/",
+          "title": "La French Tech",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:inria-transfer-ai",
+      "to": "entity:inria",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://www.inria.fr/en",
+          "title": "Inria",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:cnil-genai-enforcement",
+      "to": "entity:cnil",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://www.cnil.fr/",
+          "title": "CNIL",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:pepr-ia-outputs",
+      "to": "entity:pepr-ia",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://www.pepr-ia.fr/",
+          "title": "PEPR IA",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:eurohpc-training-access",
+      "to": "entity:eurohpc-ju",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/",
+          "title": "EuroHPC JU",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:vivatech-ai-centrality",
+      "to": "entity:vivatech",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Viva_Technology",
+          "title": "Wikipedia: Viva Technology",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:web-summit-lisbon-anchor",
+      "to": "entity:web-summit",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://websummit.com/",
+          "title": "Web Summit",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:mwc-4yfn-ai-track",
+      "to": "entity:mwc",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://www.mobileworldcongress.com/",
+          "title": "MWC",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:spain-ai-native-raise",
+      "to": "entity:multiverse-computing",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://multiversecomputing.com/",
+          "title": "Multiverse Computing",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:italy-cdp-ai-push",
+      "to": "entity:cdp-venture-capital",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://www.cdpventurecapital.it/",
+          "title": "CDP Venture Capital",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:portugal-ai-exits",
+      "to": "entity:feedzai",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Feedzai",
+          "title": "Wikipedia: Feedzai",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:poolside-codegen-compete",
+      "to": "entity:poolside",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://www.poolside.ai/",
+          "title": "Poolside",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:dataiku-enterprise-stickiness",
+      "to": "entity:dataiku",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://www.dataiku.com/",
+          "title": "Dataiku",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:photoroom-consumer-ai",
+      "to": "entity:photoroom",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://www.photoroom.com/",
+          "title": "Photoroom",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:bioptimus-biology-models",
+      "to": "entity:bioptimus",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://www.bioptimus.com/",
+          "title": "Bioptimus",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:france-digitale-policy-voice",
+      "to": "entity:france-digitale",
+      "rel": "EVIDENCED_BY",
+      "sources": [
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:italian-tech-alliance",
+      "to": "entity:italian-tech-week",
+      "rel": "HOSTS",
+      "sources": [
+        {
+          "url": "https://italiantechweek.com/",
+          "title": "Italian Tech Week",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.italiantechalliance.com/",
+          "title": "Italian Tech Alliance",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:south-summit",
+      "to": "entity:seaya",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.southsummit.io/",
+          "title": "South Summit",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.seaya.com/",
+          "title": "Seaya",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:clarity-ai",
+      "to": "principle:clarity-esg-ai",
+      "rel": "HOLDS_PRINCIPLE",
+      "sources": [
+        {
+          "url": "https://clarity.ai/",
+          "title": "Clarity AI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:accel",
+      "to": "entity:h-company",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/H_(company)",
+          "title": "Wikipedia: H (company) seed investors",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:bpifrance",
+      "to": "entity:h-company",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/H_(company)",
+          "title": "Wikipedia: H (company) seed investors",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:eurazeo",
+      "to": "entity:h-company",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/H_(company)",
+          "title": "Wikipedia: H (company) seed investors",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:xavier-niel",
+      "to": "entity:h-company",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/H_(company)",
+          "title": "Wikipedia: H (company) seed investors",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:bpifrance",
+      "to": "assumption:bpifrance-10b-ai-2029",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://presse.bpifrance.fr/",
+          "title": "Bpifrance Presse",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:mistral-ai",
+      "to": "assumption:mistral-eu-frontier-share",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://mistral.ai/",
+          "title": "Mistral AI",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:mistral-ai",
+      "to": "assumption:eu-gpai-obligations-live",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI regulatory framework",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:h-company",
+      "to": "assumption:h-company-scale-after-220m",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.hcompany.ai/",
+          "title": "H Company",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:kyutai",
+      "to": "assumption:kyutai-open-releases",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://kyutai.org/",
+          "title": "Kyutai",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:la-french-tech",
+      "to": "assumption:french-tech-next40-ai-share",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://lafrenchtech.gouv.fr/",
+          "title": "La French Tech",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:cdp-venture-capital",
+      "to": "assumption:italy-cdp-ai-push",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.cdpventurecapital.it/",
+          "title": "CDP Venture Capital",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:clarity-ai",
+      "to": "assumption:spain-ai-native-raise",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://multiversecomputing.com/",
+          "title": "Multiverse Computing",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:polytechnique",
+      "to": "entity:hi-paris",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://www.hi-paris.fr/",
+          "title": "Hi! PARIS",
+          "accessed": "2026-07-17"
+        },
+        {
+          "url": "https://www.polytechnique.edu/",
+          "title": "École Polytechnique",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:bpifrance",
+      "to": "entity:h-company",
+      "rel": "FUNDS",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/H_(company)",
+          "title": "Wikipedia: H (company) seed investors",
+          "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "assumption:eu-gpai-obligations-live",
+      "to": "assumption:eu-high-risk-aug-2026",
+      "rel": "SUPPORTS",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "title": "EC: AI regulatory framework",
+          "accessed": "2026-07-17"
+        }
+      ]
+    }
+  ]
+}
