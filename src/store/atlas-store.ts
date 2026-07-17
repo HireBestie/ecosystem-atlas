@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import {
   applyEdgeChanges,
   applyNodeChanges,
@@ -9,7 +10,7 @@ import {
   type OnNodesChange,
 } from "@xyflow/react";
 import { create } from "zustand";
-import type { AtlasData, AtlasFilters, AtlasNode, NodeKind } from "@/lib/atlas-types";
+import type { AtlasData, AtlasFilters, NodeKind } from "@/lib/atlas-types";
 import { ALL_KINDS, isEntity } from "@/lib/atlas-types";
 import {
   buildFlowGraph,
@@ -34,12 +35,11 @@ type AtlasStore = {
   setView: (view: "graph" | "timeline") => void;
   setQuery: (query: string) => void;
   toggleKind: (kind: NodeKind) => void;
+  setKinds: (kinds: NodeKind[]) => void;
   toggleCountry: (country: string) => void;
   toggleEntityType: (entityType: string) => void;
   setHideInferred: (hide: boolean) => void;
   resetFilters: () => void;
-  getSelectedNode: () => AtlasNode | null;
-  getNeighborIds: (id: string) => Set<string>;
 };
 
 const defaultFilters: AtlasFilters = {
@@ -50,23 +50,24 @@ const defaultFilters: AtlasFilters = {
   hideInferred: true,
 };
 
-function applyVisibility(
+function sameStringArray(a: string[], b: string[]): boolean {
+  if (a.length !== b.length) return false;
+  const as = [...a].sort();
+  const bs = [...b].sort();
+  return as.every((value, index) => value === bs[index]);
+}
+
+function computeVisibleIds(
   allNodes: AtlasFlowNode[],
   allEdges: AtlasFlowEdge[],
   filters: AtlasFilters,
-  selectedId: string | null,
-): { nodes: AtlasFlowNode[]; edges: AtlasFlowEdge[] } {
-  const neighborIds = new Set<string>();
-  if (selectedId) {
-    for (const edge of allEdges) {
-      if (edge.source === selectedId) neighborIds.add(edge.target);
-      if (edge.target === selectedId) neighborIds.add(edge.source);
-    }
-  }
-
+): Set<string> {
   const entityVisible = new Set<string>();
   for (const node of allNodes) {
-    if (node.data.atlas.kind === "entity" && matchesFilters(node.data.atlas, filters)) {
+    if (
+      node.data.atlas.kind === "entity" &&
+      matchesFilters(node.data.atlas, filters)
+    ) {
       entityVisible.add(node.id);
     }
   }
@@ -81,9 +82,13 @@ function applyVisibility(
       continue;
     }
 
-    // Show assumption/principle if connected to a visible entity, or if no entity filters active
     const linkedToVisibleEntity = allEdges.some((edge) => {
-      const other = edge.source === node.id ? edge.target : edge.target === node.id ? edge.source : null;
+      const other =
+        edge.source === node.id
+          ? edge.target
+          : edge.target === node.id
+            ? edge.source
+            : null;
       if (!other) return false;
       return entityVisible.has(other);
     });
@@ -96,18 +101,46 @@ function applyVisibility(
     }
   }
 
+  return visibleIds;
+}
+
+function projectGraph(
+  allNodes: AtlasFlowNode[],
+  allEdges: AtlasFlowEdge[],
+  filters: AtlasFilters,
+  selectedId: string | null,
+  currentNodes: AtlasFlowNode[],
+): { nodes: AtlasFlowNode[]; edges: AtlasFlowEdge[] } {
+  const visibleIds = computeVisibleIds(allNodes, allEdges, filters);
+
+  const neighborIds = new Set<string>();
+  if (selectedId) {
+    for (const edge of allEdges) {
+      if (edge.source === selectedId) neighborIds.add(edge.target);
+      if (edge.target === selectedId) neighborIds.add(edge.source);
+    }
+  }
+
+  // Preserve React Flow measured positions/dimensions when possible
+  const currentById = new Map(currentNodes.map((n) => [n.id, n]));
+
   const nodes = allNodes
     .filter((n) => visibleIds.has(n.id))
     .map((n) => {
+      const existing = currentById.get(n.id);
       const dimmed =
-        selectedId != null &&
-        n.id !== selectedId &&
-        !neighborIds.has(n.id);
+        selectedId != null && n.id !== selectedId && !neighborIds.has(n.id);
       return {
-        ...n,
-        hidden: false,
-        data: { ...n.data, dimmed },
+        ...(existing ?? n),
+        id: n.id,
+        type: n.type,
+        position: existing?.position ?? n.position,
+        data: {
+          ...n.data,
+          dimmed,
+        },
         selected: n.id === selectedId,
+        hidden: false,
       };
     });
 
@@ -119,9 +152,9 @@ function applyVisibility(
         (e.source === selectedId || e.target === selectedId);
       return {
         ...e,
-        animated: highlighted || e.animated,
+        animated: highlighted,
         style: {
-          opacity: selectedId && !highlighted ? 0.12 : 0.55,
+          opacity: selectedId && !highlighted ? 0.12 : 0.45,
           strokeWidth: highlighted ? 2 : 1,
         },
       };
@@ -143,26 +176,43 @@ export const useAtlasStore = create<AtlasStore>((set, get) => ({
   filters: defaultFilters,
 
   hydrate: (atlas) => {
+    if (get().atlas?.meta.generatedAt === atlas.meta.generatedAt && get().nodes.length > 0) {
+      return;
+    }
     const built = buildFlowGraph(atlas);
     baseNodes = built.nodes;
     baseEdges = built.edges;
     const filters = get().filters;
     const selectedId = get().selectedId;
-    const visible = applyVisibility(baseNodes, baseEdges, filters, selectedId);
+    const visible = projectGraph(
+      baseNodes,
+      baseEdges,
+      filters,
+      selectedId,
+      [],
+    );
     set({ atlas, ...visible });
   },
 
   onNodesChange: (changes: NodeChange<AtlasFlowNode>[]) => {
+    if (changes.length === 0) return;
     set({ nodes: applyNodeChanges(changes, get().nodes) });
   },
 
   onEdgesChange: (changes: EdgeChange<AtlasFlowEdge>[]) => {
+    if (changes.length === 0) return;
     set({ edges: applyEdgeChanges(changes, get().edges) });
   },
 
   selectNode: (id) => {
-    const filters = get().filters;
-    const visible = applyVisibility(baseNodes, baseEdges, filters, id);
+    if (get().selectedId === id && get().panelOpen === (id != null)) return;
+    const visible = projectGraph(
+      baseNodes,
+      baseEdges,
+      get().filters,
+      id,
+      get().nodes,
+    );
     set({
       selectedId: id,
       panelOpen: id != null,
@@ -171,24 +221,41 @@ export const useAtlasStore = create<AtlasStore>((set, get) => ({
   },
 
   setPanelOpen: (open) => {
-    if (!open) {
-      const filters = get().filters;
-      const visible = applyVisibility(baseNodes, baseEdges, filters, null);
-      set({ panelOpen: false, selectedId: null, ...visible });
+    if (open) {
+      if (get().panelOpen) return;
+      set({ panelOpen: true });
       return;
     }
-    set({ panelOpen: open });
+    // Closing with nothing selected: no-op (prevents Radix onOpenChange loops)
+    if (!get().panelOpen && get().selectedId == null) return;
+    if (get().selectedId == null) {
+      set({ panelOpen: false });
+      return;
+    }
+    const visible = projectGraph(
+      baseNodes,
+      baseEdges,
+      get().filters,
+      null,
+      get().nodes,
+    );
+    set({ panelOpen: false, selectedId: null, ...visible });
   },
 
-  setView: (view) => set({ view }),
+  setView: (view) => {
+    if (get().view === view) return;
+    set({ view });
+  },
 
   setQuery: (query) => {
+    if (get().filters.query === query) return;
     const filters = { ...get().filters, query };
-    const visible = applyVisibility(
+    const visible = projectGraph(
       baseNodes,
       baseEdges,
       filters,
       get().selectedId,
+      get().nodes,
     );
     set({ filters, ...visible });
   },
@@ -198,13 +265,19 @@ export const useAtlasStore = create<AtlasStore>((set, get) => ({
     const kinds = current.includes(kind)
       ? current.filter((k) => k !== kind)
       : [...current, kind];
+    get().setKinds(kinds);
+  },
+
+  setKinds: (kinds) => {
     const nextKinds = kinds.length === 0 ? [...ALL_KINDS] : kinds;
+    if (sameStringArray(get().filters.kinds, nextKinds)) return;
     const filters = { ...get().filters, kinds: nextKinds };
-    const visible = applyVisibility(
+    const visible = projectGraph(
       baseNodes,
       baseEdges,
       filters,
       get().selectedId,
+      get().nodes,
     );
     set({ filters, ...visible });
   },
@@ -214,12 +287,14 @@ export const useAtlasStore = create<AtlasStore>((set, get) => ({
     const countries = current.includes(country)
       ? current.filter((c) => c !== country)
       : [...current, country];
+    if (sameStringArray(current, countries)) return;
     const filters = { ...get().filters, countries };
-    const visible = applyVisibility(
+    const visible = projectGraph(
       baseNodes,
       baseEdges,
       filters,
       get().selectedId,
+      get().nodes,
     );
     set({ filters, ...visible });
   },
@@ -229,72 +304,72 @@ export const useAtlasStore = create<AtlasStore>((set, get) => ({
     const entityTypes = current.includes(entityType as never)
       ? current.filter((t) => t !== entityType)
       : [...current, entityType as never];
+    if (sameStringArray(current, entityTypes)) return;
     const filters = { ...get().filters, entityTypes };
-    const visible = applyVisibility(
+    const visible = projectGraph(
       baseNodes,
       baseEdges,
       filters,
       get().selectedId,
+      get().nodes,
     );
     set({ filters, ...visible });
   },
 
   setHideInferred: (hideInferred) => {
+    if (get().filters.hideInferred === hideInferred) return;
     const filters = { ...get().filters, hideInferred };
-    const visible = applyVisibility(
+    const visible = projectGraph(
       baseNodes,
       baseEdges,
       filters,
       get().selectedId,
+      get().nodes,
     );
     set({ filters, ...visible });
   },
 
   resetFilters: () => {
-    const filters = { ...defaultFilters };
-    const visible = applyVisibility(baseNodes, baseEdges, filters, null);
+    const filters = { ...defaultFilters, kinds: [...ALL_KINDS] };
+    const visible = projectGraph(baseNodes, baseEdges, filters, null, []);
     set({ filters, selectedId: null, panelOpen: false, ...visible });
-  },
-
-  getSelectedNode: () => {
-    const { atlas, selectedId } = get();
-    if (!atlas || !selectedId) return null;
-    return atlas.nodes.find((n) => n.id === selectedId) ?? null;
-  },
-
-  getNeighborIds: (id) => {
-    const ids = new Set<string>();
-    for (const edge of baseEdges) {
-      if (edge.source === id) ids.add(edge.target);
-      if (edge.target === id) ids.add(edge.source);
-    }
-    return ids;
   },
 }));
 
 export function useAtlasStats() {
-  return useAtlasStore((s) => {
-    if (!s.atlas) {
-      return { entities: 0, assumptions: 0, principles: 0, edges: 0, visible: 0 };
+  const atlas = useAtlasStore((s) => s.atlas);
+  const visible = useAtlasStore((s) => s.nodes.length);
+
+  return useMemo(() => {
+    if (!atlas) {
+      return {
+        entities: 0,
+        assumptions: 0,
+        principles: 0,
+        edges: 0,
+        visible: 0,
+      };
     }
     return {
-      entities: s.atlas.nodes.filter((n) => n.kind === "entity").length,
-      assumptions: s.atlas.nodes.filter((n) => n.kind === "assumption").length,
-      principles: s.atlas.nodes.filter((n) => n.kind === "principle").length,
-      edges: s.atlas.edges.length,
-      visible: s.nodes.length,
+      entities: atlas.nodes.filter((n) => n.kind === "entity").length,
+      assumptions: atlas.nodes.filter((n) => n.kind === "assumption").length,
+      principles: atlas.nodes.filter((n) => n.kind === "principle").length,
+      edges: atlas.edges.length,
+      visible,
     };
-  });
+  }, [atlas, visible]);
 }
 
 export function useAvailableFacets() {
-  return useAtlasStore((s) => {
-    if (!s.atlas) {
+  const atlas = useAtlasStore((s) => s.atlas);
+
+  return useMemo(() => {
+    if (!atlas) {
       return { countries: [] as string[], entityTypes: [] as string[] };
     }
     const countries = new Set<string>();
     const entityTypes = new Set<string>();
-    for (const node of s.atlas.nodes) {
+    for (const node of atlas.nodes) {
       if (isEntity(node)) {
         if (node.country) countries.add(node.country);
         entityTypes.add(node.entityType);
@@ -304,5 +379,5 @@ export function useAvailableFacets() {
       countries: [...countries].sort(),
       entityTypes: [...entityTypes].sort(),
     };
-  });
+  }, [atlas]);
 }

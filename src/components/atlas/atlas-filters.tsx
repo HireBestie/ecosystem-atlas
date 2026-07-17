@@ -21,7 +21,7 @@ import {
 export function AtlasFilters() {
   const filters = useAtlasStore((s) => s.filters);
   const setQuery = useAtlasStore((s) => s.setQuery);
-  const toggleKind = useAtlasStore((s) => s.toggleKind);
+  const setKinds = useAtlasStore((s) => s.setKinds);
   const toggleCountry = useAtlasStore((s) => s.toggleCountry);
   const toggleEntityType = useAtlasStore((s) => s.toggleEntityType);
   const setHideInferred = useAtlasStore((s) => s.setHideInferred);
@@ -51,11 +51,13 @@ export function AtlasFilters() {
           value={filters.kinds}
           onValueChange={(values) => {
             const next = values as NodeKind[];
-            for (const kind of ["entity", "assumption", "principle"] as NodeKind[]) {
-              const was = filters.kinds.includes(kind);
-              const now = next.includes(kind);
-              if (was !== now) toggleKind(kind);
+            if (
+              next.length === filters.kinds.length &&
+              next.every((kind) => filters.kinds.includes(kind))
+            ) {
+              return;
             }
+            setKinds(next);
           }}
         >
           {(Object.keys(KIND_LABELS) as NodeKind[]).map((kind) => (

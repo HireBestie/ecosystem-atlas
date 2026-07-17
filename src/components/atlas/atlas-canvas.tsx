@@ -1,11 +1,14 @@
 "use client";
 
+import { useCallback, useEffect, useRef } from "react";
 import {
   Background,
   BackgroundVariant,
   Controls,
   MiniMap,
   ReactFlow,
+  ReactFlowProvider,
+  useReactFlow,
   type NodeTypes,
 } from "@xyflow/react";
 import { AssumptionNode } from "@/components/atlas/nodes/assumption-node";
@@ -19,12 +22,36 @@ const nodeTypes: NodeTypes = {
   principle: PrincipleNode,
 };
 
-export function AtlasCanvas() {
+function AtlasCanvasInner() {
   const nodes = useAtlasStore((s) => s.nodes);
   const edges = useAtlasStore((s) => s.edges);
   const onNodesChange = useAtlasStore((s) => s.onNodesChange);
   const onEdgesChange = useAtlasStore((s) => s.onEdgesChange);
   const selectNode = useAtlasStore((s) => s.selectNode);
+  const { fitView } = useReactFlow();
+  const didFit = useRef(false);
+
+  useEffect(() => {
+    if (nodes.length === 0 || didFit.current) return;
+    didFit.current = true;
+    const timer = window.setTimeout(() => {
+      void fitView({ padding: 0.18, duration: 200 });
+    }, 50);
+    return () => window.clearTimeout(timer);
+    // Intentionally only re-run when the graph becomes populated once.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [nodes.length]);
+
+  const onNodeClick = useCallback(
+    (_: unknown, node: { id: string }) => {
+      selectNode(node.id);
+    },
+    [selectNode],
+  );
+
+  const onPaneClick = useCallback(() => {
+    selectNode(null);
+  }, [selectNode]);
 
   return (
     <div className="atlas-canvas absolute inset-0">
@@ -34,24 +61,15 @@ export function AtlasCanvas() {
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
         nodeTypes={nodeTypes}
-        onNodeClick={(_, node) => selectNode(node.id)}
-        onPaneClick={() => selectNode(null)}
-        fitView
-        fitViewOptions={{ padding: 0.18 }}
+        onNodeClick={onNodeClick}
+        onPaneClick={onPaneClick}
         minZoom={0.15}
         maxZoom={1.6}
         proOptions={{ hideAttribution: true }}
         defaultEdgeOptions={{
           style: { stroke: "oklch(0.55 0.02 250)", strokeWidth: 1 },
-          labelStyle: {
-            fill: "oklch(0.7 0 0)",
-            fontSize: 9,
-            fontFamily: "ui-monospace, monospace",
-          },
-          labelBgStyle: { fill: "oklch(0.18 0 0)", fillOpacity: 0.9 },
-          labelBgPadding: [4, 2] as [number, number],
-          labelBgBorderRadius: 4,
         }}
+        onlyRenderVisibleElements
       >
         <Background
           variant={BackgroundVariant.Dots}
@@ -76,5 +94,13 @@ export function AtlasCanvas() {
         />
       </ReactFlow>
     </div>
+  );
+}
+
+export function AtlasCanvas() {
+  return (
+    <ReactFlowProvider>
+      <AtlasCanvasInner />
+    </ReactFlowProvider>
   );
 }

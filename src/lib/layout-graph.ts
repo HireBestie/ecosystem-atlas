@@ -1,4 +1,4 @@
-import dagre from "@dagrejs/dagre";
+import { Graph, layout as dagreLayout } from "@dagrejs/dagre";
 import type { Edge, Node } from "@xyflow/react";
 import type { AtlasData, AtlasNode, NodeKind } from "@/lib/atlas-types";
 import { isAssumption, isEntity, isPrinciple } from "@/lib/atlas-types";
@@ -59,10 +59,8 @@ export function buildFlowGraph(data: AtlasData): {
     id: `e:${edge.from}->${edge.to}:${edge.rel}:${index}`,
     source: edge.from,
     target: edge.to,
-    label: edge.rel.replaceAll("_", " "),
     data: { rel: edge.rel },
     type: "smoothstep",
-    animated: edge.rel === "BETS_ON" || edge.rel === "HOLDS_PRINCIPLE",
   }));
 
   return { nodes: layoutNodes(nodes, edges), edges };
@@ -72,7 +70,36 @@ export function layoutNodes(
   nodes: AtlasFlowNode[],
   edges: AtlasFlowEdge[],
 ): AtlasFlowNode[] {
-  const g = new dagre.graphlib.Graph();
+  try {
+    return layoutWithDagre(nodes, edges);
+  } catch (err) {
+    console.error("[layoutNodes] dagre failed, using grid fallback", err);
+    return layoutWithGrid(nodes);
+  }
+}
+
+function layoutWithGrid(nodes: AtlasFlowNode[]): AtlasFlowNode[] {
+  const columns = 8;
+  return nodes.map((node, index) => {
+    const width = NODE_WIDTH[node.type as NodeKind];
+    const height = NODE_HEIGHT[node.type as NodeKind];
+    const col = index % columns;
+    const row = Math.floor(index / columns);
+    return {
+      ...node,
+      position: {
+        x: col * (width + 48),
+        y: row * (height + 36),
+      },
+    };
+  });
+}
+
+function layoutWithDagre(
+  nodes: AtlasFlowNode[],
+  edges: AtlasFlowEdge[],
+): AtlasFlowNode[] {
+  const g = new Graph();
   g.setDefaultEdgeLabel(() => ({}));
   g.setGraph({
     rankdir: "LR",
@@ -87,9 +114,6 @@ export function layoutNodes(
     g.setNode(node.id, {
       width: NODE_WIDTH[node.type as NodeKind],
       height: NODE_HEIGHT[node.type as NodeKind],
-      // Rank by kind: principles → entities → assumptions (left to right narrative)
-      rank:
-        node.type === "principle" ? 0 : node.type === "entity" ? 1 : 2,
     });
   }
 
@@ -99,7 +123,7 @@ export function layoutNodes(
     }
   }
 
-  dagre.layout(g);
+  dagreLayout(g);
 
   // Secondary pass: sort assumptions by event date vertically within their column
   const assumptionY = new Map<string, number>();
@@ -127,11 +151,9 @@ export function layoutNodes(
     let y = layout.y - height / 2;
 
     if (node.type === "assumption" && assumptionY.has(node.id)) {
-      // Keep dagre X, override Y for timeline readability
       y = assumptionY.get(node.id)!;
     }
 
-    // Slight vertical nudge by entity type so clusters breathe
     if (node.type === "entity" && isEntity(node.data.atlas)) {
       const typeOffset: Record<string, number> = {
         frontier_lab: -20,
@@ -143,11 +165,6 @@ export function layoutNodes(
         person: 70,
       };
       y += typeOffset[node.data.atlas.entityType] ?? 0;
-    }
-
-    if (node.type === "principle" && isPrinciple(node.data.atlas)) {
-      // Keep compact
-      void node;
     }
 
     return {
