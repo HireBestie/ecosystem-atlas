@@ -25,14 +25,14 @@ type AtlasStore = {
   edges: AtlasFlowEdge[];
   selectedId: string | null;
   panelOpen: boolean;
-  view: "graph" | "timeline";
+  view: "graph" | "timeline" | "mission" | "network";
   filters: AtlasFilters;
   hydrate: (atlas: AtlasData) => void;
   onNodesChange: OnNodesChange<AtlasFlowNode>;
   onEdgesChange: OnEdgesChange<AtlasFlowEdge>;
   selectNode: (id: string | null) => void;
   setPanelOpen: (open: boolean) => void;
-  setView: (view: "graph" | "timeline") => void;
+  setView: (view: "graph" | "timeline" | "mission" | "network") => void;
   setQuery: (query: string) => void;
   toggleKind: (kind: NodeKind) => void;
   setKinds: (kinds: NodeKind[]) => void;
@@ -172,7 +172,7 @@ export const useAtlasStore = create<AtlasStore>((set, get) => ({
   edges: [],
   selectedId: null,
   panelOpen: false,
-  view: "graph",
+  view: "network",
   filters: defaultFilters,
 
   hydrate: (atlas) => {

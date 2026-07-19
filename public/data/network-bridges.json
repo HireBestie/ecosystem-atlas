@@ -1,0 +1,1834 @@
+{
+  "meta": {
+    "version": "0.5.0-southern-europe",
+    "title": "Activation network — FR entities + key persons + warm bridges",
+    "generatedAt": "2026-07-19T15:18:16.118Z",
+    "disclaimer": "Public Output: stakeholder + proximity only. Voucher identities never rendered. Method tab documents how to replicate. Private overlay holds L1/L2 edges and may declare default L2 via trusted vouchers without naming them.",
+    "enrichment": {
+      "stakeholderSource": "exa + official team pages",
+      "proximitySource": "linkedin_connections_csv",
+      "atlasGap": "Atlas had ~119 entities but only 3 person entities — this file is the activation people layer.",
+      "southernEuropePass": "Exa 2026-07-19 — FR GP gaps + ES/IT/PT funds, people, theses, portfolios"
+    },
+    "hideBridgeIdentities": true
+  },
+  "egoPersonId": "person:maxime",
+  "nodes": [
+    {
+      "kind": "org",
+      "id": "org:motier",
+      "name": "Motier Ventures",
+      "orgType": "vc_fund",
+      "thesis": "Moulin-Houzé family office; La Maison founder hub; high AI portfolio density.",
+      "aiStance": "ai_native",
+      "atlasEntityId": "entity:motier",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2024/10/02/motier-ventures-unveils-la-maison-a-community-space-for-the-french-tech-ecosystem/",
+          "title": "TechCrunch La Maison",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:elaia",
+      "name": "Elaia",
+      "orgType": "vc_fund",
+      "thesis": "Digital + deep tech early stage; strong AI/ML partnership bench.",
+      "aiStance": "ai_native",
+      "atlasEntityId": "entity:elaia",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://www.elaia.com/team/",
+          "title": "Elaia Team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:kima",
+      "name": "Kima Ventures",
+      "orgType": "vc_fund",
+      "thesis": "Xavier Niel seed vehicle; high velocity; AI density (Mistral etc.).",
+      "aiStance": "mixed",
+      "atlasEntityId": "entity:kima",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://dealroom.co/investors/kima-ventures/",
+          "title": "Dealroom Kima",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:partech",
+      "name": "Partech",
+      "orgType": "vc_fund",
+      "thesis": "Global seed→growth tech platform; operator-heavy.",
+      "aiStance": "opportunistic",
+      "atlasEntityId": "entity:partech",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://partechpartners.com/",
+          "title": "Partech",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:alven",
+      "name": "Alven",
+      "orgType": "vc_fund",
+      "thesis": "Independent early-stage European builders; vertical AI platforms.",
+      "aiStance": "mixed",
+      "atlasEntityId": "entity:alven",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://alven.co/",
+          "title": "Alven",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:frst",
+      "name": "Frst",
+      "orgType": "vc_fund",
+      "thesis": "Day One / pre-incorporation seed believer.",
+      "aiStance": "mixed",
+      "atlasEntityId": "entity:frst",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://www.frst.vc/",
+          "title": "Frst",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:daphni",
+      "name": "Daphni",
+      "orgType": "vc_fund",
+      "thesis": "European tech VC with open LP community (daphnipolis); deep tech + science entrepreneurship.",
+      "aiStance": "ai_native",
+      "atlasEntityId": "entity:daphni",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://www.daphni.com/",
+          "title": "Daphni",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:starquest",
+      "name": "Starquest Capital",
+      "orgType": "vc_fund",
+      "thesis": "Protect / climate / biodiversity thesis — high-tech low-carbon; disaster prevention & green tech.",
+      "aiStance": "opportunistic",
+      "atlasEntityId": "entity:starquest",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://starquest-capital.com/",
+          "title": "Starquest",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:serena",
+      "name": "Serena",
+      "orgType": "vc_fund",
+      "thesis": "Operator VC; early Applied AI + energy transition; Serena Squad community platform.",
+      "aiStance": "ai_native",
+      "atlasEntityId": "entity:serena",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://www.serena.vc/",
+          "title": "Serena",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:breega",
+      "name": "Breega",
+      "orgType": "vc_fund",
+      "thesis": "Digital, climate, deep tech pre-seed→A+.",
+      "aiStance": "mixed",
+      "atlasEntityId": "entity:breega",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://www.breega.com/",
+          "title": "Breega",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:isai",
+      "name": "ISAI",
+      "orgType": "vc_fund",
+      "thesis": "Tech growth / buyouts; entrepreneur-backed.",
+      "aiStance": "opportunistic",
+      "atlasEntityId": "entity:isai",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://www.isai.fr/",
+          "title": "ISAI",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:xange",
+      "name": "XAnge",
+      "orgType": "vc_fund",
+      "thesis": "Software / internet early-stage.",
+      "aiStance": "mixed",
+      "atlasEntityId": "entity:xange",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://www.xange.vc/",
+          "title": "XAnge",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:station-f",
+      "name": "Station F",
+      "orgType": "hub",
+      "thesis": "Largest startup campus; programme owners > logo.",
+      "aiStance": "mixed",
+      "atlasEntityId": "entity:station-f",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:france-digitale",
+      "name": "France Digitale",
+      "orgType": "community",
+      "thesis": "Founders + investors association; mobilisation layer.",
+      "aiStance": "mixed",
+      "atlasEntityId": "entity:france-digitale",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://francedigitale.org/",
+          "title": "France Digitale",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:open-diplomacy",
+      "name": "Open Diplomacy Institute",
+      "orgType": "other",
+      "thesis": "Geopolitics / business think tank founded by Thomas Friang — Maxime adjacency channel.",
+      "aiStance": "unknown",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://www.open-diplomacy.fr/thomas-friang",
+          "title": "Open Diplomacy",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:essec-geopolitics",
+      "name": "ESSEC Institute for Geopolitics & Business",
+      "orgType": "other",
+      "thesis": "Corporate geopolitics institute — network into business + policy.",
+      "aiStance": "unknown",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://institute-geopolitics-business.essec.edu/experts",
+          "title": "ESSEC Geopolitics",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:maxime",
+      "name": "Maxime Batandéo",
+      "publicRole": "Builder / AI agents operator — Hire Bestie",
+      "orgIds": [],
+      "thesis": "Warm-intro activation without Anthropic brand.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ego",
+      "linkedinUrl": "https://www.linkedin.com/in/maxime-batandeo",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/maxime-batandeo",
+          "title": "LinkedIn (auth)",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:sofia-dahoune",
+      "name": "Sofia Dahoune",
+      "publicRole": "Partner, daphni (deep tech / science entrepreneurship)",
+      "orgIds": [
+        "org:daphni"
+      ],
+      "thesis": "Deep tech builder challenges; ex-Elaia Partner (Alice&Bob, Aqemia, Harfanglab); ex-Bpifrance; Polytechnique startup programmes; AI@ENS adjacency.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ecosystem",
+      "linkedinUrl": "https://www.linkedin.com/in/sofiadahoune",
+      "notes": "Public ecosystem actor. Proximity edges are private.",
+      "sources": [
+        {
+          "url": "https://www.daphni.com/team/sofia-dahoune",
+          "title": "daphni — Sofia Dahoune",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:harold-dumeurger",
+      "name": "Harold Dumeurger",
+      "publicRole": "Partner, Starquest Capital",
+      "orgIds": [
+        "org:starquest"
+      ],
+      "thesis": "Climate / protect / biodiversity VC — mobilises founders in green + risk-tech.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ecosystem",
+      "linkedinUrl": "https://www.linkedin.com/in/harold-dumeurger-5143b945",
+      "notes": "Public ecosystem actor. Proximity edges are private.",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/harold-dumeurger-5143b945",
+          "title": "Harold Dumeurger LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:thomas-friang",
+      "name": "Thomas Friang",
+      "publicRole": "Executive Director, ESSEC Institute for Geopolitics & Business; Founder Open Diplomacy",
+      "orgIds": [
+        "org:essec-geopolitics",
+        "org:open-diplomacy"
+      ],
+      "thesis": "Geopolitics × business network; Open Diplomacy alumni/community as intro fabric.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ecosystem",
+      "linkedinUrl": "https://www.linkedin.com/in/thomasfriang",
+      "notes": "Public ecosystem actor. Proximity edges are private.",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/thomasfriang",
+          "title": "Thomas Friang LinkedIn",
+          "accessed": "2026-07-19"
+        },
+        {
+          "url": "https://pressreleases.responsesource.com/news/106421/thomas-friang-appointed-executive-director-of-the-essec-institute-for/",
+          "title": "ESSEC appointment",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:nicolas-essayan",
+      "name": "Nicolas Essayan",
+      "publicRole": "Founding Partner, Motier Ventures",
+      "orgIds": [
+        "org:motier"
+      ],
+      "thesis": "Motier founding partner — programme / portfolio mobilisation with Houzé.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://www.linkedin.com/in/nicolasessayan",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/nicolasessayan",
+          "title": "Nicolas Essayan LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:guillaume-houze",
+      "name": "Guillaume Houzé",
+      "publicRole": "Founder, Motier Ventures",
+      "orgIds": [
+        "org:motier"
+      ],
+      "thesis": "La Maison + family ecosystem play for AI founders.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ecosystem",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2024/10/02/motier-ventures-unveils-la-maison-a-community-space-for-the-french-tech-ecosystem/",
+          "title": "TechCrunch",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:clement-lamolinerie",
+      "name": "Clément Lamolinerie",
+      "publicRole": "Team, Motier Ventures (verify title)",
+      "orgIds": [
+        "org:motier"
+      ],
+      "thesis": "Possible La Maison / ops contact — verify before outreach.",
+      "identificationStatus": "hypothesized",
+      "networkRole": "target",
+      "linkedinUrl": "https://www.linkedin.com/in/cl%C3%A9ment-lamolinerie-8b39a2b",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/cl%C3%A9ment-lamolinerie-8b39a2b",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:alexis-frentz",
+      "name": "Alexis Frentz",
+      "publicRole": "Partner, Elaia — AI / SaaS / Data / Fintech",
+      "orgIds": [
+        "org:elaia"
+      ],
+      "thesis": "AI partner channel into Elaia portfolio.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://www.linkedin.com/in/alexisfrentz/",
+      "notes": "Sofia is ex-Elaia Partner — strong potential CAN_INTRO path.",
+      "sources": [
+        {
+          "url": "https://www.elaia.com/team/",
+          "title": "Elaia Team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:pauline-roux",
+      "name": "Pauline Roux",
+      "publicRole": "Managing Partner, Elaia",
+      "orgIds": [
+        "org:elaia"
+      ],
+      "thesis": "MP — digital venture leadership.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ecosystem",
+      "linkedinUrl": "https://www.linkedin.com/in/paulineroux",
+      "sources": [
+        {
+          "url": "https://www.elaia.com/team/",
+          "title": "Elaia Team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:xavier-lazarus",
+      "name": "Xavier Lazarus",
+      "publicRole": "Managing Partner, Elaia",
+      "orgIds": [
+        "org:elaia"
+      ],
+      "thesis": "MP — deep tech / digital.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ecosystem",
+      "linkedinUrl": "https://fr.linkedin.com/in/xavier-lazarus-63747",
+      "sources": [
+        {
+          "url": "https://www.elaia.com/team/",
+          "title": "Elaia Team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:jean-de-la-rochebrochard",
+      "name": "Jean de La Rochebrochard",
+      "publicRole": "Managing Partner, Kima Ventures",
+      "orgIds": [
+        "org:kima"
+      ],
+      "thesis": "Runs Kima seed velocity machine.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://www.linkedin.com/in/jeandlr",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/jeandlr",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:alexis-robert",
+      "name": "Alexis Robert",
+      "publicRole": "General Partner, Kima Ventures",
+      "orgIds": [
+        "org:kima"
+      ],
+      "thesis": "GP — early-stage deal flow.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ecosystem",
+      "linkedinUrl": "https://www.linkedin.com/in/robertalexis",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/robertalexis",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:romain-lavault",
+      "name": "Romain Lavault",
+      "publicRole": "General Partner, Partech (Seed)",
+      "orgIds": [
+        "org:partech"
+      ],
+      "thesis": "Seed GP — AI/infra apps in deal flow.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://www.linkedin.com/in/lavault",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/lavault",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:charles-letourneur",
+      "name": "Charles Letourneur",
+      "publicRole": "Co-founder & Managing Partner, Alven",
+      "orgIds": [
+        "org:alven"
+      ],
+      "thesis": "Early-stage software/AI platforms.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://www.linkedin.com/in/charles-letourneur-347bb233",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/charles-letourneur-347bb233",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:pierre-entremont",
+      "name": "Pierre Entremont",
+      "publicRole": "Co-Founder & Partner, Frst",
+      "orgIds": [
+        "org:frst"
+      ],
+      "thesis": "Day One seed believer.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://www.linkedin.com/in/pierreentremont",
+      "sources": [
+        {
+          "url": "https://www.frst.vc/",
+          "title": "Frst",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:pierre-yves-meerschman",
+      "name": "Pierre-Yves Meerschman",
+      "publicRole": "Co-founder & Managing Partner, daphni",
+      "orgIds": [
+        "org:daphni"
+      ],
+      "thesis": "daphnipolis community facilitation — portfolio mobilisation layer.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ecosystem",
+      "linkedinUrl": "https://www.linkedin.com/in/pierre-yves-meerschman",
+      "sources": [
+        {
+          "url": "https://www.daphni.com/team",
+          "title": "daphni Team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:pierre-eric-leibovici",
+      "name": "Pierre-Eric Leibovici",
+      "publicRole": "Co-founder & Managing Partner, daphni",
+      "orgIds": [
+        "org:daphni"
+      ],
+      "thesis": "MP — European tech + community LP model.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ecosystem",
+      "linkedinUrl": "https://www.linkedin.com/in/pierre-eric-leibovici",
+      "sources": [
+        {
+          "url": "https://www.daphni.com/team",
+          "title": "daphni Team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:xavier-lorphelin",
+      "name": "Xavier Lorphelin",
+      "publicRole": "Managing Partner, Serena",
+      "orgIds": [
+        "org:serena"
+      ],
+      "thesis": "Serena leadership; Squad community; AI fund pioneer framing.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://fr.linkedin.com/in/xlorphelin",
+      "sources": [
+        {
+          "url": "https://www.serena.vc/",
+          "title": "Serena",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:nicolas-rose",
+      "name": "Nicolas Rose",
+      "publicRole": "Managing Partner, XAnge",
+      "orgIds": [
+        "org:xange"
+      ],
+      "thesis": "Software / internet early-stage leadership.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://www.linkedin.com/in/rosenicolas",
+      "sources": [
+        {
+          "url": "https://www.xange.vc/team/nicolas-rose",
+          "title": "XAnge — Nicolas Rose",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:nicolas-martineau",
+      "name": "Nicolas Martineau",
+      "publicRole": "Partner, ISAI",
+      "orgIds": [
+        "org:isai"
+      ],
+      "thesis": "ISAI tech growth / PE adjacency.",
+      "identificationStatus": "hypothesized",
+      "networkRole": "target",
+      "linkedinUrl": "https://www.linkedin.com/in/nicolas-martineau-1b773aa",
+      "notes": "Confirm current title on ISAI site before outreach.",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/nicolas-martineau-1b773aa",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:benjamin-deplus",
+      "name": "Benjamin Deplus",
+      "publicRole": "Partner, Breega",
+      "orgIds": [
+        "org:breega"
+      ],
+      "thesis": "Breega digital/climate/deeptech partner bench.",
+      "identificationStatus": "hypothesized",
+      "networkRole": "target",
+      "notes": "Confirm on breega.com/team before outreach.",
+      "sources": [
+        {
+          "url": "https://www.breega.com/",
+          "title": "Breega",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:roxanne-varza",
+      "name": "Roxanne Varza",
+      "publicRole": "Director, Station F",
+      "orgIds": [
+        "org:station-f"
+      ],
+      "thesis": "Campus OS — programmes and density.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://www.linkedin.com/in/roxannevarza/",
+      "sources": [
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:xavier-niel",
+      "name": "Xavier Niel",
+      "publicRole": "Entrepreneur; Station F / Kima adjacency",
+      "orgIds": [
+        "org:station-f",
+        "org:kima"
+      ],
+      "thesis": "French tech density via capital + campus.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ecosystem",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Xavier_Niel",
+          "title": "Wikipedia",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:pricemoov",
+      "name": "Pricemoov",
+      "orgType": "other",
+      "thesis": "AI price management SaaS — Pierre Hébrard’s company; Series A led by ISAI + Bpifrance Digital Venture (2023).",
+      "aiStance": "ai_native",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://pricemoov.com/news/series-a",
+          "title": "Pricemoov Series A",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:aleph-avocats",
+      "name": "Aleph Avocats",
+      "orgType": "other",
+      "thesis": "Paris business law firm active in tech / blockchain / e-reputation.",
+      "aiStance": "unknown",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://aleph-avocats.com/elsa-sammari/?lang=en",
+          "title": "Aleph — Elsa Sammari",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:ditp",
+      "name": "DITP (Direction interministérielle de la transformation publique)",
+      "orgType": "other",
+      "thesis": "Public transformation; Agora citizen dialogue product.",
+      "aiStance": "unknown",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://beta.gouv.fr/startups/agora.html",
+          "title": "Agora — beta.gouv",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:bpifrance",
+      "name": "Bpifrance",
+      "orgType": "vc_fund",
+      "thesis": "Public investment bank — Digital Venture co-led Pricemoov Series A.",
+      "aiStance": "mixed",
+      "atlasEntityId": "entity:bpifrance",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://www.bpifrance.com/",
+          "title": "Bpifrance",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:eurazeo",
+      "name": "Eurazeo",
+      "orgType": "vc_fund",
+      "thesis": "Growth / venture with material AI portfolio density.",
+      "aiStance": "mixed",
+      "atlasEntityId": "entity:eurazeo",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://www.eurazeo.com/",
+          "title": "Eurazeo",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:korelya",
+      "name": "Korelya Capital",
+      "orgType": "vc_fund",
+      "thesis": "EU↔Asia growth; AI scale-ups (e.g. Mistral).",
+      "aiStance": "ai_native",
+      "atlasEntityId": "entity:korelya",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://www.korelyacapital.com/",
+          "title": "Korelya",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:ring",
+      "name": "Ring Capital",
+      "orgType": "vc_fund",
+      "thesis": "Impact / growth equity in European software scale-ups.",
+      "aiStance": "opportunistic",
+      "atlasEntityId": "entity:ring",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://www.ringcp.com/",
+          "title": "Ring",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:educapital",
+      "name": "Educapital",
+      "orgType": "vc_fund",
+      "thesis": "Edtech / lifelong learning specialist VC.",
+      "aiStance": "opportunistic",
+      "atlasEntityId": "entity:educapital",
+      "country": "FR",
+      "sources": [
+        {
+          "url": "https://www.educapitalvc.com/",
+          "title": "Educapital",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:seaya",
+      "name": "Seaya Ventures",
+      "orgType": "vc_fund",
+      "thesis": "Multi-stage Iberian growth incl. AI / deep tech / fintech.",
+      "aiStance": "ai_native",
+      "atlasEntityId": "entity:seaya",
+      "country": "ES",
+      "sources": [
+        {
+          "url": "https://seaya.vc/",
+          "title": "Seaya",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:k-fund",
+      "name": "K Fund",
+      "orgType": "vc_fund",
+      "thesis": "Seed–A Spanish B2B SaaS / ML / AI.",
+      "aiStance": "ai_native",
+      "atlasEntityId": "entity:k-fund",
+      "country": "ES",
+      "sources": [
+        {
+          "url": "https://kfund.vc/",
+          "title": "K Fund",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:kibo",
+      "name": "Kibo Ventures",
+      "orgType": "vc_fund",
+      "thesis": "Deeptech fund — AI, robotics, cybersecurity.",
+      "aiStance": "ai_native",
+      "atlasEntityId": "entity:kibo-ventures",
+      "country": "ES",
+      "sources": [
+        {
+          "url": "https://kiboventures.com/",
+          "title": "Kibo",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:samaipata",
+      "name": "Samaipata",
+      "orgType": "vc_fund",
+      "thesis": "AI-powered productivity early-stage.",
+      "aiStance": "ai_native",
+      "atlasEntityId": "entity:samaipata",
+      "country": "ES",
+      "sources": [
+        {
+          "url": "https://samaipata.substack.com/",
+          "title": "Samaipata",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:cdp-vc",
+      "name": "CDP Venture Capital",
+      "orgType": "vc_fund",
+      "thesis": "~€1B AI programme under 2024–28 plan.",
+      "aiStance": "ai_native",
+      "atlasEntityId": "entity:cdp-venture-capital",
+      "country": "IT",
+      "sources": [
+        {
+          "url": "https://www.cdpventurecapital.it/",
+          "title": "CDP VC",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:p101",
+      "name": "P101",
+      "orgType": "vc_fund",
+      "thesis": "Programma 103 — AI / ML / SaaS.",
+      "aiStance": "ai_native",
+      "atlasEntityId": "entity:p101",
+      "country": "IT",
+      "sources": [
+        {
+          "url": "https://p101.it/",
+          "title": "P101",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:indico",
+      "name": "Indico Capital Partners",
+      "orgType": "vc_fund",
+      "thesis": "Iberian Seed→B AI / SaaS / deep tech (Fund III ~€125M).",
+      "aiStance": "ai_native",
+      "atlasEntityId": "entity:indico-capital",
+      "country": "PT",
+      "sources": [
+        {
+          "url": "https://indicocapital.com/",
+          "title": "Indico",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "org",
+      "id": "org:armilar",
+      "name": "Armilar Venture Partners",
+      "orgType": "vc_fund",
+      "thesis": "Iberian deep tech Fund IV (~€120M) — AI / cyber / data infra.",
+      "aiStance": "ai_native",
+      "atlasEntityId": "entity:armilar",
+      "country": "PT",
+      "sources": [
+        {
+          "url": "https://armilar.com/",
+          "title": "Armilar",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:thomas-turelier",
+      "name": "Thomas Turelier",
+      "publicRole": "MD Venture Capital, Eurazeo",
+      "orgIds": [
+        "org:eurazeo"
+      ],
+      "thesis": "AI venture channel inside Eurazeo.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://www.linkedin.com/in/thomasturelier",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/thomasturelier",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:fleur-pellerin",
+      "name": "Fleur Pellerin",
+      "publicRole": "Founder & CEO, Korelya Capital",
+      "orgIds": [
+        "org:korelya"
+      ],
+      "thesis": "EU↔Asia growth for AI scale-ups.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://fr.linkedin.com/in/fleurpellerin",
+      "sources": [
+        {
+          "url": "https://www.korelyacapital.com/team/",
+          "title": "Korelya team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:nicolas-celier",
+      "name": "Nicolas Celier",
+      "publicRole": "Co-founder & MP, Ring Capital",
+      "orgIds": [
+        "org:ring"
+      ],
+      "thesis": "Growth / impact scale-up mobilisation.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ecosystem",
+      "sources": [
+        {
+          "url": "https://www.ringcp.com/",
+          "title": "Ring",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:marie-christine-levet",
+      "name": "Marie-Christine Levet",
+      "publicRole": "Co-founder, Educapital",
+      "orgIds": [
+        "org:educapital"
+      ],
+      "thesis": "Edtech specialist — lower AI activation priority.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ecosystem",
+      "sources": [
+        {
+          "url": "https://www.educapitalvc.com/about-us",
+          "title": "Educapital",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:beatriz-gonzalez",
+      "name": "Beatriz González",
+      "publicRole": "Founding & Managing Partner, Seaya",
+      "orgIds": [
+        "org:seaya"
+      ],
+      "thesis": "Primary Spain growth AI/deeptech activation target.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "sources": [
+        {
+          "url": "https://seaya.vc/team/",
+          "title": "Seaya team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:miguel-arias",
+      "name": "Miguel Arias",
+      "publicRole": "Partner, K Fund",
+      "orgIds": [
+        "org:k-fund"
+      ],
+      "thesis": "Spanish seed–A AI / ML infra.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://www.linkedin.com/in/miguelarias",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/miguelarias",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:javier-torremocha",
+      "name": "Javier Torremocha",
+      "publicRole": "Co-founder & MP, Kibo Ventures",
+      "orgIds": [
+        "org:kibo"
+      ],
+      "thesis": "Deeptech / AI / robotics Spain.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://www.linkedin.com/in/javier-torremocha",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/javier-torremocha",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:jose-del-barrio",
+      "name": "José del Barrio",
+      "publicRole": "Co-founder, Samaipata",
+      "orgIds": [
+        "org:samaipata"
+      ],
+      "thesis": "AI productivity early-stage Spain.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ecosystem",
+      "sources": [
+        {
+          "url": "https://medium.com/samaipata-ventures/the-founders-q-a-reloaded-873fb8127512",
+          "title": "Samaipata founders",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:cristina-bini",
+      "name": "Cristina Bini",
+      "publicRole": "Senior Partner, CDP Venture Capital",
+      "orgIds": [
+        "org:cdp-vc"
+      ],
+      "thesis": "Italy state-backed AI fund mobilisation.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://www.linkedin.com/in/cristina-bini-9abb50",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/cristina-bini-9abb50",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:andrea-di-camillo",
+      "name": "Andrea Di Camillo",
+      "publicRole": "Founder, P101",
+      "orgIds": [
+        "org:p101"
+      ],
+      "thesis": "Italian AI / SaaS private VC channel.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "sources": [
+        {
+          "url": "https://p101.it/",
+          "title": "P101",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:cristina-fonseca",
+      "name": "Cristina Fonseca",
+      "publicRole": "General Partner, Indico Capital",
+      "orgIds": [
+        "org:indico"
+      ],
+      "thesis": "Portugal / Iberia AI Seed→B activation.",
+      "identificationStatus": "confirmed",
+      "networkRole": "target",
+      "linkedinUrl": "https://linkedin.com/in/cristinanfonseca",
+      "sources": [
+        {
+          "url": "https://linkedin.com/in/cristinanfonseca",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "kind": "person",
+      "id": "person:stephan-morais",
+      "name": "Stephan Morais",
+      "publicRole": "Managing GP, Indico Capital",
+      "orgIds": [
+        "org:indico"
+      ],
+      "thesis": "Indico leadership — Portugal AI mandate.",
+      "identificationStatus": "confirmed",
+      "networkRole": "ecosystem",
+      "sources": [
+        {
+          "url": "https://indicocapital.com/",
+          "title": "Indico",
+          "accessed": "2026-07-19"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e:sofia-daphni",
+      "from": "person:sofia-dahoune",
+      "to": "org:daphni",
+      "rel": "PARTNER_AT",
+      "basis": "Listed Partner on daphni.com/team/sofia-dahoune",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:harold-starquest",
+      "from": "person:harold-dumeurger",
+      "to": "org:starquest",
+      "rel": "PARTNER_AT",
+      "basis": "Partner at Starquest Capital (LinkedIn + firm)",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:thomas-essec",
+      "from": "person:thomas-friang",
+      "to": "org:essec-geopolitics",
+      "rel": "WORKS_AT",
+      "basis": "Executive Director since 2025",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:thomas-opendip",
+      "from": "person:thomas-friang",
+      "to": "org:open-diplomacy",
+      "rel": "FOUNDED",
+      "basis": "Founder Open Diplomacy Institute",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:essayan-motier",
+      "from": "person:nicolas-essayan",
+      "to": "org:motier",
+      "rel": "PARTNER_AT",
+      "basis": "Founding partner Motier",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:houze-motier",
+      "from": "person:guillaume-houze",
+      "to": "org:motier",
+      "rel": "FOUNDED",
+      "basis": "Founder Motier / La Maison",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:clement-motier",
+      "from": "person:clement-lamolinerie",
+      "to": "org:motier",
+      "rel": "WORKS_AT",
+      "basis": "Public Motier association — title TBD",
+      "confidence": "likely"
+    },
+    {
+      "id": "e:frentz-elaia",
+      "from": "person:alexis-frentz",
+      "to": "org:elaia",
+      "rel": "PARTNER_AT",
+      "basis": "Elaia team page",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:roux-elaia",
+      "from": "person:pauline-roux",
+      "to": "org:elaia",
+      "rel": "PARTNER_AT",
+      "basis": "Elaia team page",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:lazarus-elaia",
+      "from": "person:xavier-lazarus",
+      "to": "org:elaia",
+      "rel": "PARTNER_AT",
+      "basis": "Elaia team page",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:jean-kima",
+      "from": "person:jean-de-la-rochebrochard",
+      "to": "org:kima",
+      "rel": "PARTNER_AT",
+      "basis": "Managing Partner",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:alexis-robert-kima",
+      "from": "person:alexis-robert",
+      "to": "org:kima",
+      "rel": "PARTNER_AT",
+      "basis": "GP Kima",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:lavault-partech",
+      "from": "person:romain-lavault",
+      "to": "org:partech",
+      "rel": "PARTNER_AT",
+      "basis": "GP Partech Seed",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:charles-alven",
+      "from": "person:charles-letourneur",
+      "to": "org:alven",
+      "rel": "PARTNER_AT",
+      "basis": "MP Alven",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:pierre-frst",
+      "from": "person:pierre-entremont",
+      "to": "org:frst",
+      "rel": "PARTNER_AT",
+      "basis": "Co-founder Frst",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:pym-daphni",
+      "from": "person:pierre-yves-meerschman",
+      "to": "org:daphni",
+      "rel": "PARTNER_AT",
+      "basis": "Co-founder MP daphni",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:pel-daphni",
+      "from": "person:pierre-eric-leibovici",
+      "to": "org:daphni",
+      "rel": "PARTNER_AT",
+      "basis": "Co-founder MP daphni",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:lorphelin-serena",
+      "from": "person:xavier-lorphelin",
+      "to": "org:serena",
+      "rel": "PARTNER_AT",
+      "basis": "MP Serena",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:rose-xange",
+      "from": "person:nicolas-rose",
+      "to": "org:xange",
+      "rel": "PARTNER_AT",
+      "basis": "MP XAnge",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:martineau-isai",
+      "from": "person:nicolas-martineau",
+      "to": "org:isai",
+      "rel": "PARTNER_AT",
+      "basis": "Partner ISAI — verify",
+      "confidence": "likely"
+    },
+    {
+      "id": "e:deplus-breega",
+      "from": "person:benjamin-deplus",
+      "to": "org:breega",
+      "rel": "PARTNER_AT",
+      "basis": "Partner Breega — verify",
+      "confidence": "likely"
+    },
+    {
+      "id": "e:roxanne-stationf",
+      "from": "person:roxanne-varza",
+      "to": "org:station-f",
+      "rel": "WORKS_AT",
+      "basis": "Director Station F",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:niel-stationf",
+      "from": "person:xavier-niel",
+      "to": "org:station-f",
+      "rel": "FOUNDED",
+      "basis": "Station F backer",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:niel-kima",
+      "from": "person:xavier-niel",
+      "to": "org:kima",
+      "rel": "FOUNDED",
+      "basis": "Kima association",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:sofia-ex-elaia",
+      "from": "person:sofia-dahoune",
+      "to": "org:elaia",
+      "rel": "ADVISES",
+      "basis": "Former Partner Elaia 2018–2023 — alumni path",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:daphni-coinvest-elaia",
+      "from": "org:daphni",
+      "to": "org:elaia",
+      "rel": "CO_INVESTS_WITH",
+      "basis": "Overlapping deep-tech FR dealflow; Sofia bridges both — verify deal-by-deal",
+      "confidence": "likely"
+    },
+    {
+      "id": "e:pierre-isai-backed",
+      "from": "org:isai",
+      "to": "org:pricemoov",
+      "rel": "CO_INVESTS_WITH",
+      "basis": "ISAI co-led Pricemoov $10M Series A (Apr 2023) with Bpifrance Digital Venture",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://pricemoov.com/news/series-a",
+          "title": "Pricemoov Series A",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "e:thomas-turelier-eurazeo",
+      "from": "person:thomas-turelier",
+      "to": "org:eurazeo",
+      "rel": "PARTNER_AT",
+      "basis": "Public role / team page (Exa-backed enrichment)",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/thomasturelier",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "e:fleur-pellerin-korelya",
+      "from": "person:fleur-pellerin",
+      "to": "org:korelya",
+      "rel": "PARTNER_AT",
+      "basis": "Public role / team page (Exa-backed enrichment)",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.korelyacapital.com/team/",
+          "title": "Korelya team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "e:nicolas-celier-ring",
+      "from": "person:nicolas-celier",
+      "to": "org:ring",
+      "rel": "PARTNER_AT",
+      "basis": "Public role / team page (Exa-backed enrichment)",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.ringcp.com/",
+          "title": "Ring",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "e:marie-christine-levet-educapital",
+      "from": "person:marie-christine-levet",
+      "to": "org:educapital",
+      "rel": "PARTNER_AT",
+      "basis": "Public role / team page (Exa-backed enrichment)",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.educapitalvc.com/about-us",
+          "title": "Educapital",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "e:beatriz-gonzalez-seaya",
+      "from": "person:beatriz-gonzalez",
+      "to": "org:seaya",
+      "rel": "PARTNER_AT",
+      "basis": "Public role / team page (Exa-backed enrichment)",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://seaya.vc/team/",
+          "title": "Seaya team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "e:miguel-arias-k-fund",
+      "from": "person:miguel-arias",
+      "to": "org:k-fund",
+      "rel": "PARTNER_AT",
+      "basis": "Public role / team page (Exa-backed enrichment)",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/miguelarias",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "e:javier-torremocha-kibo",
+      "from": "person:javier-torremocha",
+      "to": "org:kibo",
+      "rel": "PARTNER_AT",
+      "basis": "Public role / team page (Exa-backed enrichment)",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/javier-torremocha",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "e:jose-del-barrio-samaipata",
+      "from": "person:jose-del-barrio",
+      "to": "org:samaipata",
+      "rel": "PARTNER_AT",
+      "basis": "Public role / team page (Exa-backed enrichment)",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://medium.com/samaipata-ventures/the-founders-q-a-reloaded-873fb8127512",
+          "title": "Samaipata founders",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "e:cristina-bini-cdp-vc",
+      "from": "person:cristina-bini",
+      "to": "org:cdp-vc",
+      "rel": "PARTNER_AT",
+      "basis": "Public role / team page (Exa-backed enrichment)",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/cristina-bini-9abb50",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "e:andrea-di-camillo-p101",
+      "from": "person:andrea-di-camillo",
+      "to": "org:p101",
+      "rel": "PARTNER_AT",
+      "basis": "Public role / team page (Exa-backed enrichment)",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://p101.it/",
+          "title": "P101",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "e:cristina-fonseca-indico",
+      "from": "person:cristina-fonseca",
+      "to": "org:indico",
+      "rel": "PARTNER_AT",
+      "basis": "Public role / team page (Exa-backed enrichment)",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://linkedin.com/in/cristinanfonseca",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "e:stephan-morais-indico",
+      "from": "person:stephan-morais",
+      "to": "org:indico",
+      "rel": "PARTNER_AT",
+      "basis": "Public role / team page (Exa-backed enrichment)",
+      "confidence": "confirmed",
+      "sources": [
+        {
+          "url": "https://indicocapital.com/",
+          "title": "Indico",
+          "accessed": "2026-07-19"
+        }
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "personId": "person:nicolas-essayan",
+      "orgId": "org:motier",
+      "priority": 1,
+      "why": "Motier founding partner — Mission case programme ownership.",
+      "desiredAsk": "Warm intro via your L1s to confirm La Maison / portfolio programme owner; cohort workshop design chat.",
+      "killCriteria": "No programme owner after 2 warm attempts.",
+      "verifySteps": {
+        "sharedConnectionsHint": "Look for Motier / La Maison / portfolio founders among Shared connections.",
+        "introAskDraft": "Short intro to confirm who owns La Maison / portfolio founder programmes — want a cohort evaluation workshop design chat, not a brand ask."
+      }
+    },
+    {
+      "personId": "person:alexis-frentz",
+      "orgId": "org:elaia",
+      "priority": 2,
+      "why": "AI Partner Elaia — path via Sofia (ex-Elaia) already in private graph.",
+      "desiredAsk": "Technical portfolio mobilisation / evaluation workshop design.",
+      "killCriteria": "Partner declines; try programme ops.",
+      "verifySteps": {
+        "sharedConnectionsHint": "Prefer vouchers with Elaia alumni or AI portfolio overlap.",
+        "introAskDraft": "Intro for a short call on how Elaia mobilises AI portfolio founders for technical evaluation workshops."
+      }
+    },
+    {
+      "personId": "person:jean-de-la-rochebrochard",
+      "orgId": "org:kima",
+      "priority": 3,
+      "why": "Kima MP — seed velocity + AI density.",
+      "desiredAsk": "Who can convene technical founders from portfolio.",
+      "killCriteria": "Announcement-only access.",
+      "verifySteps": {
+        "sharedConnectionsHint": "Prefer Kima portfolio founders or seed peers who know Jean directly.",
+        "introAskDraft": "Who can convene technical founders from the Kima portfolio for a small session — not a pitch for credits."
+      }
+    },
+    {
+      "personId": "person:roxanne-varza",
+      "orgId": "org:station-f",
+      "priority": 4,
+      "why": "Campus programmes — path via Pénélope (Noël FT) / Corentin (Station F).",
+      "desiredAsk": "Intro to technical programme leads.",
+      "killCriteria": "Logo-only conversation.",
+      "verifySteps": {
+        "sharedConnectionsHint": "Prefer Station F / French Tech programme operators among Shared connections.",
+        "introAskDraft": "Intro to programme leads who mobilise technical founders (not logo / campus tour)."
+      }
+    },
+    {
+      "personId": "person:romain-lavault",
+      "orgId": "org:partech",
+      "priority": 5,
+      "why": "Partech Seed GP.",
+      "desiredAsk": "Platform/portfolio engagement owner.",
+      "killCriteria": "No portfolio hop.",
+      "verifySteps": {
+        "sharedConnectionsHint": "Prefer Partech portfolio or seed founders with a real tie to Romain.",
+        "introAskDraft": "Intro to platform/portfolio engagement owner OR a short technical portfolio session design chat."
+      }
+    },
+    {
+      "personId": "person:nicolas-martineau",
+      "orgId": "org:isai",
+      "priority": 6,
+      "why": "ISAI — Pierre Hébrard’s Series A lead; concrete founder→investor bridge.",
+      "desiredAsk": "Warm intro via Pierre to the ISAI partner who owns founder programmes / portfolio engagement.",
+      "killCriteria": "Intro stays fundraising-only with no activation angle."
+    },
+    {
+      "personId": "person:xavier-lorphelin",
+      "orgId": "org:serena",
+      "priority": 7,
+      "why": "Serena MP + Squad community.",
+      "desiredAsk": "How Serena Squad mobilises AI founders.",
+      "killCriteria": "No community access path."
+    },
+    {
+      "personId": "person:charles-letourneur",
+      "orgId": "org:alven",
+      "priority": 8,
+      "why": "Alven MP.",
+      "desiredAsk": "Portfolio technical engagement owner.",
+      "killCriteria": "Check-writing only."
+    },
+    {
+      "personId": "person:pierre-entremont",
+      "orgId": "org:frst",
+      "priority": 9,
+      "why": "Frst Day One.",
+      "desiredAsk": "Seed founder mobilisation chat.",
+      "killCriteria": "No path."
+    },
+    {
+      "personId": "person:nicolas-rose",
+      "orgId": "org:xange",
+      "priority": 10,
+      "why": "XAnge MP.",
+      "desiredAsk": "Software/AI portfolio engagement.",
+      "killCriteria": "No path."
+    },
+    {
+      "personId": "person:thomas-turelier",
+      "orgId": "org:eurazeo",
+      "priority": 11,
+      "why": "Eurazeo VC MD — closes FR fund people gap; AI venture channel.",
+      "desiredAsk": "Who owns portfolio technical engagement for AI companies.",
+      "killCriteria": "PE-only conversation with no venture path."
+    },
+    {
+      "personId": "person:fleur-pellerin",
+      "orgId": "org:korelya",
+      "priority": 12,
+      "why": "Korelya CEO — EU↔Asia AI scale-up bridge.",
+      "desiredAsk": "Intro to portfolio / platform owner for applied AI founders.",
+      "killCriteria": "Asia-only BD with no FR founder mobilisation."
+    },
+    {
+      "personId": "person:beatriz-gonzalez",
+      "orgId": "org:seaya",
+      "priority": 13,
+      "why": "Primary Spain growth AI activation target.",
+      "desiredAsk": "Warm path to Seaya AI portfolio mobilisation owner.",
+      "killCriteria": "No Iberia activation angle after 2 attempts.",
+      "verifySteps": {
+        "sharedConnectionsHint": "Prefer Iberia / Seaya portfolio founders among Shared connections.",
+        "introAskDraft": "Intro for a short chat on how Seaya mobilises AI / deeptech founders — not a fundraising ask."
+      }
+    },
+    {
+      "personId": "person:miguel-arias",
+      "orgId": "org:k-fund",
+      "priority": 14,
+      "why": "Spain seed–A AI / ML.",
+      "desiredAsk": "Technical founder convening from K Fund portfolio.",
+      "killCriteria": "Announcement-only access."
+    },
+    {
+      "personId": "person:javier-torremocha",
+      "orgId": "org:kibo",
+      "priority": 15,
+      "why": "Spain deeptech AI / robotics.",
+      "desiredAsk": "Deeptech portfolio technical session design.",
+      "killCriteria": "No robotics/AI portfolio hop."
+    },
+    {
+      "personId": "person:cristina-bini",
+      "orgId": "org:cdp-vc",
+      "priority": 16,
+      "why": "Italy CDP AI fund programme adjacency.",
+      "desiredAsk": "Who runs AI fund founder programmes / technical activation.",
+      "killCriteria": "Policy-only conversation."
+    },
+    {
+      "personId": "person:andrea-di-camillo",
+      "orgId": "org:p101",
+      "priority": 17,
+      "why": "Italy private AI / SaaS VC.",
+      "desiredAsk": "Portfolio founder mobilisation for evaluation workshops.",
+      "killCriteria": "No path into AI portfolio."
+    },
+    {
+      "personId": "person:cristina-fonseca",
+      "orgId": "org:indico",
+      "priority": 18,
+      "why": "Portugal / Iberia AI Seed→B.",
+      "desiredAsk": "Indico AI portfolio engagement owner.",
+      "killCriteria": "No Iberia founder path."
+    }
+  ]
+}

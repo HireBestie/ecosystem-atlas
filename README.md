@@ -39,6 +39,15 @@ Graph lives in `src/data/atlas.json` (mirrored under `public/data/`). Every node
 
 ## UI
 
-- **Graph** — filter by kind / country / entity type; click node → sources sheet
+- **Graph** — filter by kind / country / entity type; click node → sources panel
 - **Timeline** — assumptions ordered by anchoring event
+- **Mission** — one complete Mission Graph stress case (Motier): goal → milestones → rebuttals → evidence → operating theorem → intervention → metric, with worldview counterfactuals
 - Selection dims non-neighbors so relationships stay readable
+
+## Mission Graph (v0.2)
+
+`public/data/mission-motier.json` is a self-contained stress case:
+
+World model + objectives + interventions + decision policy — without letting intention corrupt belief.
+
+Switch worldviews in the Mission tab: the same facts produce different selected recommendations.

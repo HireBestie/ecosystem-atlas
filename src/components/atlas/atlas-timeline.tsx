@@ -14,7 +14,7 @@ export function AtlasTimeline() {
   const assumptions =
     atlas?.nodes
       .filter(isAssumption)
-      .filter((n) => filters.kinds.includes("assumption"))
+      .filter(() => filters.kinds.includes("assumption"))
       .filter((n) => {
         const q = filters.query.trim().toLowerCase();
         if (!q) return true;

@@ -147,7 +147,7 @@ function layoutWithDagre(
     const layout = g.node(node.id);
     const width = NODE_WIDTH[node.type as NodeKind];
     const height = NODE_HEIGHT[node.type as NodeKind];
-    let x = layout.x - width / 2;
+    const x = layout.x - width / 2;
     let y = layout.y - height / 2;
 
     if (node.type === "assumption" && assumptionY.has(node.id)) {

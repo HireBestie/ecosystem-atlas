@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# private LinkedIn L1 / warm-intro overlay (PII)
+/public/data/network-bridges.private.json
+/data/private/Connections.csv
+/data/private/proximity-report.json

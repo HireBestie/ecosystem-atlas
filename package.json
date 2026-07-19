@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "network:import-connections": "bun run scripts/import-linkedin-connections.ts",
+    "network:build-people": "bun run scripts/build-people-layer.ts",
+    "atlas:enrich-southern-europe": "bun run scripts/enrich-southern-europe-atlas.ts"
   },
   "dependencies": {
     "@dagrejs/dagre": "^3.0.0",

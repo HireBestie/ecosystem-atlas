@@ -1,8 +1,10 @@
 {
   "meta": {
-    "version": "0.1.0",
-    "generatedAt": "2026-07-17T17:00:00.000Z",
-    "scope": "FR deep · ES/IT/PT first pass"
+    "version": "0.2.0",
+    "generatedAt": "2026-07-19T15:18:16.098Z",
+    "scope": "FR deep · ES/IT/PT comprehensive pass (Exa 2026-07-19)",
+    "peopleLayerNote": "Person entities expanded 2026-07-19 via Exa + team pages",
+    "enrichmentNote": "Southern Europe funds/people/theses/portfolios + FR GP gap fill via Exa public sources; no PII enrichment."
   },
   "nodes": [
     {
@@ -3455,6 +3457,1002 @@
           "accessed": "2026-07-17"
         }
       ]
+    },
+    {
+      "id": "entity:starquest",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Starquest Capital",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Paris VC investing in high-tech low-carbon / Protect thesis: climate, disaster prevention, biodiversity, and resource preservation.",
+      "tags": [
+        "vc",
+        "climate",
+        "protect"
+      ],
+      "sources": [
+        {
+          "url": "https://starquest-capital.com/",
+          "title": "Starquest Capital",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:sofia-dahoune",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Sofia Dahoune",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Partner at daphni; former Partner at Elaia; deep tech / science entrepreneurship.",
+      "tags": [
+        "person",
+        "daphni",
+        "elaia"
+      ],
+      "sources": [
+        {
+          "url": "https://www.daphni.com/team/sofia-dahoune",
+          "title": "daphni — Sofia",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:harold-dumeurger",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Harold Dumeurger",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Partner at Starquest Capital (climate / protect thesis).",
+      "tags": [
+        "person",
+        "starquest"
+      ],
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/harold-dumeurger-5143b945",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:thomas-friang",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Thomas Friang",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Executive Director, ESSEC Institute for Geopolitics & Business; founder Open Diplomacy Institute.",
+      "tags": [
+        "person",
+        "essec",
+        "open-diplomacy"
+      ],
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/thomasfriang",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:nicolas-essayan",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Nicolas Essayan",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Founding partner, Motier Ventures.",
+      "tags": [
+        "person",
+        "motier"
+      ],
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/nicolasessayan",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:jean-de-la-rochebrochard",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Jean de La Rochebrochard",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Managing Partner, Kima Ventures.",
+      "tags": [
+        "person",
+        "kima"
+      ],
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/jeandlr",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:alexis-frentz",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Alexis Frentz",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Partner at Elaia focused on AI / SaaS / data / fintech.",
+      "tags": [
+        "person",
+        "elaia"
+      ],
+      "sources": [
+        {
+          "url": "https://www.elaia.com/team/",
+          "title": "Elaia Team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:romain-lavault",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Romain Lavault",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "General Partner, Partech Seed.",
+      "tags": [
+        "person",
+        "partech"
+      ],
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/lavault",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:xavier-lorphelin",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Xavier Lorphelin",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Managing Partner, Serena.",
+      "tags": [
+        "person",
+        "serena"
+      ],
+      "sources": [
+        {
+          "url": "https://fr.linkedin.com/in/xlorphelin",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:pierre-entremont",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Pierre Entremont",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Co-founder & Partner, Frst.",
+      "tags": [
+        "person",
+        "frst"
+      ],
+      "sources": [
+        {
+          "url": "https://www.frst.vc/",
+          "title": "Frst",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:charles-letourneur",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Charles Letourneur",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Co-founder & Managing Partner, Alven.",
+      "tags": [
+        "person",
+        "alven"
+      ],
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/charles-letourneur-347bb233",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:nauta-capital",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Nauta Capital",
+      "country": "ES",
+      "city": "Barcelona",
+      "summary": "Pan-European early-stage B2B software investor; increasing AI/LLM and AI-governance exposure.",
+      "tags": [
+        "vc",
+        "b2b",
+        "ai"
+      ],
+      "sources": [
+        {
+          "url": "https://nautacapital.com/",
+          "title": "Nauta Capital",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:kibo-ventures",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Kibo Ventures",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Spanish early-stage VC; 2025 deeptech fund (~€150M) targeting AI, robotics, and cybersecurity.",
+      "tags": [
+        "vc",
+        "deeptech",
+        "ai"
+      ],
+      "sources": [
+        {
+          "url": "https://kiboventures.com/",
+          "title": "Kibo Ventures",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:samaipata",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Samaipata",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Iberian early-stage fund with 2025–26 emphasis on AI-powered productivity software.",
+      "tags": [
+        "vc",
+        "ai",
+        "productivity"
+      ],
+      "sources": [
+        {
+          "url": "https://samaipata.substack.com/p/samaipatas-2025-in-review-13-investments",
+          "title": "Samaipata 2025 review",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:p101",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "P101",
+      "country": "IT",
+      "city": "Milan",
+      "summary": "Italian VC (Programma 103 ~€250M) focused on AI, machine learning, and SaaS.",
+      "tags": [
+        "vc",
+        "ai",
+        "saas"
+      ],
+      "sources": [
+        {
+          "url": "https://p101.it/",
+          "title": "P101",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:primo-capital",
+      "kind": "entity",
+      "entityType": "vc_fund",
+      "name": "Primo Capital",
+      "country": "IT",
+      "city": "Milan",
+      "summary": "Italian specialised tech investor spanning AI applications, cybersecurity, and deep tech themes.",
+      "tags": [
+        "vc",
+        "ai",
+        "deeptech"
+      ],
+      "sources": [
+        {
+          "url": "https://primo.capital/",
+          "title": "Primo Capital",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:tucuvi",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Tucuvi",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Voice AI clinical assistant for remote patient monitoring and care workflows.",
+      "tags": [
+        "ai",
+        "tucuvi"
+      ],
+      "sources": [
+        {
+          "url": "https://tucuvi.com/",
+          "title": "Tucuvi",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:cicerai",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Cicerai",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Spanish AI startup in Seaya’s disclosed portfolio set.",
+      "tags": [
+        "ai",
+        "cicerai"
+      ],
+      "sources": [
+        {
+          "url": "https://seaya.vc/portfolio/",
+          "title": "Cicerai",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:adsmurai",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Adsmurai",
+      "country": "ES",
+      "city": "Barcelona",
+      "summary": "Marketing / ads platform in Seaya portfolio.",
+      "tags": [
+        "ai",
+        "adsmurai"
+      ],
+      "sources": [
+        {
+          "url": "https://seaya.vc/portfolio/",
+          "title": "Adsmurai",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:alinia",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Alinia",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "B2B / ML infrastructure company associated with K Fund.",
+      "tags": [
+        "ai",
+        "alinia"
+      ],
+      "sources": [
+        {
+          "url": "https://kfund.vc/",
+          "title": "Alinia",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:bdeo",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Bdeo",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Visual AI for insurance claims; K Fund portfolio adjacency.",
+      "tags": [
+        "ai",
+        "bdeo"
+      ],
+      "sources": [
+        {
+          "url": "https://kfund.vc/",
+          "title": "Bdeo",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:neurolabs",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Neurolabs",
+      "country": "ES",
+      "city": "Barcelona",
+      "summary": "Computer-vision AI for retail; Nauta-related portfolio activity.",
+      "tags": [
+        "ai",
+        "neurolabs"
+      ],
+      "sources": [
+        {
+          "url": "https://nautacapital.com/",
+          "title": "Neurolabs",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:genesy",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Genesy",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Sales-focused AI platform; Samaipata 2025 portfolio addition.",
+      "tags": [
+        "ai",
+        "genesy"
+      ],
+      "sources": [
+        {
+          "url": "https://samaipata.substack.com/p/samaipatas-2025-in-review-13-investments",
+          "title": "Genesy",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:theker-robotics",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "THEKER Robotics",
+      "country": "ES",
+      "city": "Spain",
+      "summary": "Deep-learning industrial automation robotics; Kibo deeptech theme.",
+      "tags": [
+        "ai",
+        "robotics"
+      ],
+      "sources": [
+        {
+          "url": "https://kiboventures.com/",
+          "title": "THEKER Robotics",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:axyon-ai",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Axyon AI",
+      "country": "IT",
+      "city": "Modena",
+      "summary": "AI for investment / financial decision support; CDP VC portfolio adjacency.",
+      "tags": [
+        "ai",
+        "axyon"
+      ],
+      "sources": [
+        {
+          "url": "https://www.cdpventurecapital.it/it/portfolio.page",
+          "title": "Axyon AI",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:cyber-guru",
+      "kind": "entity",
+      "entityType": "ai_startup",
+      "name": "Cyber Guru",
+      "country": "IT",
+      "city": "Rome",
+      "summary": "Cybersecurity training platform in P101 portfolio set.",
+      "tags": [
+        "ai",
+        "cybersecurity"
+      ],
+      "sources": [
+        {
+          "url": "https://p101.it/",
+          "title": "Cyber Guru",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:fleur-pellerin",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Fleur Pellerin",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Founder & CEO, Korelya Capital — growth platform linking European tech scale-ups with Asian markets.",
+      "tags": [
+        "person",
+        "korelya",
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.korelyacapital.com/team/",
+          "title": "Korelya team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:thomas-turelier",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Thomas Turelier",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Managing Director, Venture Capital at Eurazeo — AI / defense-adjacent venture investments (e.g. Arcads AI).",
+      "tags": [
+        "person",
+        "eurazeo",
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/thomasturelier",
+          "title": "Thomas Turelier LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:nicolas-celier",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Nicolas Celier",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Co-founder & Managing Partner, Ring Capital.",
+      "tags": [
+        "person",
+        "ring",
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.ringcp.com/",
+          "title": "Ring Capital",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:marie-christine-levet",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Marie-Christine Levet",
+      "country": "FR",
+      "city": "Paris",
+      "summary": "Co-founder, Educapital — edtech / lifelong learning venture thesis.",
+      "tags": [
+        "person",
+        "educapital",
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.educapitalvc.com/about-us",
+          "title": "Educapital about",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:beatriz-gonzalez",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Beatriz González",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Founding & Managing Partner, Seaya Ventures — multi-stage growth including AI / deep tech.",
+      "tags": [
+        "person",
+        "seaya",
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://seaya.vc/team/",
+          "title": "Seaya team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:miguel-arias",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Miguel Arias",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Partner, K Fund — seed / Series A B2B SaaS, ML infrastructure, and AI.",
+      "tags": [
+        "person",
+        "k-fund",
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/miguelarias",
+          "title": "Miguel Arias LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:javier-torremocha",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Javier Torremocha",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Co-founder & Managing Partner, Kibo Ventures — deeptech / AI / robotics fund strategy.",
+      "tags": [
+        "person",
+        "kibo",
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/javier-torremocha",
+          "title": "Javier Torremocha LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:jose-del-barrio",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "José del Barrio",
+      "country": "ES",
+      "city": "Madrid",
+      "summary": "Co-founder, Samaipata — AI-powered productivity investment focus.",
+      "tags": [
+        "person",
+        "samaipata",
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://medium.com/samaipata-ventures/the-founders-q-a-reloaded-873fb8127512",
+          "title": "Samaipata founders Q&A",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:andrea-di-camillo",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Andrea Di Camillo",
+      "country": "IT",
+      "city": "Milan",
+      "summary": "Founder, P101 — Programma 103 AI / ML / SaaS thesis.",
+      "tags": [
+        "person",
+        "p101",
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://p101.it/",
+          "title": "P101",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:cristina-bini",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Cristina Bini",
+      "country": "IT",
+      "city": "Rome",
+      "summary": "Senior Partner, CDP Venture Capital — VC funds including AI programme adjacency.",
+      "tags": [
+        "person",
+        "cdp",
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/cristina-bini-9abb50",
+          "title": "Cristina Bini LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:cristina-fonseca",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Cristina Fonseca",
+      "country": "PT",
+      "city": "Lisbon",
+      "summary": "General Partner, Indico Capital Partners — Seed→Series B AI / enterprise SaaS / deep tech Iberia.",
+      "tags": [
+        "person",
+        "indico",
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://linkedin.com/in/cristinanfonseca",
+          "title": "Cristina Fonseca LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "entity:stephan-morais",
+      "kind": "entity",
+      "entityType": "person",
+      "name": "Stephan Morais",
+      "country": "PT",
+      "city": "Lisbon",
+      "summary": "Managing General Partner, Indico Capital Partners.",
+      "tags": [
+        "person",
+        "indico",
+        "vc"
+      ],
+      "sources": [
+        {
+          "url": "https://indicocapital.com/",
+          "title": "Indico Capital",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "assumption:seaya-ai-deeptech-growth",
+      "kind": "assumption",
+      "statement": "Through 2026 Seaya continues writing growth checks (€2–20M class) into AI, deep tech, and fintech scale-ups as a core Southern Europe thesis.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2025-01-01",
+        "what": "Seaya Growth Tech Fund / EIF ETCI commitment communications"
+      },
+      "sources": [
+        {
+          "url": "https://seaya.vc/",
+          "title": "Seaya",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "assumption:k-fund-ai-seed-a",
+      "kind": "assumption",
+      "statement": "K Fund remains an active seed–Series A investor in Spanish B2B SaaS / ML infra / AI through 2026.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2025-01-01",
+        "what": "K Fund Spain ecosystem report / fund positioning"
+      },
+      "sources": [
+        {
+          "url": "https://kfund.vc/",
+          "title": "K Fund",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "assumption:kibo-deeptech-150m",
+      "kind": "assumption",
+      "statement": "Kibo’s ~€150M deeptech fund deploys meaningfully into AI, robotics, and cybersecurity Iberian startups by end-2026.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2025-03-25",
+        "what": "Public reporting on Kibo deeptech fund launch"
+      },
+      "sources": [
+        {
+          "url": "https://www.elconfidencial.com/mercados/2025-03-25/kibo-ventures-fondo-capital-riesgo-deeptech-millones_4093045/",
+          "title": "El Confidencial — Kibo deeptech",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "assumption:samaipata-ai-productivity",
+      "kind": "assumption",
+      "statement": "Samaipata’s 2025–26 new investments stay concentrated in AI-powered productivity software.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2025-12-23",
+        "what": "Samaipata 2025 in review (13 investments)"
+      },
+      "sources": [
+        {
+          "url": "https://samaipata.substack.com/p/samaipatas-2025-in-review-13-investments",
+          "title": "Samaipata 2025 review",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "assumption:cdp-ai-fund-1b",
+      "kind": "assumption",
+      "statement": "CDP Venture Capital’s dedicated AI envelope (~€1B under 2024–28 plan) continues deploying across tech transfer, industrial AI startups, and national champions through 2026.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2024-01-01",
+        "what": "CDP VC 2024–2028 industrial plan / AI fund materials"
+      },
+      "sources": [
+        {
+          "url": "https://www.cdpventurecapital.it/en/fondo.page?contentId=FND50514",
+          "title": "CDP Artificial Intelligence fund",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "assumption:p101-programma-103-ai",
+      "kind": "assumption",
+      "statement": "P101 Programma 103 (~€250M) continues prioritising AI / ML / SaaS deals as a primary Italian thesis through 2026.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2025-04-25",
+        "what": "P101 Programma 103 close reporting"
+      },
+      "sources": [
+        {
+          "url": "https://vcwire.tech/2025/04/25/p101-closes-programma-103-fund-at-e250m/",
+          "title": "VCWire — P101 Programma 103",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "assumption:indico-fund-iii-ai",
+      "kind": "assumption",
+      "statement": "Indico Capital Fund III (~€125M) keeps Seed→Series B AI / enterprise SaaS / deep tech as a core Southern Europe mandate through 2026.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2025-11-28",
+        "what": "Indico Fund III launch / EIF commitment coverage"
+      },
+      "sources": [
+        {
+          "url": "https://tech.eu/2025/11/28/indico-capital-partners-launches-eur125m-fund/",
+          "title": "Tech.eu — Indico Fund III",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "assumption:armilar-fund-iv-iberia-deeptech",
+      "kind": "assumption",
+      "statement": "Armilar Fund IV (~€120M) continues backing Iberian deep tech including AI, cybersecurity, and data infrastructure through 2026.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2025-11-05",
+        "what": "Armilar Fund IV close coverage"
+      },
+      "sources": [
+        {
+          "url": "https://techfundingnews.com/armilar-venture-partners-raises-120m-fund-iv-iberian-deep-tech/",
+          "title": "TFN — Armilar Fund IV",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "assumption:korelya-eu-asia-ai-scale",
+      "kind": "assumption",
+      "statement": "Korelya remains a relevant growth partner for European AI scale-ups seeking Asia market bridges through 2026.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2025-01-01",
+        "what": "Korelya public positioning / AI portfolio disclosures"
+      },
+      "sources": [
+        {
+          "url": "https://www.korelyacapital.com/",
+          "title": "Korelya Capital",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "assumption:eurazeo-ai-venture-density",
+      "kind": "assumption",
+      "statement": "Eurazeo’s venture strategies keep material AI exposure (models, vertical AI, applied AI) in active portfolios through 2026.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2025-01-01",
+        "what": "Eurazeo venture / AI portfolio public profiles"
+      },
+      "sources": [
+        {
+          "url": "https://goldi.ai/intelligence/vc/eurazeo",
+          "title": "Eurazeo AI portfolio profile",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "assumption:motier-ai-portfolio-density",
+      "kind": "assumption",
+      "statement": "Motier Ventures maintains high AI portfolio density (incl. Dust, Mistral) and La Maison as a founder mobilisation surface through 2026.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2024-10-02",
+        "what": "TechCrunch La Maison / Motier portfolio disclosures"
+      },
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2024/10/02/motier-ventures-unveils-la-maison-a-community-space-for-the-french-tech-ecosystem/",
+          "title": "TechCrunch — Motier La Maison",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "id": "assumption:serena-applied-ai-fund",
+      "kind": "assumption",
+      "statement": "Serena continues operator-led Applied AI investing (and Squad community mobilisation) as a durable FR thesis through 2026.",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "anchoredToEvent": {
+        "date": "2025-01-01",
+        "what": "Serena public AI fund / portfolio positioning"
+      },
+      "sources": [
+        {
+          "url": "https://serena.vc/",
+          "title": "Serena",
+          "accessed": "2026-07-19"
+        }
+      ]
     }
   ],
   "edges": [
@@ -6629,6 +7627,630 @@
           "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
           "title": "EC: AI regulatory framework",
           "accessed": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "from": "entity:sofia-dahoune",
+      "to": "entity:daphni",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "People layer enrichment",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:sofia-dahoune",
+      "to": "entity:elaia",
+      "rel": "PARTNERS_WITH",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "People layer enrichment",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:harold-dumeurger",
+      "to": "entity:starquest",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "People layer enrichment",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:nicolas-essayan",
+      "to": "entity:motier",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "People layer enrichment",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:jean-de-la-rochebrochard",
+      "to": "entity:kima",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "People layer enrichment",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:alexis-frentz",
+      "to": "entity:elaia",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "People layer enrichment",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:romain-lavault",
+      "to": "entity:partech",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "People layer enrichment",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:xavier-lorphelin",
+      "to": "entity:serena",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "People layer enrichment",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:pierre-entremont",
+      "to": "entity:frst",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "People layer enrichment",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:charles-letourneur",
+      "to": "entity:alven",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "People layer enrichment",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:fleur-pellerin",
+      "to": "entity:korelya",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.korelyacapital.com/team/",
+          "title": "Korelya team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:thomas-turelier",
+      "to": "entity:eurazeo",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/thomasturelier",
+          "title": "Thomas Turelier LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:nicolas-celier",
+      "to": "entity:ring",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.ringcp.com/",
+          "title": "Ring Capital",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:marie-christine-levet",
+      "to": "entity:educapital",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.educapitalvc.com/about-us",
+          "title": "Educapital about",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:beatriz-gonzalez",
+      "to": "entity:seaya",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://seaya.vc/team/",
+          "title": "Seaya team",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:miguel-arias",
+      "to": "entity:k-fund",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/miguelarias",
+          "title": "Miguel Arias LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:javier-torremocha",
+      "to": "entity:kibo-ventures",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/javier-torremocha",
+          "title": "Javier Torremocha LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:jose-del-barrio",
+      "to": "entity:samaipata",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://medium.com/samaipata-ventures/the-founders-q-a-reloaded-873fb8127512",
+          "title": "Samaipata founders Q&A",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:andrea-di-camillo",
+      "to": "entity:p101",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://p101.it/",
+          "title": "P101",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:cristina-bini",
+      "to": "entity:cdp-venture-capital",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/cristina-bini-9abb50",
+          "title": "Cristina Bini LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:cristina-fonseca",
+      "to": "entity:indico-capital",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://linkedin.com/in/cristinanfonseca",
+          "title": "Cristina Fonseca LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:stephan-morais",
+      "to": "entity:indico-capital",
+      "rel": "MEMBER_OF",
+      "sources": [
+        {
+          "url": "https://indicocapital.com/",
+          "title": "Indico Capital",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "assumption:seaya-ai-deeptech-growth",
+      "to": "entity:seaya",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://seaya.vc/",
+          "title": "Seaya",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "assumption:k-fund-ai-seed-a",
+      "to": "entity:k-fund",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://kfund.vc/",
+          "title": "K Fund",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "assumption:kibo-deeptech-150m",
+      "to": "entity:kibo-ventures",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.elconfidencial.com/mercados/2025-03-25/kibo-ventures-fondo-capital-riesgo-deeptech-millones_4093045/",
+          "title": "El Confidencial — Kibo deeptech",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "assumption:samaipata-ai-productivity",
+      "to": "entity:samaipata",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://samaipata.substack.com/p/samaipatas-2025-in-review-13-investments",
+          "title": "Samaipata 2025 review",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "assumption:cdp-ai-fund-1b",
+      "to": "entity:cdp-venture-capital",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.cdpventurecapital.it/en/fondo.page?contentId=FND50514",
+          "title": "CDP Artificial Intelligence fund",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "assumption:p101-programma-103-ai",
+      "to": "entity:p101",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://vcwire.tech/2025/04/25/p101-closes-programma-103-fund-at-e250m/",
+          "title": "VCWire — P101 Programma 103",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "assumption:indico-fund-iii-ai",
+      "to": "entity:indico-capital",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://tech.eu/2025/11/28/indico-capital-partners-launches-eur125m-fund/",
+          "title": "Tech.eu — Indico Fund III",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "assumption:armilar-fund-iv-iberia-deeptech",
+      "to": "entity:armilar",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://techfundingnews.com/armilar-venture-partners-raises-120m-fund-iv-iberian-deep-tech/",
+          "title": "TFN — Armilar Fund IV",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "assumption:korelya-eu-asia-ai-scale",
+      "to": "entity:korelya",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://www.korelyacapital.com/",
+          "title": "Korelya Capital",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "assumption:eurazeo-ai-venture-density",
+      "to": "entity:eurazeo",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://goldi.ai/intelligence/vc/eurazeo",
+          "title": "Eurazeo AI portfolio profile",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "assumption:motier-ai-portfolio-density",
+      "to": "entity:motier",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2024/10/02/motier-ventures-unveils-la-maison-a-community-space-for-the-french-tech-ecosystem/",
+          "title": "TechCrunch — Motier La Maison",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "assumption:serena-applied-ai-fund",
+      "to": "entity:serena",
+      "rel": "BETS_ON",
+      "sources": [
+        {
+          "url": "https://serena.vc/",
+          "title": "Serena",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:motier",
+      "to": "entity:dust",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://www.gp-intel.com/company/dust",
+          "title": "Dust · Motier",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:motier",
+      "to": "entity:mistral-ai",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://motier.vc/",
+          "title": "Motier portfolio",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:eurazeo",
+      "to": "entity:mistral-ai",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://goldi.ai/intelligence/vc/eurazeo",
+          "title": "Eurazeo AI portfolio",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:korelya",
+      "to": "entity:mistral-ai",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://www.gp-intel.com/gp/korelya-capital",
+          "title": "Korelya portfolio",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:elaia",
+      "to": "entity:shift-technology",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://tracxn.com/d/venture-capital/elaia/__R59ESo4GNZjGlOHdvcDQZHcf8wBKWxvKXM4wFN0HFY8",
+          "title": "Elaia · Shift",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:elaia",
+      "to": "entity:mirakl",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://tracxn.com/d/venture-capital/elaia/__R59ESo4GNZjGlOHdvcDQZHcf8wBKWxvKXM4wFN0HFY8",
+          "title": "Elaia · Mirakl",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:seaya",
+      "to": "entity:clarity-ai",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://seaya.vc/portfolio/",
+          "title": "Seaya portfolio",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:seaya",
+      "to": "entity:tucuvi",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://seaya.vc/portfolio/",
+          "title": "Seaya portfolio",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:seaya",
+      "to": "entity:cicerai",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://seaya.vc/portfolio/",
+          "title": "Seaya portfolio",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:seaya",
+      "to": "entity:adsmurai",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://seaya.vc/portfolio/",
+          "title": "Seaya portfolio",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:k-fund",
+      "to": "entity:alinia",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://kfund.vc/",
+          "title": "K Fund",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:k-fund",
+      "to": "entity:bdeo",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://kfund.vc/",
+          "title": "K Fund",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:nauta-capital",
+      "to": "entity:neurolabs",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://nautacapital.com/",
+          "title": "Nauta",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:samaipata",
+      "to": "entity:genesy",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://samaipata.substack.com/p/samaipatas-2025-in-review-13-investments",
+          "title": "Samaipata 2025",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:kibo-ventures",
+      "to": "entity:theker-robotics",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://kiboventures.com/",
+          "title": "Kibo",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:cdp-venture-capital",
+      "to": "entity:axyon-ai",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://www.cdpventurecapital.it/it/portfolio.page",
+          "title": "CDP portfolio",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:p101",
+      "to": "entity:cyber-guru",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://p101.it/",
+          "title": "P101",
+          "accessed": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "from": "entity:armilar",
+      "to": "entity:feedzai",
+      "rel": "INVESTED_IN",
+      "sources": [
+        {
+          "url": "https://techfundingnews.com/armilar-venture-partners-raises-120m-fund-iv-iberian-deep-tech/",
+          "title": "Armilar · Feedzai adjacency",
+          "accessed": "2026-07-19"
         }
       ]
     }

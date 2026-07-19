@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "id": "person:bridge-slot-1",
+      "kind": "person",
+      "name": "REAL NAME — your strong L1",
+      "publicRole": "e.g. Founder @ PortfolioCo / Operator @ Hub",
+      "orgIds": [],
+      "identificationStatus": "confirmed",
+      "networkRole": "bridge",
+      "notes": "Why the tie is strong. Replace this whole node.",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/REPLACE",
+          "title": "LinkedIn",
+          "accessed": "2026-07-19"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e:maxime-bridge1",
+      "from": "person:maxime",
+      "to": "person:bridge-slot-1",
+      "rel": "KNOWS",
+      "linkedinDegree": 1,
+      "strength": "strong",
+      "basis": "REPLACE — e.g. worked together / community / intro history",
+      "confidence": "confirmed"
+    },
+    {
+      "id": "e:bridge1-can-intro-example",
+      "from": "person:bridge-slot-1",
+      "to": "person:roxanne-varza",
+      "rel": "CAN_INTRO",
+      "linkedinDegree": 1,
+      "strength": "warm",
+      "basis": "REPLACE — only if they are actually L1 and willing to intro",
+      "confidence": "likely"
+    }
+  ]
+}
