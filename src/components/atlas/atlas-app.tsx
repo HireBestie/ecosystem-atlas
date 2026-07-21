@@ -2,28 +2,24 @@
 
 import { useEffect, useState } from "react";
 import { AtlasCanvas } from "@/components/atlas/atlas-canvas";
+import { AtlasCases } from "@/components/atlas/atlas-cases";
 import { AtlasDetailSheet } from "@/components/atlas/atlas-detail-sheet";
 import { AtlasErrorBoundary } from "@/components/atlas/atlas-error-boundary";
 import { AtlasFilters } from "@/components/atlas/atlas-filters";
 import { AtlasHeader } from "@/components/atlas/atlas-header";
 import { AtlasMission } from "@/components/atlas/atlas-mission";
-import { AtlasNetwork } from "@/components/atlas/atlas-network";
 import { AtlasTimeline } from "@/components/atlas/atlas-timeline";
 import type { AtlasData } from "@/lib/atlas-types";
+import type { WorkedCaseBundle } from "@/lib/case-types";
 import type { MissionCase } from "@/lib/mission-types";
-import {
-  mergeNetworkGraphs,
-  type NetworkGraph,
-  type NetworkOverlay,
-} from "@/lib/network-types";
 import { useAtlasStore } from "@/store/atlas-store";
+import { useCaseStore } from "@/store/case-store";
 import { useMissionStore } from "@/store/mission-store";
-import { useNetworkStore } from "@/store/network-store";
 
 export function AtlasApp() {
   const hydrate = useAtlasStore((s) => s.hydrate);
   const hydrateMission = useMissionStore((s) => s.hydrate);
-  const hydrateNetwork = useNetworkStore((s) => s.hydrate);
+  const hydrateCases = useCaseStore((s) => s.hydrate);
   const view = useAtlasStore((s) => s.view);
   const atlas = useAtlasStore((s) => s.atlas);
   const [error, setError] = useState<string | null>(null);
@@ -35,10 +31,10 @@ export function AtlasApp() {
     async function load() {
       try {
         setLoading(true);
-        const [atlasRes, missionRes, networkRes] = await Promise.all([
+        const [atlasRes, missionRes, casesRes] = await Promise.all([
           fetch("/data/atlas.json", { cache: "force-cache" }),
           fetch("/data/mission-motier.json", { cache: "force-cache" }),
-          fetch("/data/network-bridges.json", { cache: "force-cache" }),
+          fetch("/data/worked-cases.json", { cache: "force-cache" }),
         ]);
         if (!atlasRes.ok) {
           throw new Error(`Failed to fetch atlas.json (${atlasRes.status})`);
@@ -48,32 +44,19 @@ export function AtlasApp() {
             `Failed to fetch mission-motier.json (${missionRes.status})`,
           );
         }
-        if (!networkRes.ok) {
+        if (!casesRes.ok) {
           throw new Error(
-            `Failed to fetch network-bridges.json (${networkRes.status})`,
+            `Failed to fetch worked-cases.json (${casesRes.status})`,
           );
         }
         const data = (await atlasRes.json()) as AtlasData;
         const mission = (await missionRes.json()) as MissionCase;
-        let network = (await networkRes.json()) as NetworkGraph;
-
-        // Optional private L1 overlay — 404 is expected when not present
-        try {
-          const privateRes = await fetch("/data/network-bridges.private.json", {
-            cache: "no-store",
-          });
-          if (privateRes.ok) {
-            const overlay = (await privateRes.json()) as NetworkOverlay;
-            network = mergeNetworkGraphs(network, overlay);
-          }
-        } catch {
-          // ignore — private file is optional
-        }
+        const cases = (await casesRes.json()) as WorkedCaseBundle;
 
         if (cancelled) return;
         hydrate(data);
         hydrateMission(mission);
-        hydrateNetwork(network);
+        hydrateCases(cases);
         setError(null);
       } catch (err) {
         if (cancelled) return;
@@ -90,9 +73,9 @@ export function AtlasApp() {
     return () => {
       cancelled = true;
     };
-  }, [hydrate, hydrateMission, hydrateNetwork]);
+  }, [hydrate, hydrateMission, hydrateCases]);
 
-  const hideAtlasChrome = view === "mission" || view === "network";
+  const hideAtlasChrome = view === "mission" || view === "cases";
 
   return (
     <AtlasErrorBoundary>
@@ -119,7 +102,7 @@ export function AtlasApp() {
             ) : view === "mission" ? (
               <AtlasMission />
             ) : (
-              <AtlasNetwork />
+              <AtlasCases />
             )}
             {!hideAtlasChrome ? <AtlasDetailSheet /> : null}
           </main>

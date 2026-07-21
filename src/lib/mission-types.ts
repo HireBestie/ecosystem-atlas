@@ -27,6 +27,9 @@ export type AssumptionSystemRole =
   | "operator_situation"
   | "operator_objective";
 
+/** Qualitative support — no fake precision. */
+export type SupportLevel = "supported" | "uncertain" | "weakly_supported";
+
 export type MissionNodeKind =
   | "entity"
   | "objective"
@@ -91,7 +94,11 @@ export type MissionAssumption = BaseMissionNode & {
   resolveBy: string;
   resolutionCriteria: string;
   resolutionObservability: "public_direct" | "public_proxy" | "operator_confirmation";
-  probability: number;
+  supportLevel: SupportLevel;
+  evidenceFor: string[];
+  evidenceAgainst: string[];
+  unknowns: string[];
+  decisionAffected: string;
   currentStateId?: string;
 };
 
@@ -171,7 +178,7 @@ export type MissionArgumentation = BaseMissionNode & {
 export type MissionAssumptionState = BaseMissionNode & {
   kind: "assumption_state";
   assumptionId: string;
-  probability: number;
+  supportLevel: SupportLevel;
   asOf: string;
   note: string;
 };
@@ -190,7 +197,6 @@ export type MissionEdge = {
   polarity?: "positive" | "negative" | "mixed";
   magnitude?: "low" | "medium" | "high";
   mechanism?: string;
-  estimatedDeltaPp?: number;
   asOf?: string;
   sources?: SourceRef[];
 };
@@ -248,7 +254,7 @@ export function missionNodeLabel(node: MissionNode): string {
     case "metric":
     case "evidence": return node.statement;
     case "argumentation": return node.claim;
-    case "assumption_state": return `${Math.round(node.probability * 100)}% — ${node.note}`;
+    case "assumption_state": return `${node.supportLevel} — ${node.note}`;
     default: {
       const exhaustive: never = node;
       return exhaustive;

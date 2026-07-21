@@ -24,7 +24,7 @@ export function AtlasHeader() {
               Ecosystem Atlas
             </h1>
             <p className="truncate text-xs text-muted-foreground">
-              France & Southern Europe AI · map · decide · activate
+              Work sample · map → prioritise → programme → enable → measure
             </p>
           </div>
         </div>
@@ -33,7 +33,7 @@ export function AtlasHeader() {
       <div className="hidden items-center gap-2 lg:flex">
         <Stat label="Entities" value={stats.entities} tone="teal" />
         <Stat label="Assumptions" value={stats.assumptions} tone="amber" />
-        <Stat label="Principles" value={stats.principles} tone="rose" />
+        <Stat label="Signals" value={stats.signals} tone="rose" />
         <Separator orientation="vertical" className="mx-1 h-6" />
         <Badge variant="outline" className="font-mono text-[10px] font-normal">
           <GitBranch className="mr-1 h-3 w-3" />
@@ -44,14 +44,14 @@ export function AtlasHeader() {
       <Tabs
         value={view}
         onValueChange={(v) =>
-          setView(v as "graph" | "timeline" | "mission" | "network")
+          setView(v as "graph" | "timeline" | "mission" | "cases")
         }
       >
         <TabsList>
+          <TabsTrigger value="mission">Operate</TabsTrigger>
+          <TabsTrigger value="cases">Cases</TabsTrigger>
           <TabsTrigger value="graph">Graph</TabsTrigger>
           <TabsTrigger value="timeline">Timeline</TabsTrigger>
-          <TabsTrigger value="mission">Operate</TabsTrigger>
-          <TabsTrigger value="network">Network</TabsTrigger>
         </TabsList>
       </Tabs>
     </header>

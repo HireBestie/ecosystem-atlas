@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ecosystem Atlas — France & Southern Europe AI",
   description:
-    "Interactive stakeholder map: entities, assumptions, and principles across the French and Southern European AI ecosystem. Public sources only.",
+    "Interactive work sample: Operate programme design, two worked activation cases, and a public-source ecosystem graph for France & Southern Europe AI.",
 };
 
 export default function RootLayout({

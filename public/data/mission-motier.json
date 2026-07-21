@@ -1,26 +1,55 @@
 {
   "meta": {
-    "version": "mission-graph-v2-flat",
+    "version": "mission-graph-v3-support-tiers",
     "title": "From ecosystem signal to portfolio activation",
-    "generatedAt": "2026-07-18T18:00:00+02:00",
+    "generatedAt": "2026-07-20T09:22:31.749Z",
     "scope": "Unofficial day-one operating case for Startup Partnerships — France & Southern Europe",
-    "disclaimer": "A role-specific work sample, not an Anthropic plan or a claim of existing relationships. Public facts are sourced; probabilities, interventions and operating policies are explicitly illustrative and meant to be challenged with the team."
+    "disclaimer": "A role-specific work sample, not an Anthropic plan or a claim of existing relationships. Public facts are sourced. Support levels are qualitative judgments for programme design — not calibrated probabilities."
   },
   "targetEntityId": "entity:motier",
   "defaultWorldviewId": "worldview:portfolio-activation",
   "readiness": [
-    { "id": "map", "label": "Map", "status": "ready", "proof": "Source-backed stakeholder graph" },
-    { "id": "prioritize", "label": "Prioritize", "status": "ready", "proof": "Resolvable account and programme markets" },
-    { "id": "program", "label": "Program", "status": "ready", "proof": "Interventions linked to blockers" },
-    { "id": "enable", "label": "Enable", "status": "prototype", "proof": "Build with Claude workshop kit" },
-    { "id": "measure", "label": "Measure", "status": "ready", "proof": "Activation and ROI scorecard" }
+    {
+      "id": "map",
+      "label": "Map",
+      "status": "ready",
+      "proof": "Source-backed stakeholder graph"
+    },
+    {
+      "id": "prioritize",
+      "label": "Prioritize",
+      "status": "ready",
+      "proof": "Resolvable account and programme markets"
+    },
+    {
+      "id": "program",
+      "label": "Program",
+      "status": "ready",
+      "proof": "Interventions linked to blockers"
+    },
+    {
+      "id": "enable",
+      "label": "Enable",
+      "status": "ready",
+      "proof": "Build with Claude Evaluation Kit (inspectable)"
+    },
+    {
+      "id": "measure",
+      "label": "Measure",
+      "status": "ready",
+      "proof": "Activation and ROI scorecard"
+    }
   ],
   "worldviews": [
     {
       "id": "worldview:portfolio-activation",
       "name": "Portfolio activation",
       "summary": "Optimise for repeatable technical adoption across a partner portfolio.",
-      "principleIds": ["principle:org-technical-trust", "principle:team-portfolio-activation", "principle:motier-founder-support"],
+      "principleIds": [
+        "principle:org-technical-trust",
+        "principle:team-portfolio-activation",
+        "principle:motier-founder-support"
+      ],
       "selectedRecommendationId": "recommendation:cohort-eval-workshop",
       "rankingNote": "The cohort wins because it creates founder value, a repeatable partner motion and measurable activation — not because it creates the largest audience."
     },
@@ -28,7 +57,10 @@
       "id": "worldview:product-learning",
       "name": "Product learning",
       "summary": "Optimise for dense feedback from advanced technical founders.",
-      "principleIds": ["principle:org-technical-trust", "principle:motier-founder-support"],
+      "principleIds": [
+        "principle:org-technical-trust",
+        "principle:motier-founder-support"
+      ],
       "selectedRecommendationId": "recommendation:founder-salon",
       "rankingNote": "A smaller salon wins when the scarce outcome is product insight rather than activation volume."
     },
@@ -36,167 +68,847 @@
       "id": "worldview:visibility",
       "name": "Visibility",
       "summary": "Optimise for reach and ecosystem presence.",
-      "principleIds": ["principle:motier-founder-support"],
+      "principleIds": [
+        "principle:motier-founder-support"
+      ],
       "selectedRecommendationId": "recommendation:conference-sponsorship",
       "rankingNote": "Sponsorship wins only under a visibility-first policy; the same factual graph produces a different action because the objective function changed."
     }
   ],
   "nodes": [
     {
-      "id": "entity:operator-partnerships", "kind": "entity", "entityType": "role_model", "name": "Startup Partnerships operator", "role": "operator", "summary": "Illustrative operating surface derived from the public Anthropic role description.",
-      "sources": [{ "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008", "title": "Anthropic — Startup Partnerships, France & Southern Europe", "accessed": "2026-07-18" }]
+      "id": "entity:operator-partnerships",
+      "kind": "entity",
+      "entityType": "role_model",
+      "name": "Startup Partnerships operator",
+      "role": "operator",
+      "summary": "Illustrative operating surface derived from the public Anthropic role description.",
+      "sources": [
+        {
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008",
+          "title": "Anthropic — Startup Partnerships, France & Southern Europe",
+          "accessed": "2026-07-18"
+        }
+      ]
     },
     {
-      "id": "entity:motier", "kind": "entity", "entityType": "venture_capital", "name": "Motier Ventures", "country": "France", "role": "target", "summary": "Moulin family investment vehicle: 100 portfolio companies, nearly 40% AI, and La Maison for AI entrepreneurs.",
-      "sources": [{ "url": "https://motier.fr/en/participations/", "title": "Motier Holding — Our participations", "accessed": "2026-07-18" }]
+      "id": "entity:motier",
+      "kind": "entity",
+      "entityType": "venture_capital",
+      "name": "Motier Ventures",
+      "country": "France",
+      "role": "target",
+      "summary": "Moulin family investment vehicle: 100 portfolio companies, nearly 40% AI, and La Maison for AI entrepreneurs.",
+      "sources": [
+        {
+          "url": "https://motier.fr/en/participations/",
+          "title": "Motier Holding — Our participations",
+          "accessed": "2026-07-18"
+        }
+      ]
     },
     {
-      "id": "objective:motier-portfolio-activation", "kind": "objective", "statement": "Create a repeatable Motier portfolio programme that produces five sustained Claude activations by 31 December 2026.", "targetEntityId": "entity:motier", "horizon": "2026-12-31",
-      "sources": [{ "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008", "title": "Role mandate: portfolio engagement, developer enablement and ROI", "accessed": "2026-07-18" }]
-    },
-
-    {
-      "id": "assumption:external-ai-density", "kind": "assumption", "statement": "Motier has at least fifteen portfolio companies relevant to a technical Claude programme.", "marketQuestion": "Will public research plus partner validation identify at least 15 technically relevant Motier portfolio companies by 15 September 2026?", "family": "external", "systemRole": "external_event", "externalImpact": "opportunity", "status": "open", "resolveBy": "2026-09-15", "resolutionCriteria": "A sourced list of at least 15 current portfolio companies with an active AI product, AI-enabled workflow or credible model-evaluation need.", "resolutionObservability": "public_proxy", "probability": 0.82, "currentStateId": "assumption_state:external-ai-density-2026-07",
-      "sources": [{ "url": "https://motier.fr/en/participations/", "title": "100 portfolio companies; nearly 40% of investments in AI", "accessed": "2026-07-18" }]
-    },
-    {
-      "id": "assumption:external-program-owner", "kind": "assumption", "statement": "Motier will designate an accountable programme owner.", "marketQuestion": "Will Motier designate one programme owner with portfolio access by 30 September 2026?", "family": "external", "systemRole": "external_event", "externalImpact": "opportunity", "status": "open", "resolveBy": "2026-09-30", "resolutionCriteria": "A named counterpart accepts responsibility for cohort recruitment, scheduling and follow-up.", "resolutionObservability": "operator_confirmation", "probability": 0.32,
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Illustrative partner-side market — requires direct validation", "accessed": "2026-07-18" }]
-    },
-    {
-      "id": "assumption:external-shared-need", "kind": "assumption", "statement": "At least half of recruited teams share an evaluation-to-production need.", "marketQuestion": "Will discovery reveal one shared technical need across at least 50% of recruited Motier teams by 15 October 2026?", "family": "external", "systemRole": "external_event", "externalImpact": "mixed", "status": "open", "resolveBy": "2026-10-15", "resolutionCriteria": "Discovery notes from at least 10 teams show a common blocker across 5 or more teams.", "resolutionObservability": "operator_confirmation", "probability": 0.48,
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Illustrative demand market — requires discovery", "accessed": "2026-07-18" }]
+      "id": "objective:motier-portfolio-activation",
+      "kind": "objective",
+      "statement": "Create a repeatable Motier portfolio programme that produces five sustained Claude activations by 31 December 2026.",
+      "targetEntityId": "entity:motier",
+      "horizon": "2026-12-31",
+      "sources": [
+        {
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008",
+          "title": "Role mandate: portfolio engagement, developer enablement and ROI",
+          "accessed": "2026-07-18"
+        }
+      ]
     },
     {
-      "id": "assumption:external-security-fit", "kind": "assumption", "statement": "Security, privacy and procurement constraints are resolvable for a majority of qualified teams.", "marketQuestion": "Will at least 60% of qualified teams report no fatal security, privacy or procurement blocker by 31 October 2026?", "family": "blocker", "systemRole": "external_event", "externalImpact": "threat", "status": "open", "resolveBy": "2026-10-31", "resolutionCriteria": "Six of ten qualified teams can proceed to a technical evaluation under their stated constraints.", "resolutionObservability": "operator_confirmation", "probability": 0.55,
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Illustrative risk market — requires discovery", "accessed": "2026-07-18" }]
-    },
-
-    {
-      "id": "assumption:internal-champions", "kind": "assumption", "statement": "The operator can recruit ten qualified technical champions from the portfolio.", "marketQuestion": "Will ten qualified technical champions accept the programme invitation by 31 October 2026?", "family": "milestone", "systemRole": "operator_situation", "status": "open", "resolveBy": "2026-10-31", "resolutionCriteria": "Ten named technical owners complete intake with a use case and evaluation commitment.", "resolutionObservability": "operator_confirmation", "probability": 0.58,
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Illustrative operator market", "accessed": "2026-07-18" }]
-    },
-    {
-      "id": "assumption:internal-evaluations", "kind": "assumption", "statement": "Eight teams will complete a structured Claude evaluation.", "marketQuestion": "Will eight recruited teams complete an evaluation dataset, baseline and go/no-go decision within 60 days?", "family": "milestone", "systemRole": "operator_situation", "status": "open", "resolveBy": "2026-11-30", "resolutionCriteria": "Eight evaluation records contain representative cases, a baseline, a rubric and a recorded decision.", "resolutionObservability": "operator_confirmation", "probability": 0.44,
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Illustrative operator market", "accessed": "2026-07-18" }]
-    },
-    {
-      "id": "assumption:internal-followup", "kind": "assumption", "statement": "Five evaluated teams will sustain qualified usage for 30 days.", "marketQuestion": "Will five evaluated teams maintain the agreed qualified-usage threshold for 30 days by 31 December 2026?", "family": "outcome", "systemRole": "operator_objective", "status": "open", "resolveBy": "2026-12-31", "resolutionCriteria": "Five distinct portfolio companies cross the agreed activation threshold and remain active for 30 consecutive days.", "resolutionObservability": "operator_confirmation", "probability": 0.31, "currentStateId": "assumption_state:terminal-2026-07",
-      "sources": [{ "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008", "title": "Role mandate: activation and account penetration", "accessed": "2026-07-18" }]
-    },
-    {
-      "id": "assumption:intervention-workshop", "kind": "assumption", "statement": "A cohort evaluation workshop will raise completion versus credits-only access.", "marketQuestion": "Will the structured cohort improve completed evaluations by at least 20 percentage points versus a credits-only comparison by 31 December 2026?", "family": "intervention", "systemRole": "operator_situation", "status": "open", "resolveBy": "2026-12-31", "resolutionCriteria": "Difference in completion rate is at least 20 percentage points with comparable eligibility criteria.", "resolutionObservability": "operator_confirmation", "probability": 0.6,
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Illustrative intervention-effect market", "accessed": "2026-07-18" }]
-    },
-
-    {
-      "id": "rebuttal:no-owner", "kind": "rebuttal", "statement": "No accountable partner owner: recruitment fragments and the partnership remains ceremonial.", "severity": "active", "resolvableVia": ["relationship", "programme_design"],
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Illustrative operating rebuttal", "accessed": "2026-07-18" }]
-    },
-    {
-      "id": "rebuttal:heterogeneous", "kind": "rebuttal", "statement": "Portfolio needs are too heterogeneous for one cohort to create technical value.", "severity": "watch", "resolvableVia": ["discovery", "segmentation"],
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Illustrative operating rebuttal", "accessed": "2026-07-18" }]
-    },
-    {
-      "id": "rebuttal:trial-not-adoption", "kind": "rebuttal", "statement": "Credits generate trials, but no evaluation discipline or sustained production usage.", "severity": "active", "resolvableVia": ["technical_enablement", "followup"],
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Illustrative operating rebuttal", "accessed": "2026-07-18" }]
-    },
-
-    {
-      "id": "principle:org-technical-trust", "kind": "principle", "principleType": "org_constitution", "strength": "hard_constraint", "holderEntityId": "entity:operator-partnerships", "statement": "Earn technical trust before asking for expansion; preserve an honest no-fit outcome.", "decisionImplications": ["Reject vanity programmes without a technical decision", "Make evidence and limitations inspectable"],
-      "sources": [{ "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008", "title": "Public role: trusted technical partner and rigorous analysis", "accessed": "2026-07-18" }]
+      "id": "assumption:external-ai-density",
+      "kind": "assumption",
+      "statement": "Motier has at least fifteen portfolio companies relevant to a technical Claude programme.",
+      "marketQuestion": "Will public research plus partner validation identify at least 15 technically relevant Motier portfolio companies by 15 September 2026?",
+      "family": "external",
+      "systemRole": "external_event",
+      "externalImpact": "opportunity",
+      "status": "open",
+      "resolveBy": "2026-09-15",
+      "resolutionCriteria": "A sourced list of at least 15 current portfolio companies with an active AI product, AI-enabled workflow or credible model-evaluation need.",
+      "resolutionObservability": "public_proxy",
+      "currentStateId": "assumption_state:external-ai-density-2026-07",
+      "sources": [
+        {
+          "url": "https://motier.fr/en/participations/",
+          "title": "100 portfolio companies; nearly 40% of investments in AI",
+          "accessed": "2026-07-18"
+        }
+      ],
+      "supportLevel": "supported",
+      "evidenceFor": [
+        "100 portfolio companies; nearly 40% of investments in AI"
+      ],
+      "evidenceAgainst": [
+        "Partner-side validation not yet obtained"
+      ],
+      "unknowns": [
+        "Named programme owner",
+        "Shared technical need across cohort"
+      ],
+      "decisionAffected": "Whether to invest operator time in a Motier portfolio cohort vs another partner."
     },
     {
-      "id": "principle:team-portfolio-activation", "kind": "principle", "principleType": "team_strategy", "strength": "default_rule", "holderEntityId": "entity:operator-partnerships", "statement": "Prefer repeatable portfolio activation over one-off ecosystem visibility.", "decisionImplications": ["Prioritise partners with operational portfolio access", "Measure activated accounts and programme ROI"],
-      "sources": [{ "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008", "title": "Public role: portfolio engagement, activation and ROI", "accessed": "2026-07-18" }]
+      "id": "assumption:external-program-owner",
+      "kind": "assumption",
+      "statement": "Motier will designate an accountable programme owner.",
+      "marketQuestion": "Will Motier designate one programme owner with portfolio access by 30 September 2026?",
+      "family": "external",
+      "systemRole": "external_event",
+      "externalImpact": "opportunity",
+      "status": "open",
+      "resolveBy": "2026-09-30",
+      "resolutionCriteria": "A named counterpart accepts responsibility for cohort recruitment, scheduling and follow-up.",
+      "resolutionObservability": "operator_confirmation",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "Illustrative partner-side market — requires direct validation",
+          "accessed": "2026-07-18"
+        }
+      ],
+      "supportLevel": "weakly_supported",
+      "evidenceFor": [
+        "Illustrative partner-side market — requires direct validation"
+      ],
+      "evidenceAgainst": [
+        "Partner-side validation not yet obtained"
+      ],
+      "unknowns": [
+        "Named programme owner",
+        "Shared technical need across cohort"
+      ],
+      "decisionAffected": "Whether to invest operator time in a Motier portfolio cohort vs another partner."
     },
     {
-      "id": "principle:motier-founder-support", "kind": "principle", "principleType": "target_doctrine", "strength": "default_rule", "holderEntityId": "entity:motier", "statement": "Create direct operating value for AI founders and their communities.", "quote": "La Maison, its new venue for AI entrepreneurs and their communities", "decisionImplications": ["Lead with hands-on founder enablement", "Design for a reusable portfolio programme"],
-      "sources": [{ "url": "https://motier.fr/en/participations/", "title": "Motier Holding — La Maison and AI portfolio", "accessed": "2026-07-18" }]
+      "id": "assumption:external-shared-need",
+      "kind": "assumption",
+      "statement": "At least half of recruited teams share an evaluation-to-production need.",
+      "marketQuestion": "Will discovery reveal one shared technical need across at least 50% of recruited Motier teams by 15 October 2026?",
+      "family": "external",
+      "systemRole": "external_event",
+      "externalImpact": "mixed",
+      "status": "open",
+      "resolveBy": "2026-10-15",
+      "resolutionCriteria": "Discovery notes from at least 10 teams show a common blocker across 5 or more teams.",
+      "resolutionObservability": "operator_confirmation",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "Illustrative demand market — requires discovery",
+          "accessed": "2026-07-18"
+        }
+      ],
+      "supportLevel": "uncertain",
+      "evidenceFor": [
+        "Illustrative demand market — requires discovery"
+      ],
+      "evidenceAgainst": [
+        "Partner-side validation not yet obtained"
+      ],
+      "unknowns": [
+        "Named programme owner",
+        "Shared technical need across cohort"
+      ],
+      "decisionAffected": "Whether to invest operator time in a Motier portfolio cohort vs another partner."
     },
     {
-      "id": "operating_theorem:cohort", "kind": "operating_theorem", "statement": "Compile organisation, team and target principles into one contextual action rule.", "given": ["Technical trust is a hard constraint", "Portfolio activation is the current team objective", "Motier has a dense AI portfolio and a founder-community venue"], "when": ["A programme owner is named", "At least ten champions qualify", "One shared need covers at least half the cohort"], "prefer": "Cohort evaluation workshop", "over": "Conference sponsorship", "because": "It creates direct founder value, measurable activation and reusable product feedback.", "unless": ["No accountable programme owner", "No shared technical need", "A fatal product or security mismatch emerges"],
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Illustrative compiled operating theorem", "accessed": "2026-07-18" }]
-    },
-
-    {
-      "id": "intervention:cohort-workshop", "kind": "intervention", "name": "Portfolio evaluation cohort", "summary": "A Build with Claude programme that moves teams from use-case selection to evidence-backed go/no-go decisions.", "expectedEffect": "Increase evaluation completion and sustained activation while generating structured product feedback.", "preconditions": ["Partner owner", "Qualified champions", "Shared problem cluster"], "successCriteria": ["Eight completed evaluations", "Five sustained activations", "Every no-fit decision documented"],
-      "sources": [{ "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008", "title": "Role mandate: technical enablement and portfolio programmes", "accessed": "2026-07-18" }]
-    },
-    {
-      "id": "intervention:founder-salon", "kind": "intervention", "name": "Technical founder salon", "summary": "A small-room session optimised for high-density product feedback.", "expectedEffect": "Higher learning density, lower activation volume.", "preconditions": ["Six advanced founders", "Product counterpart"], "successCriteria": ["Six structured feedback notes", "Two roadmap candidates"],
-      "sources": [{ "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008", "title": "Role mandate: founder salons and product feedback", "accessed": "2026-07-18" }]
-    },
-    {
-      "id": "intervention:sponsorship", "kind": "intervention", "name": "Flagship event sponsorship", "summary": "A visibility-led ecosystem play with weak direct causality to activation unless paired with enablement.", "expectedEffect": "Reach and awareness, with uncertain downstream adoption.", "preconditions": ["Budget", "Brand fit"], "successCriteria": ["Qualified follow-up programme scheduled"],
-      "sources": [{ "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008", "title": "Role mandate: flagship ecosystem events", "accessed": "2026-07-18" }]
-    },
-    {
-      "id": "recommendation:cohort-eval-workshop", "kind": "recommendation", "statement": "Run discovery, secure a partner owner, then launch a Motier portfolio evaluation cohort.", "status": "selected", "rationale": "Best fit under portfolio activation: it connects stakeholder mapping, developer enablement, product feedback and measurable ROI.",
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Illustrative recommendation", "accessed": "2026-07-18" }]
-    },
-    {
-      "id": "recommendation:founder-salon", "kind": "recommendation", "statement": "Run a private technical founder salon before a scaled programme.", "status": "deferred", "rationale": "Wins when the team optimises for product learning rather than activation volume.",
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Illustrative counterfactual recommendation", "accessed": "2026-07-18" }]
-    },
-    {
-      "id": "recommendation:conference-sponsorship", "kind": "recommendation", "statement": "Lead with flagship event sponsorship.", "status": "rejected", "rationale": "Wins only under a visibility-first policy and has the weakest causal path to sustained adoption.",
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Illustrative counterfactual recommendation", "accessed": "2026-07-18" }]
-    },
-    {
-      "id": "enablement_asset:evaluation-kit", "kind": "enablement_asset", "name": "Build with Claude — Evaluation Kit", "summary": "Founder briefing, representative-case template, baseline rubric, cost worksheet and 30-day follow-up protocol.", "addressesRebuttals": ["rebuttal:heterogeneous", "rebuttal:trial-not-adoption"],
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Prototype enablement asset", "accessed": "2026-07-18" }]
-    },
-    {
-      "id": "metric:programme-scorecard", "kind": "metric", "statement": "Portfolio programme scorecard", "targetValue": "10 champions → 8 evaluations → 5 sustained activations", "reviewBy": "2026-12-31",
-      "sources": [{ "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008", "title": "Role mandate: own analytics and programme ROI", "accessed": "2026-07-18" }]
-    },
-
-    {
-      "id": "evidence:motier-density", "kind": "evidence", "statement": "Motier reports 100 portfolio companies and nearly 40% of investments focused on AI.", "observedAt": "2026-07-18",
-      "sources": [{ "url": "https://motier.fr/en/participations/", "title": "Motier Holding — Our participations", "accessed": "2026-07-18" }]
+      "id": "assumption:external-security-fit",
+      "kind": "assumption",
+      "statement": "Security, privacy and procurement constraints are resolvable for a majority of qualified teams.",
+      "marketQuestion": "Will at least 60% of qualified teams report no fatal security, privacy or procurement blocker by 31 October 2026?",
+      "family": "blocker",
+      "systemRole": "external_event",
+      "externalImpact": "threat",
+      "status": "open",
+      "resolveBy": "2026-10-31",
+      "resolutionCriteria": "Six of ten qualified teams can proceed to a technical evaluation under their stated constraints.",
+      "resolutionObservability": "operator_confirmation",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "Illustrative risk market — requires discovery",
+          "accessed": "2026-07-18"
+        }
+      ],
+      "supportLevel": "uncertain",
+      "evidenceFor": [
+        "Illustrative risk market — requires discovery"
+      ],
+      "evidenceAgainst": [
+        "Partner-side validation not yet obtained"
+      ],
+      "unknowns": [
+        "Named programme owner",
+        "Shared technical need across cohort"
+      ],
+      "decisionAffected": "Whether to invest operator time in a Motier portfolio cohort vs another partner."
     },
     {
-      "id": "argumentation:density-lift", "kind": "argumentation", "evidenceIds": ["evidence:motier-density"], "rebuttalIds": ["rebuttal:heterogeneous"], "warrant": "A dense AI portfolio raises the chance of recruiting qualified teams, but portfolio size alone does not prove a shared need or an accountable programme owner.", "claim": "Raise the terminal activation market from 24% to 31%; keep shared-need and owner rebuttals active.", "observedAt": "2026-07-18",
-      "sources": [{ "url": "https://motier.fr/en/participations/", "title": "Public evidence behind the belief update", "accessed": "2026-07-18" }]
+      "id": "assumption:internal-champions",
+      "kind": "assumption",
+      "statement": "The operator can recruit ten qualified technical champions from the portfolio.",
+      "marketQuestion": "Will ten qualified technical champions accept the programme invitation by 31 October 2026?",
+      "family": "milestone",
+      "systemRole": "operator_situation",
+      "status": "open",
+      "resolveBy": "2026-10-31",
+      "resolutionCriteria": "Ten named technical owners complete intake with a use case and evaluation commitment.",
+      "resolutionObservability": "operator_confirmation",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "Illustrative operator market",
+          "accessed": "2026-07-18"
+        }
+      ],
+      "supportLevel": "uncertain",
+      "evidenceFor": [
+        "Illustrative operator market"
+      ],
+      "evidenceAgainst": [
+        "Partner-side validation not yet obtained"
+      ],
+      "unknowns": [
+        "Named programme owner",
+        "Shared technical need across cohort"
+      ],
+      "decisionAffected": "Whether to invest operator time in a Motier portfolio cohort vs another partner."
     },
     {
-      "id": "assumption_state:terminal-baseline", "kind": "assumption_state", "assumptionId": "assumption:internal-followup", "probability": 0.24, "asOf": "2026-07-17", "note": "Baseline before target-specific public research.",
-      "sources": [{ "url": "https://github.com/HireBestie/ecosystem-atlas", "title": "Illustrative belief-state snapshot", "accessed": "2026-07-18" }]
+      "id": "assumption:internal-evaluations",
+      "kind": "assumption",
+      "statement": "Eight teams will complete a structured Claude evaluation.",
+      "marketQuestion": "Will eight recruited teams complete an evaluation dataset, baseline and go/no-go decision within 60 days?",
+      "family": "milestone",
+      "systemRole": "operator_situation",
+      "status": "open",
+      "resolveBy": "2026-11-30",
+      "resolutionCriteria": "Eight evaluation records contain representative cases, a baseline, a rubric and a recorded decision.",
+      "resolutionObservability": "operator_confirmation",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "Illustrative operator market",
+          "accessed": "2026-07-18"
+        }
+      ],
+      "supportLevel": "uncertain",
+      "evidenceFor": [
+        "Illustrative operator market"
+      ],
+      "evidenceAgainst": [
+        "Partner-side validation not yet obtained"
+      ],
+      "unknowns": [
+        "Named programme owner",
+        "Shared technical need across cohort"
+      ],
+      "decisionAffected": "Whether to invest operator time in a Motier portfolio cohort vs another partner."
     },
     {
-      "id": "assumption_state:terminal-2026-07", "kind": "assumption_state", "assumptionId": "assumption:internal-followup", "probability": 0.31, "asOf": "2026-07-18", "note": "Target-specific state after public portfolio-density evidence.",
-      "sources": [{ "url": "https://motier.fr/en/participations/", "title": "Illustrative update grounded in Motier public data", "accessed": "2026-07-18" }]
+      "id": "assumption:internal-followup",
+      "kind": "assumption",
+      "statement": "Five evaluated teams will sustain qualified usage for 30 days.",
+      "marketQuestion": "Will five evaluated teams maintain the agreed qualified-usage threshold for 30 days by 31 December 2026?",
+      "family": "outcome",
+      "systemRole": "operator_objective",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "resolutionCriteria": "Five distinct portfolio companies cross the agreed activation threshold and remain active for 30 consecutive days.",
+      "resolutionObservability": "operator_confirmation",
+      "currentStateId": "assumption_state:terminal-2026-07",
+      "sources": [
+        {
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008",
+          "title": "Role mandate: activation and account penetration",
+          "accessed": "2026-07-18"
+        }
+      ],
+      "supportLevel": "weakly_supported",
+      "evidenceFor": [
+        "Role mandate: activation and account penetration"
+      ],
+      "evidenceAgainst": [
+        "Partner-side validation not yet obtained"
+      ],
+      "unknowns": [
+        "Named programme owner",
+        "Shared technical need across cohort"
+      ],
+      "decisionAffected": "Whether to invest operator time in a Motier portfolio cohort vs another partner."
     },
     {
-      "id": "assumption_state:external-ai-density-2026-07", "kind": "assumption_state", "assumptionId": "assumption:external-ai-density", "probability": 0.82, "asOf": "2026-07-18", "note": "Strong public proxy; still requires company-level qualification.",
-      "sources": [{ "url": "https://motier.fr/en/participations/", "title": "100 portfolio companies; nearly 40% AI", "accessed": "2026-07-18" }]
+      "id": "assumption:intervention-workshop",
+      "kind": "assumption",
+      "statement": "A cohort evaluation workshop will raise completion versus credits-only access.",
+      "marketQuestion": "Will the structured cohort improve completed evaluations by at least 20 percentage points versus a credits-only comparison by 31 December 2026?",
+      "family": "intervention",
+      "systemRole": "operator_situation",
+      "status": "open",
+      "resolveBy": "2026-12-31",
+      "resolutionCriteria": "Difference in completion rate is at least 20 percentage points with comparable eligibility criteria.",
+      "resolutionObservability": "operator_confirmation",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "Illustrative intervention-effect market",
+          "accessed": "2026-07-18"
+        }
+      ],
+      "supportLevel": "uncertain",
+      "evidenceFor": [
+        "Illustrative intervention-effect market"
+      ],
+      "evidenceAgainst": [
+        "Partner-side validation not yet obtained"
+      ],
+      "unknowns": [
+        "Named programme owner",
+        "Shared technical need across cohort"
+      ],
+      "decisionAffected": "Whether to invest operator time in a Motier portfolio cohort vs another partner."
+    },
+    {
+      "id": "rebuttal:no-owner",
+      "kind": "rebuttal",
+      "statement": "No accountable partner owner: recruitment fragments and the partnership remains ceremonial.",
+      "severity": "active",
+      "resolvableVia": [
+        "relationship",
+        "programme_design"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "Illustrative operating rebuttal",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "rebuttal:heterogeneous",
+      "kind": "rebuttal",
+      "statement": "Portfolio needs are too heterogeneous for one cohort to create technical value.",
+      "severity": "watch",
+      "resolvableVia": [
+        "discovery",
+        "segmentation"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "Illustrative operating rebuttal",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "rebuttal:trial-not-adoption",
+      "kind": "rebuttal",
+      "statement": "Credits generate trials, but no evaluation discipline or sustained production usage.",
+      "severity": "active",
+      "resolvableVia": [
+        "technical_enablement",
+        "followup"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "Illustrative operating rebuttal",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "principle:org-technical-trust",
+      "kind": "principle",
+      "principleType": "org_constitution",
+      "strength": "hard_constraint",
+      "holderEntityId": "entity:operator-partnerships",
+      "statement": "Earn technical trust before asking for expansion; preserve an honest no-fit outcome.",
+      "decisionImplications": [
+        "Reject vanity programmes without a technical decision",
+        "Make evidence and limitations inspectable"
+      ],
+      "sources": [
+        {
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008",
+          "title": "Public role: trusted technical partner and rigorous analysis",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "principle:team-portfolio-activation",
+      "kind": "principle",
+      "principleType": "team_strategy",
+      "strength": "default_rule",
+      "holderEntityId": "entity:operator-partnerships",
+      "statement": "Prefer repeatable portfolio activation over one-off ecosystem visibility.",
+      "decisionImplications": [
+        "Prioritise partners with operational portfolio access",
+        "Measure activated accounts and programme ROI"
+      ],
+      "sources": [
+        {
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008",
+          "title": "Public role: portfolio engagement, activation and ROI",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "principle:motier-founder-support",
+      "kind": "principle",
+      "principleType": "target_doctrine",
+      "strength": "default_rule",
+      "holderEntityId": "entity:motier",
+      "statement": "Create direct operating value for AI founders and their communities.",
+      "quote": "La Maison, its new venue for AI entrepreneurs and their communities",
+      "decisionImplications": [
+        "Lead with hands-on founder enablement",
+        "Design for a reusable portfolio programme"
+      ],
+      "sources": [
+        {
+          "url": "https://motier.fr/en/participations/",
+          "title": "Motier Holding — La Maison and AI portfolio",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "operating_theorem:cohort",
+      "kind": "operating_theorem",
+      "statement": "Compile organisation, team and target principles into one contextual action rule.",
+      "given": [
+        "Technical trust is a hard constraint",
+        "Portfolio activation is the current team objective",
+        "Motier has a dense AI portfolio and a founder-community venue"
+      ],
+      "when": [
+        "A programme owner is named",
+        "At least ten champions qualify",
+        "One shared need covers at least half the cohort"
+      ],
+      "prefer": "Cohort evaluation workshop",
+      "over": "Conference sponsorship",
+      "because": "It creates direct founder value, measurable activation and reusable product feedback.",
+      "unless": [
+        "No accountable programme owner",
+        "No shared technical need",
+        "A fatal product or security mismatch emerges"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "Illustrative compiled operating theorem",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "intervention:cohort-workshop",
+      "kind": "intervention",
+      "name": "Portfolio evaluation cohort",
+      "summary": "A Build with Claude programme that moves teams from use-case selection to evidence-backed go/no-go decisions.",
+      "expectedEffect": "Increase evaluation completion and sustained activation while generating structured product feedback.",
+      "preconditions": [
+        "Partner owner",
+        "Qualified champions",
+        "Shared problem cluster"
+      ],
+      "successCriteria": [
+        "Eight completed evaluations",
+        "Five sustained activations",
+        "Every no-fit decision documented"
+      ],
+      "sources": [
+        {
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008",
+          "title": "Role mandate: technical enablement and portfolio programmes",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "intervention:founder-salon",
+      "kind": "intervention",
+      "name": "Technical founder salon",
+      "summary": "A small-room session optimised for high-density product feedback.",
+      "expectedEffect": "Higher learning density, lower activation volume.",
+      "preconditions": [
+        "Six advanced founders",
+        "Product counterpart"
+      ],
+      "successCriteria": [
+        "Six structured feedback notes",
+        "Two roadmap candidates"
+      ],
+      "sources": [
+        {
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008",
+          "title": "Role mandate: founder salons and product feedback",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "intervention:sponsorship",
+      "kind": "intervention",
+      "name": "Flagship event sponsorship",
+      "summary": "A visibility-led ecosystem play with weak direct causality to activation unless paired with enablement.",
+      "expectedEffect": "Reach and awareness, with uncertain downstream adoption.",
+      "preconditions": [
+        "Budget",
+        "Brand fit"
+      ],
+      "successCriteria": [
+        "Qualified follow-up programme scheduled"
+      ],
+      "sources": [
+        {
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008",
+          "title": "Role mandate: flagship ecosystem events",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "recommendation:cohort-eval-workshop",
+      "kind": "recommendation",
+      "statement": "Run discovery, secure a partner owner, then launch a Motier portfolio evaluation cohort.",
+      "status": "selected",
+      "rationale": "Best fit under portfolio activation: it connects stakeholder mapping, developer enablement, product feedback and measurable ROI.",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "Illustrative recommendation",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "recommendation:founder-salon",
+      "kind": "recommendation",
+      "statement": "Run a private technical founder salon before a scaled programme.",
+      "status": "deferred",
+      "rationale": "Wins when the team optimises for product learning rather than activation volume.",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "Illustrative counterfactual recommendation",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "recommendation:conference-sponsorship",
+      "kind": "recommendation",
+      "statement": "Lead with flagship event sponsorship.",
+      "status": "rejected",
+      "rationale": "Wins only under a visibility-first policy and has the weakest causal path to sustained adoption.",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "Illustrative counterfactual recommendation",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "enablement_asset:evaluation-kit",
+      "kind": "enablement_asset",
+      "name": "Build with Claude — Evaluation Kit",
+      "summary": "Founder briefing, representative-case template, baseline rubric, cost worksheet and 30-day follow-up protocol.",
+      "addressesRebuttals": [
+        "rebuttal:heterogeneous",
+        "rebuttal:trial-not-adoption"
+      ],
+      "sources": [
+        {
+          "url": "/enablement/build-with-claude/",
+          "title": "Build with Claude — Evaluation Kit",
+          "accessed": "2026-07-20"
+        }
+      ]
+    },
+    {
+      "id": "metric:programme-scorecard",
+      "kind": "metric",
+      "statement": "Portfolio programme scorecard",
+      "targetValue": "10 champions → 8 evaluations → 5 sustained activations",
+      "reviewBy": "2026-12-31",
+      "sources": [
+        {
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008",
+          "title": "Role mandate: own analytics and programme ROI",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "evidence:motier-density",
+      "kind": "evidence",
+      "statement": "Motier reports 100 portfolio companies and nearly 40% of investments focused on AI.",
+      "observedAt": "2026-07-18",
+      "sources": [
+        {
+          "url": "https://motier.fr/en/participations/",
+          "title": "Motier Holding — Our participations",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "argumentation:density-lift",
+      "kind": "argumentation",
+      "evidenceIds": [
+        "evidence:motier-density"
+      ],
+      "rebuttalIds": [
+        "rebuttal:heterogeneous"
+      ],
+      "warrant": "A dense AI portfolio raises the chance of recruiting qualified teams, but portfolio size alone does not prove a shared need or an accountable programme owner.",
+      "claim": "Raise the terminal activation market from weakly supported to uncertain; keep shared-need and owner rebuttals active.",
+      "observedAt": "2026-07-18",
+      "sources": [
+        {
+          "url": "https://motier.fr/en/participations/",
+          "title": "Public evidence behind the belief update",
+          "accessed": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "assumption_state:terminal-baseline",
+      "kind": "assumption_state",
+      "assumptionId": "assumption:internal-followup",
+      "asOf": "2026-07-17",
+      "note": "Baseline before target-specific public research.",
+      "sources": [
+        {
+          "url": "https://github.com/HireBestie/ecosystem-atlas",
+          "title": "Illustrative belief-state snapshot",
+          "accessed": "2026-07-18"
+        }
+      ],
+      "supportLevel": "weakly_supported"
+    },
+    {
+      "id": "assumption_state:terminal-2026-07",
+      "kind": "assumption_state",
+      "assumptionId": "assumption:internal-followup",
+      "asOf": "2026-07-18",
+      "note": "Target-specific state after public portfolio-density evidence.",
+      "sources": [
+        {
+          "url": "https://motier.fr/en/participations/",
+          "title": "Illustrative update grounded in Motier public data",
+          "accessed": "2026-07-18"
+        }
+      ],
+      "supportLevel": "weakly_supported"
+    },
+    {
+      "id": "assumption_state:external-ai-density-2026-07",
+      "kind": "assumption_state",
+      "assumptionId": "assumption:external-ai-density",
+      "asOf": "2026-07-18",
+      "note": "Strong public proxy; still requires company-level qualification.",
+      "sources": [
+        {
+          "url": "https://motier.fr/en/participations/",
+          "title": "100 portfolio companies; nearly 40% AI",
+          "accessed": "2026-07-18"
+        }
+      ],
+      "supportLevel": "supported"
     }
   ],
   "edges": [
-    { "id": "edge:objective-terminal", "from": "objective:motier-portfolio-activation", "to": "assumption:internal-followup", "rel": "HAS_TERMINAL_MARKET", "mechanism": "Objective resolves through the terminal account market." },
-    { "id": "edge:density-champions", "from": "assumption:external-ai-density", "to": "assumption:internal-champions", "rel": "ACTIVATES", "polarity": "positive", "magnitude": "high", "estimatedDeltaPp": 18, "asOf": "2026-07-18", "mechanism": "A denser qualified portfolio increases the reachable champion pool." },
-    { "id": "edge:owner-champions", "from": "assumption:external-program-owner", "to": "assumption:internal-champions", "rel": "ACTIVATES", "polarity": "positive", "magnitude": "high", "estimatedDeltaPp": 22, "mechanism": "A partner owner turns portfolio access into coordinated recruitment." },
-    { "id": "edge:need-evaluations", "from": "assumption:external-shared-need", "to": "assumption:internal-evaluations", "rel": "ACTIVATES", "polarity": "positive", "magnitude": "high", "estimatedDeltaPp": 20, "mechanism": "Shared need makes cohort content specific enough to complete." },
-    { "id": "edge:security-terminal", "from": "assumption:external-security-fit", "to": "assumption:internal-followup", "rel": "INFLUENCES", "polarity": "positive", "magnitude": "high", "estimatedDeltaPp": 16, "mechanism": "Resolvable constraints preserve the path from evaluation to production usage." },
-    { "id": "edge:champions-evals", "from": "assumption:internal-evaluations", "to": "assumption:internal-champions", "rel": "DEPENDS_ON", "polarity": "positive", "magnitude": "high", "mechanism": "Completed evaluations require qualified technical owners." },
-    { "id": "edge:terminal-evals", "from": "assumption:internal-followup", "to": "assumption:internal-evaluations", "rel": "DEPENDS_ON", "polarity": "positive", "magnitude": "high", "mechanism": "Sustained usage requires a completed technical evaluation." },
-    { "id": "edge:workshop-effect", "from": "assumption:intervention-workshop", "to": "assumption:internal-evaluations", "rel": "ACTIVATES", "polarity": "positive", "magnitude": "medium", "estimatedDeltaPp": 20, "mechanism": "Structured cases, baselines and follow-up should improve completion versus credits alone." },
-    { "id": "edge:owner-rebuttal", "from": "assumption:external-program-owner", "to": "rebuttal:no-owner", "rel": "REBUTTED_BY", "polarity": "negative", "magnitude": "high", "mechanism": "Absence of an owner blocks coordinated delivery." },
-    { "id": "edge:need-rebuttal", "from": "assumption:external-shared-need", "to": "rebuttal:heterogeneous", "rel": "REBUTTED_BY", "polarity": "negative", "magnitude": "high", "mechanism": "Heterogeneity invalidates a single cohort design." },
-    { "id": "edge:followup-rebuttal", "from": "assumption:internal-followup", "to": "rebuttal:trial-not-adoption", "rel": "REBUTTED_BY", "polarity": "negative", "magnitude": "high", "mechanism": "Trials without discipline may not become production usage." },
-    { "id": "edge:recommendation-theorem", "from": "recommendation:cohort-eval-workshop", "to": "operating_theorem:cohort", "rel": "GOVERNED_BY" },
-    { "id": "edge:theorem-org", "from": "operating_theorem:cohort", "to": "principle:org-technical-trust", "rel": "DERIVED_FROM" },
-    { "id": "edge:theorem-team", "from": "operating_theorem:cohort", "to": "principle:team-portfolio-activation", "rel": "DERIVED_FROM" },
-    { "id": "edge:theorem-target", "from": "operating_theorem:cohort", "to": "principle:motier-founder-support", "rel": "DERIVED_FROM" },
-    { "id": "edge:rec-cohort", "from": "recommendation:cohort-eval-workshop", "to": "intervention:cohort-workshop", "rel": "SELECTED_BY" },
-    { "id": "edge:rec-salon", "from": "recommendation:founder-salon", "to": "intervention:founder-salon", "rel": "SELECTED_BY" },
-    { "id": "edge:rec-sponsorship", "from": "recommendation:conference-sponsorship", "to": "intervention:sponsorship", "rel": "SELECTED_BY" },
-    { "id": "edge:workshop-asset", "from": "intervention:cohort-workshop", "to": "enablement_asset:evaluation-kit", "rel": "USES_ASSET" },
-    { "id": "edge:workshop-metric", "from": "intervention:cohort-workshop", "to": "metric:programme-scorecard", "rel": "MEASURED_BY" },
-    { "id": "edge:evidence-argument", "from": "evidence:motier-density", "to": "argumentation:density-lift", "rel": "SUPPORTED_BY" },
-    { "id": "edge:argument-state", "from": "argumentation:density-lift", "to": "assumption_state:terminal-2026-07", "rel": "PROPOSES_STATE" },
-    { "id": "edge:state-terminal", "from": "assumption_state:terminal-2026-07", "to": "assumption:internal-followup", "rel": "SETTLES" },
-    { "id": "edge:state-density", "from": "assumption_state:external-ai-density-2026-07", "to": "assumption:external-ai-density", "rel": "SETTLES" }
+    {
+      "id": "edge:objective-terminal",
+      "from": "objective:motier-portfolio-activation",
+      "to": "assumption:internal-followup",
+      "rel": "HAS_TERMINAL_MARKET",
+      "mechanism": "Objective resolves through the terminal account market."
+    },
+    {
+      "id": "edge:density-champions",
+      "from": "assumption:external-ai-density",
+      "to": "assumption:internal-champions",
+      "rel": "ACTIVATES",
+      "polarity": "positive",
+      "magnitude": "high",
+      "asOf": "2026-07-18",
+      "mechanism": "A denser qualified portfolio increases the reachable champion pool."
+    },
+    {
+      "id": "edge:owner-champions",
+      "from": "assumption:external-program-owner",
+      "to": "assumption:internal-champions",
+      "rel": "ACTIVATES",
+      "polarity": "positive",
+      "magnitude": "high",
+      "mechanism": "A partner owner turns portfolio access into coordinated recruitment."
+    },
+    {
+      "id": "edge:need-evaluations",
+      "from": "assumption:external-shared-need",
+      "to": "assumption:internal-evaluations",
+      "rel": "ACTIVATES",
+      "polarity": "positive",
+      "magnitude": "high",
+      "mechanism": "Shared need makes cohort content specific enough to complete."
+    },
+    {
+      "id": "edge:security-terminal",
+      "from": "assumption:external-security-fit",
+      "to": "assumption:internal-followup",
+      "rel": "INFLUENCES",
+      "polarity": "positive",
+      "magnitude": "high",
+      "mechanism": "Resolvable constraints preserve the path from evaluation to production usage."
+    },
+    {
+      "id": "edge:champions-evals",
+      "from": "assumption:internal-evaluations",
+      "to": "assumption:internal-champions",
+      "rel": "DEPENDS_ON",
+      "polarity": "positive",
+      "magnitude": "high",
+      "mechanism": "Completed evaluations require qualified technical owners."
+    },
+    {
+      "id": "edge:terminal-evals",
+      "from": "assumption:internal-followup",
+      "to": "assumption:internal-evaluations",
+      "rel": "DEPENDS_ON",
+      "polarity": "positive",
+      "magnitude": "high",
+      "mechanism": "Sustained usage requires a completed technical evaluation."
+    },
+    {
+      "id": "edge:workshop-effect",
+      "from": "assumption:intervention-workshop",
+      "to": "assumption:internal-evaluations",
+      "rel": "ACTIVATES",
+      "polarity": "positive",
+      "magnitude": "medium",
+      "mechanism": "Structured cases, baselines and follow-up should improve completion versus credits alone."
+    },
+    {
+      "id": "edge:owner-rebuttal",
+      "from": "assumption:external-program-owner",
+      "to": "rebuttal:no-owner",
+      "rel": "REBUTTED_BY",
+      "polarity": "negative",
+      "magnitude": "high",
+      "mechanism": "Absence of an owner blocks coordinated delivery."
+    },
+    {
+      "id": "edge:need-rebuttal",
+      "from": "assumption:external-shared-need",
+      "to": "rebuttal:heterogeneous",
+      "rel": "REBUTTED_BY",
+      "polarity": "negative",
+      "magnitude": "high",
+      "mechanism": "Heterogeneity invalidates a single cohort design."
+    },
+    {
+      "id": "edge:followup-rebuttal",
+      "from": "assumption:internal-followup",
+      "to": "rebuttal:trial-not-adoption",
+      "rel": "REBUTTED_BY",
+      "polarity": "negative",
+      "magnitude": "high",
+      "mechanism": "Trials without discipline may not become production usage."
+    },
+    {
+      "id": "edge:recommendation-theorem",
+      "from": "recommendation:cohort-eval-workshop",
+      "to": "operating_theorem:cohort",
+      "rel": "GOVERNED_BY"
+    },
+    {
+      "id": "edge:theorem-org",
+      "from": "operating_theorem:cohort",
+      "to": "principle:org-technical-trust",
+      "rel": "DERIVED_FROM"
+    },
+    {
+      "id": "edge:theorem-team",
+      "from": "operating_theorem:cohort",
+      "to": "principle:team-portfolio-activation",
+      "rel": "DERIVED_FROM"
+    },
+    {
+      "id": "edge:theorem-target",
+      "from": "operating_theorem:cohort",
+      "to": "principle:motier-founder-support",
+      "rel": "DERIVED_FROM"
+    },
+    {
+      "id": "edge:rec-cohort",
+      "from": "recommendation:cohort-eval-workshop",
+      "to": "intervention:cohort-workshop",
+      "rel": "SELECTED_BY"
+    },
+    {
+      "id": "edge:rec-salon",
+      "from": "recommendation:founder-salon",
+      "to": "intervention:founder-salon",
+      "rel": "SELECTED_BY"
+    },
+    {
+      "id": "edge:rec-sponsorship",
+      "from": "recommendation:conference-sponsorship",
+      "to": "intervention:sponsorship",
+      "rel": "SELECTED_BY"
+    },
+    {
+      "id": "edge:workshop-asset",
+      "from": "intervention:cohort-workshop",
+      "to": "enablement_asset:evaluation-kit",
+      "rel": "USES_ASSET"
+    },
+    {
+      "id": "edge:workshop-metric",
+      "from": "intervention:cohort-workshop",
+      "to": "metric:programme-scorecard",
+      "rel": "MEASURED_BY"
+    },
+    {
+      "id": "edge:evidence-argument",
+      "from": "evidence:motier-density",
+      "to": "argumentation:density-lift",
+      "rel": "SUPPORTED_BY"
+    },
+    {
+      "id": "edge:argument-state",
+      "from": "argumentation:density-lift",
+      "to": "assumption_state:terminal-2026-07",
+      "rel": "PROPOSES_STATE"
+    },
+    {
+      "id": "edge:state-terminal",
+      "from": "assumption_state:terminal-2026-07",
+      "to": "assumption:internal-followup",
+      "rel": "SETTLES"
+    },
+    {
+      "id": "edge:state-density",
+      "from": "assumption_state:external-ai-density-2026-07",
+      "to": "assumption:external-ai-density",
+      "rel": "SETTLES"
+    }
   ]
 }

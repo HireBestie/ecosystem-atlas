@@ -238,7 +238,7 @@ export function AtlasMission() {
               index="02"
               eyebrow="Rebuttal-first account intelligence"
               title="What can stop the close?"
-              body="A probability without an active counter-argument is CRM theatre. Each blocker is tied to the market it challenges and the intervention that can test or remove it."
+              body="A support judgment without an active counter-argument is CRM theatre. Each blocker is tied to the market it challenges and the intervention that can test or remove it."
             />
             <div className="mt-7 grid gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-3">
               {model.rebuttals.map((rebuttal) => (
@@ -374,7 +374,16 @@ export function AtlasMission() {
                 ) : null}
               </div>
               <div className="grid gap-4">
-                <CompactArtifact icon={<BookOpen className="h-4 w-4" />} label="Ready asset" node={selectedAsset} />
+                <CompactArtifact
+                  icon={<BookOpen className="h-4 w-4" />}
+                  label="Ready asset"
+                  node={selectedAsset}
+                  href={
+                    selectedAsset?.kind === "enablement_asset"
+                      ? "/enablement/build-with-claude/"
+                      : undefined
+                  }
+                />
                 <CompactArtifact icon={<Gauge className="h-4 w-4" />} label="Programme measurement" node={selectedMetric} />
               </div>
             </div>
@@ -385,7 +394,7 @@ export function AtlasMission() {
               index="05"
               eyebrow="Argument → state"
               title="Every belief move leaves a receipt"
-              body="Observed facts can append directly. Probability changes require an argument that admits evidence, states its warrant and keeps rebuttals visible."
+              body="Observed facts can append directly. Support-level changes require an argument that admits evidence, states its warrant and keeps rebuttals visible — without fake numerical precision."
             />
             <div className="mt-7 grid gap-4 lg:grid-cols-[.9fr_1.1fr]">
               <div className="border border-white/10 bg-white/[0.025] p-6">
@@ -395,7 +404,9 @@ export function AtlasMission() {
                     <div key={state.id} className="contents">
                       {index > 0 ? <ArrowRight className="h-4 w-4 shrink-0 text-white/25" /> : null}
                       <div className="min-w-0 flex-1 border border-white/10 bg-black/20 p-4">
-                        <p className="font-mono text-2xl text-[#f3d897]">{Math.round(state.probability * 100)}%</p>
+                        <p className="font-mono text-sm uppercase tracking-wide text-[#f3d897]">
+                          {state.supportLevel.replaceAll("_", " ")}
+                        </p>
                         <p className="mt-1 font-mono text-[10px] text-white/35">{state.asOf}</p>
                         <p className="mt-3 text-xs leading-5 text-white/48">{state.note}</p>
                       </div>
@@ -475,14 +486,37 @@ function MarketLane({ title, subtitle, icon, assumptions, palette }: { title: st
 
 function MarketCard({ assumption, palette }: { assumption: MissionAssumption; palette: keyof typeof tone }) {
   const colors = tone[palette];
+  const supportLabel =
+    assumption.supportLevel === "supported"
+      ? "Supported"
+      : assumption.supportLevel === "weakly_supported"
+        ? "Weakly supported"
+        : "Uncertain";
   return (
     <div className="p-4">
       <div className="flex items-start justify-between gap-4">
         <p className="text-sm leading-5 text-white/76">{assumption.statement}</p>
-        <span className={`shrink-0 font-mono text-xl ${colors.ink}`}>{Math.round(assumption.probability * 100)}%</span>
+        <span className={`shrink-0 font-mono text-[10px] tracking-wide uppercase ${colors.ink}`}>
+          {supportLabel}
+        </span>
       </div>
-      <div className="mt-3 h-1 overflow-hidden bg-white/[0.07]">
-        <div className={`h-full ${colors.bar}`} style={{ width: `${assumption.probability * 100}%` }} />
+      <div className="mt-3 space-y-2 text-[11px] leading-5 text-white/45">
+        <p>
+          <span className="text-white/30">For · </span>
+          {assumption.evidenceFor.slice(0, 2).join(" · ")}
+        </p>
+        <p>
+          <span className="text-white/30">Against · </span>
+          {assumption.evidenceAgainst.slice(0, 2).join(" · ")}
+        </p>
+        <p>
+          <span className="text-white/30">Unknown · </span>
+          {assumption.unknowns.slice(0, 2).join(" · ")}
+        </p>
+        <p>
+          <span className="text-white/30">Decision · </span>
+          {assumption.decisionAffected}
+        </p>
       </div>
       <div className="mt-3 flex items-center justify-between gap-3 font-mono text-[9px] tracking-wide text-white/32 uppercase">
         <span>{assumption.family}</span>
@@ -504,21 +538,49 @@ function InfluenceRow({ edge, byId }: { edge: MissionEdge; byId: Map<string, Mis
       <span className="font-mono text-[9px] tracking-wider text-white/35 uppercase">{edge.rel}</span>
       <p className="text-xs leading-5 text-amber-100/65">{toLabel}</p>
       <span className="justify-self-start border border-teal-300/20 bg-teal-300/[0.06] px-2 py-1 font-mono text-[10px] text-teal-200 md:justify-self-end">
-        {edge.estimatedDeltaPp ? `+${edge.estimatedDeltaPp}pp` : edge.magnitude}
+        {edge.magnitude ?? "—"}
       </span>
       {edge.mechanism ? <p className="text-[11px] leading-5 text-white/30 md:col-span-4">{edge.mechanism}</p> : null}
     </div>
   );
 }
 
-function CompactArtifact({ icon, label, node }: { icon: ReactNode; label: string; node?: MissionNode }) {
+function CompactArtifact({
+  icon,
+  label,
+  node,
+  href,
+}: {
+  icon: ReactNode;
+  label: string;
+  node?: MissionNode;
+  href?: string;
+}) {
   return (
     <div className="border border-white/10 bg-white/[0.025] p-5">
-      <div className="flex items-center gap-2 text-white/45">{icon}<span className="font-mono text-[10px] tracking-[0.14em] uppercase">{label}</span></div>
-      <p className="mt-4 text-sm font-medium leading-6 text-white/78">{node ? nodeLabel(node) : "Not linked"}</p>
-      {node?.kind === "enablement_asset" ? <p className="mt-2 text-xs leading-5 text-white/42">{node.summary}</p> : null}
-      {node?.kind === "metric" ? <p className="mt-2 font-mono text-xs leading-5 text-amber-200/75">{node.targetValue}</p> : null}
-      {node ? <SourceLink node={node} /> : null}
+      <div className="flex items-center gap-2 text-white/45">
+        {icon}
+        <span className="font-mono text-[10px] tracking-[0.14em] uppercase">{label}</span>
+      </div>
+      <p className="mt-4 text-sm font-medium leading-6 text-white/78">
+        {node ? nodeLabel(node) : "Not linked"}
+      </p>
+      {node?.kind === "enablement_asset" ? (
+        <p className="mt-2 text-xs leading-5 text-white/42">{node.summary}</p>
+      ) : null}
+      {node?.kind === "metric" ? (
+        <p className="mt-2 font-mono text-xs leading-5 text-amber-200/75">{node.targetValue}</p>
+      ) : null}
+      {href ? (
+        <a
+          href={href}
+          className="mt-4 inline-flex items-center gap-1 text-[10px] text-teal-200/80 hover:text-teal-100"
+        >
+          Open kit <ExternalLink className="h-2.5 w-2.5" />
+        </a>
+      ) : node ? (
+        <SourceLink node={node} />
+      ) : null}
     </div>
   );
 }

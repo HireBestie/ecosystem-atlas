@@ -1,7 +1,7 @@
 import { Graph, layout as dagreLayout } from "@dagrejs/dagre";
 import type { Edge, Node } from "@xyflow/react";
 import type { AtlasData, AtlasNode, NodeKind } from "@/lib/atlas-types";
-import { isAssumption, isEntity, isPrinciple } from "@/lib/atlas-types";
+import { isAssumption, isEntity, isPrinciple, isSignal } from "@/lib/atlas-types";
 
 export type AtlasFlowNodeData = {
   atlas: AtlasNode;
@@ -15,12 +15,14 @@ export type AtlasFlowEdge = Edge<{ rel: string }>;
 const NODE_WIDTH: Record<NodeKind, number> = {
   entity: 200,
   assumption: 240,
+  signal: 220,
   principle: 220,
 };
 
 const NODE_HEIGHT: Record<NodeKind, number> = {
   entity: 72,
   assumption: 96,
+  signal: 88,
   principle: 88,
 };
 
@@ -186,7 +188,11 @@ export function matchesFilters(
 ): boolean {
   if (!filters.kinds.includes(node.kind)) return false;
 
-  if (isPrinciple(node) && filters.hideInferred && node.inferred) {
+  if (
+    (isPrinciple(node) || isSignal(node)) &&
+    filters.hideInferred &&
+    node.inferred
+  ) {
     return false;
   }
 
@@ -220,8 +226,8 @@ export function matchesFilters(
     isEntity(node) ? (node.tags ?? []).join(" ") : "",
     isAssumption(node) ? node.statement : "",
     isAssumption(node) ? node.anchoredToEvent?.what ?? "" : "",
-    isPrinciple(node) ? node.statement : "",
-    isPrinciple(node) ? node.quote ?? "" : "",
+    isSignal(node) || isPrinciple(node) ? node.statement : "",
+    isSignal(node) || isPrinciple(node) ? node.quote ?? "" : "",
   ]
     .join(" ")
     .toLowerCase();

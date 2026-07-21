@@ -1,10 +1,11 @@
 {
   "meta": {
-    "version": "0.2.0",
-    "generatedAt": "2026-07-19T15:18:16.098Z",
+    "version": "0.3.0",
+    "generatedAt": "2026-07-20T09:21:07.555Z",
     "scope": "FR deep · ES/IT/PT comprehensive pass (Exa 2026-07-19)",
     "peopleLayerNote": "Person entities expanded 2026-07-19 via Exa + team pages",
-    "enrichmentNote": "Southern Europe funds/people/theses/portfolios + FR GP gap fill via Exa public sources; no PII enrichment."
+    "enrichmentNote": "Southern Europe funds/people/theses/portfolios + FR GP gap fill via Exa public sources; no PII enrichment.",
+    "ontologyNote": "Descriptive former principles reclassified as signals. Principles reserved for real decision rules."
   },
   "nodes": [
     {
@@ -3051,9 +3052,11 @@
       ]
     },
     {
-      "id": "principle:mistral-open-weight-europe",
-      "kind": "principle",
+      "id": "signal:mistral-open-weight-europe",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "European frontier labs can compete by releasing capable open-weight models rather than only closed APIs.",
+      "quote": "Mistral AI SAS is a French artificial intelligence (AI) company headquartered in Paris.",
       "inferred": false,
       "sources": [
         {
@@ -3061,13 +3064,14 @@
           "title": "Wikipedia: Mistral AI",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "Mistral AI SAS is a French artificial intelligence (AI) company headquartered in Paris."
+      ]
     },
     {
-      "id": "principle:kyutai-open-science-agi",
-      "kind": "principle",
+      "id": "signal:kyutai-open-science-agi",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Open science is a viable institutional form for European AGI research laboratories.",
+      "quote": "Our mission is to build and democratize artificial general intelligence through open science.",
       "inferred": false,
       "sources": [
         {
@@ -3075,13 +3079,14 @@
           "title": "Kyutai",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "Our mission is to build and democratize artificial general intelligence through open science."
+      ]
     },
     {
-      "id": "principle:hf-share-models",
-      "kind": "principle",
+      "id": "signal:hf-share-models",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Shared model hubs lower the cost of building ML applications across ecosystems.",
+      "quote": "Its transformers library built for natural language processing applications and its platform",
       "inferred": false,
       "sources": [
         {
@@ -3089,13 +3094,14 @@
           "title": "Wikipedia: Hugging Face",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "Its transformers library built for natural language processing applications and its platform"
+      ]
     },
     {
-      "id": "principle:station-f-density",
-      "kind": "principle",
+      "id": "signal:station-f-density",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Physical density of startups can itself be an ecosystem advantage.",
+      "quote": "It is noted as the world's largest startup facility.",
       "inferred": false,
       "sources": [
         {
@@ -3103,13 +3109,14 @@
           "title": "Wikipedia: Station F",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "It is noted as the world's largest startup facility."
+      ]
     },
     {
-      "id": "principle:bpifrance-public-capital",
-      "kind": "principle",
+      "id": "signal:bpifrance-public-capital",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Public investment banks are central capital actors in the French tech ecosystem.",
+      "quote": "Bpifrance also known as the Banque publique d'investissement is a French public sector investment bank.",
       "inferred": false,
       "sources": [
         {
@@ -3117,13 +3124,14 @@
           "title": "Wikipedia: Bpifrance",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "Bpifrance also known as the Banque publique d'investissement is a French public sector investment bank."
+      ]
     },
     {
-      "id": "principle:french-tech-mission",
-      "kind": "principle",
+      "id": "signal:french-tech-mission",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "State coordination missions can structure national startup growth at home and abroad.",
+      "quote": "La mission French Tech est chargée de soutenir la structuration et la croissance de l’écosystème des start-up françaises, en France et à l’international.",
       "inferred": false,
       "sources": [
         {
@@ -3131,13 +3139,14 @@
           "title": "La French Tech",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "La mission French Tech est chargée de soutenir la structuration et la croissance de l’écosystème des start-up françaises, en France et à l’international."
+      ]
     },
     {
-      "id": "principle:ai-act-first-framework",
-      "kind": "principle",
+      "id": "signal:ai-act-first-framework",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "The EU treats comprehensive AI risk regulation as a global leadership lever.",
+      "quote": "The AI Act is the first-ever legal framework on AI, which addresses the risks of AI and positions Europe to play a leading role globally.",
       "inferred": false,
       "sources": [
         {
@@ -3145,13 +3154,14 @@
           "title": "EC: AI Act",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "The AI Act is the first-ever legal framework on AI, which addresses the risks of AI and positions Europe to play a leading role globally."
+      ]
     },
     {
-      "id": "principle:ai-act-common-framework",
-      "kind": "principle",
+      "id": "signal:ai-act-common-framework",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "A single EU AI legal framework is intended to govern AI across member states.",
+      "quote": "It establishes a common regulatory and legal framework for AI within the European Union (EU).",
       "inferred": false,
       "sources": [
         {
@@ -3159,13 +3169,14 @@
           "title": "Wikipedia: Artificial Intelligence Act",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "It establishes a common regulatory and legal framework for AI within the European Union (EU)."
+      ]
     },
     {
-      "id": "principle:inria-digital-science",
-      "kind": "principle",
+      "id": "signal:inria-digital-science",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "National digital-science institutes anchor long-horizon French AI capability.",
+      "quote": "The National Institute for Research in Digital Science and Technology (Inria) is a French national research institution focusing on computer science and applied mathematics.",
       "inferred": false,
       "sources": [
         {
@@ -3173,13 +3184,14 @@
           "title": "Wikipedia: Inria",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "The National Institute for Research in Digital Science and Technology (Inria) is a French national research institution focusing on computer science and applied mathematics."
+      ]
     },
     {
-      "id": "principle:cnil-data-privacy",
-      "kind": "principle",
+      "id": "signal:cnil-data-privacy",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Privacy regulators shape how AI systems may collect and process personal data in France.",
+      "quote": "whose mission is to ensure that data privacy law is applied to the collection, storage, and use of personal data.",
       "inferred": false,
       "sources": [
         {
@@ -3187,13 +3199,14 @@
           "title": "Wikipedia: CNIL",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "whose mission is to ensure that data privacy law is applied to the collection, storage, and use of personal data."
+      ]
     },
     {
-      "id": "principle:cnrs-public-research-scale",
-      "kind": "principle",
+      "id": "signal:cnrs-public-research-scale",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Large public research bodies remain foundational to European scientific capacity.",
+      "quote": "is the largest public research body in Europe and the second largest research organisation in the world.",
       "inferred": false,
       "sources": [
         {
@@ -3201,13 +3214,14 @@
           "title": "Wikipedia: CNRS",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "is the largest public research body in Europe and the second largest research organisation in the world."
+      ]
     },
     {
-      "id": "principle:h-company-automate-work",
-      "kind": "principle",
+      "id": "signal:h-company-automate-work",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Frontier agent labs frame value as automating complex human work.",
+      "quote": "H Company builds models, agents, and products that automate tasks and simplify complex work.",
       "inferred": false,
       "sources": [
         {
@@ -3215,13 +3229,14 @@
           "title": "H Company",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "H Company builds models, agents, and products that automate tasks and simplify complex work."
+      ]
     },
     {
-      "id": "principle:mistral-enterprise-platform",
-      "kind": "principle",
+      "id": "signal:mistral-enterprise-platform",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Frontier model companies increasingly package open models into enterprise platforms.",
+      "quote": "Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models.",
       "inferred": false,
       "sources": [
         {
@@ -3229,13 +3244,14 @@
           "title": "Mistral AI",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+      ]
     },
     {
-      "id": "principle:dataiku-paris-origin",
-      "kind": "principle",
+      "id": "signal:dataiku-paris-origin",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Enterprise AI platforms can scale globally while retaining French founding roots.",
+      "quote": "Dataiku is a French-American artificial intelligence (AI) and machine learning company which was founded in 2013 in Paris, France.",
       "inferred": false,
       "sources": [
         {
@@ -3243,13 +3259,14 @@
           "title": "Wikipedia: Dataiku",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "Dataiku is a French-American artificial intelligence (AI) and machine learning company which was founded in 2013 in Paris, France."
+      ]
     },
     {
-      "id": "principle:vivatech-innovation-stage",
-      "kind": "principle",
+      "id": "signal:vivatech-innovation-stage",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Large annual tech conferences concentrate capital, talent, and policy attention.",
+      "quote": "Viva Technology, or VivaTech, is an annual technology conference, dedicated to innovation and startups, held in Paris, France.",
       "inferred": false,
       "sources": [
         {
@@ -3257,13 +3274,14 @@
           "title": "Wikipedia: Viva Technology",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "Viva Technology, or VivaTech, is an annual technology conference, dedicated to innovation and startups, held in Paris, France."
+      ]
     },
     {
-      "id": "principle:web-summit-lisbon",
-      "kind": "principle",
+      "id": "signal:web-summit-lisbon",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Hosting a global tech summit can reposition a Southern European capital in venture networks.",
+      "quote": "Web Summit is an annual technology conference held in Lisbon, Portugal.",
       "inferred": false,
       "sources": [
         {
@@ -3271,13 +3289,14 @@
           "title": "Wikipedia: Web Summit",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "Web Summit is an annual technology conference held in Lisbon, Portugal."
+      ]
     },
     {
-      "id": "principle:mwc-mobile-industry",
-      "kind": "principle",
+      "id": "signal:mwc-mobile-industry",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Industry trade shows remain primary distribution channels for mobile and adjacent AI products.",
+      "quote": "MWC Barcelona, formerly known as the Mobile World Congress, is an annual trade show intended for the mobile communications industry.",
       "inferred": false,
       "sources": [
         {
@@ -3285,13 +3304,14 @@
           "title": "Wikipedia: MWC Barcelona",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "MWC Barcelona, formerly known as the Mobile World Congress, is an annual trade show intended for the mobile communications industry."
+      ]
     },
     {
-      "id": "principle:outsystems-ai-apps",
-      "kind": "principle",
+      "id": "signal:outsystems-ai-apps",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Low-code vendors reposition around AI app and agent development platforms.",
+      "quote": "OutSystems is an AI development platform designed for building, deploying, and managing AI apps and agents to accelerate enterprise development.",
       "inferred": false,
       "sources": [
         {
@@ -3299,13 +3319,14 @@
           "title": "Wikipedia: OutSystems",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "OutSystems is an AI development platform designed for building, deploying, and managing AI apps and agents to accelerate enterprise development."
+      ]
     },
     {
-      "id": "principle:feedzai-fraud-ml",
-      "kind": "principle",
+      "id": "signal:feedzai-fraud-ml",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Real-time ML for payments fraud is a durable Southern European AI export niche.",
+      "quote": "Feedzai is a data science company that develops real-time machine learning tools to identify fraudulent payment transactions and minimize risk.",
       "inferred": false,
       "sources": [
         {
@@ -3313,13 +3334,14 @@
           "title": "Wikipedia: Feedzai",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "Feedzai is a data science company that develops real-time machine learning tools to identify fraudulent payment transactions and minimize risk."
+      ]
     },
     {
-      "id": "principle:arthur-mensch-mistral-ceo",
-      "kind": "principle",
+      "id": "signal:arthur-mensch-mistral-ceo",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Founder-researchers are central public faces of Europe’s frontier AI labs.",
+      "quote": "Arthur Mensch is a French artificial intelligence researcher and entrepreneur, best known as the co-founder and CEO of the Paris-based AI company Mistral AI.",
       "inferred": false,
       "sources": [
         {
@@ -3327,13 +3349,14 @@
           "title": "Wikipedia: Arthur Mensch",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "Arthur Mensch is a French artificial intelligence researcher and entrepreneur, best known as the co-founder and CEO of the Paris-based AI company Mistral AI."
+      ]
     },
     {
-      "id": "principle:xavier-niel-builder-investor",
-      "kind": "principle",
+      "id": "signal:xavier-niel-builder-investor",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Operator-investors can underwrite both campuses and open-science labs in France.",
+      "quote": "Xavier Niel is a French billionaire entrepreneur and investor.",
       "inferred": false,
       "sources": [
         {
@@ -3341,13 +3364,14 @@
           "title": "Wikipedia: Xavier Niel",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "Xavier Niel is a French billionaire entrepreneur and investor."
+      ]
     },
     {
-      "id": "principle:roxanne-varza-station-f",
-      "kind": "principle",
+      "id": "signal:roxanne-varza-station-f",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Campus directors are ecosystem institutions in their own right.",
+      "quote": "Roxanne Varza is Director of Station F, a startup campus, the world's biggest facility of its kind, based in Paris, France.",
       "inferred": false,
       "sources": [
         {
@@ -3355,13 +3379,14 @@
           "title": "Wikipedia: Roxanne Varza",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "Roxanne Varza is Director of Station F, a startup campus, the world's biggest facility of its kind, based in Paris, France."
+      ]
     },
     {
-      "id": "principle:polytechnique-science-engineering",
-      "kind": "principle",
+      "id": "signal:polytechnique-science-engineering",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Grandes écoles remain primary talent pipelines for French deeptech and AI.",
+      "quote": "École polytechnique is a grande école located in Palaiseau, France. It specializes in science and engineering.",
       "inferred": false,
       "sources": [
         {
@@ -3369,13 +3394,14 @@
           "title": "Wikipedia: École polytechnique",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "École polytechnique is a grande école located in Palaiseau, France. It specializes in science and engineering."
+      ]
     },
     {
-      "id": "principle:eurazeo-aum-scale",
-      "kind": "principle",
+      "id": "signal:eurazeo-aum-scale",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Large French multi-strategy investors bridge venture, growth, and buyout capital.",
+      "quote": "Eurazeo is a French private equity firm and investment group headquartered in Paris.",
       "inferred": false,
       "sources": [
         {
@@ -3383,13 +3409,14 @@
           "title": "Wikipedia: Eurazeo",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "Eurazeo is a French private equity firm and investment group headquartered in Paris."
+      ]
     },
     {
-      "id": "principle:techstars-mentor-capital",
-      "kind": "principle",
+      "id": "signal:techstars-mentor-capital",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Accelerators package capital with mentorship as a repeatable early-stage product.",
+      "quote": "The accelerator provides capital, mentorship, and other support for early-stage entrepreneurs.",
       "inferred": false,
       "sources": [
         {
@@ -3397,13 +3424,14 @@
           "title": "Wikipedia: Techstars",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "The accelerator provides capital, mentorship, and other support for early-stage entrepreneurs."
+      ]
     },
     {
-      "id": "principle:contentsquare-behaviour-ai",
-      "kind": "principle",
+      "id": "signal:contentsquare-behaviour-ai",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Digital experience analytics is a French AI-software export category.",
+      "quote": "Contentsquare is a French artificial intelligence company founded in 2012 by Jonathan Cherki.",
       "inferred": false,
       "sources": [
         {
@@ -3411,8 +3439,7 @@
           "title": "Wikipedia: Contentsquare",
           "accessed": "2026-07-17"
         }
-      ],
-      "quote": "Contentsquare is a French artificial intelligence company founded in 2012 by Jonathan Cherki."
+      ]
     },
     {
       "id": "entity:clarity-ai",
@@ -3441,8 +3468,9 @@
       ]
     },
     {
-      "id": "principle:clarity-esg-ai",
-      "kind": "principle",
+      "id": "signal:clarity-esg-ai",
+      "kind": "signal",
+      "signalType": "observed_signal",
       "statement": "Clarity AI applies machine learning to sustainability and ESG analytics for capital markets.",
       "inferred": true,
       "sources": [
@@ -6277,8 +6305,8 @@
     },
     {
       "from": "entity:mistral-ai",
-      "to": "principle:mistral-open-weight-europe",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:mistral-open-weight-europe",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://mistral.ai/",
@@ -6294,8 +6322,8 @@
     },
     {
       "from": "entity:kyutai",
-      "to": "principle:kyutai-open-science-agi",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:kyutai-open-science-agi",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://kyutai.org/",
@@ -6306,8 +6334,8 @@
     },
     {
       "from": "entity:hugging-face",
-      "to": "principle:hf-share-models",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:hf-share-models",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://huggingface.co/",
@@ -6323,8 +6351,8 @@
     },
     {
       "from": "entity:station-f",
-      "to": "principle:station-f-density",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:station-f-density",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://stationf.co/",
@@ -6340,8 +6368,8 @@
     },
     {
       "from": "entity:bpifrance",
-      "to": "principle:bpifrance-public-capital",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:bpifrance-public-capital",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://www.bpifrance.com/",
@@ -6357,8 +6385,8 @@
     },
     {
       "from": "entity:la-french-tech",
-      "to": "principle:french-tech-mission",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:french-tech-mission",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://lafrenchtech.gouv.fr/",
@@ -6369,8 +6397,8 @@
     },
     {
       "from": "entity:eu-ai-act",
-      "to": "principle:ai-act-first-framework",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:ai-act-first-framework",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
@@ -6381,8 +6409,8 @@
     },
     {
       "from": "entity:eu-ai-office",
-      "to": "principle:ai-act-common-framework",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:ai-act-common-framework",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
@@ -6393,8 +6421,8 @@
     },
     {
       "from": "entity:inria",
-      "to": "principle:inria-digital-science",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:inria-digital-science",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://www.inria.fr/en",
@@ -6405,8 +6433,8 @@
     },
     {
       "from": "entity:cnil",
-      "to": "principle:cnil-data-privacy",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:cnil-data-privacy",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://www.cnil.fr/",
@@ -6417,8 +6445,8 @@
     },
     {
       "from": "entity:cnrs",
-      "to": "principle:cnrs-public-research-scale",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:cnrs-public-research-scale",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://www.cnrs.fr/",
@@ -6429,8 +6457,8 @@
     },
     {
       "from": "entity:h-company",
-      "to": "principle:h-company-automate-work",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:h-company-automate-work",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://www.hcompany.ai/",
@@ -6441,8 +6469,8 @@
     },
     {
       "from": "entity:arthur-mensch",
-      "to": "principle:arthur-mensch-mistral-ceo",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:arthur-mensch-mistral-ceo",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://en.wikipedia.org/wiki/Arthur_Mensch",
@@ -6453,8 +6481,8 @@
     },
     {
       "from": "entity:xavier-niel",
-      "to": "principle:xavier-niel-builder-investor",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:xavier-niel-builder-investor",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://en.wikipedia.org/wiki/Xavier_Niel",
@@ -6465,8 +6493,8 @@
     },
     {
       "from": "entity:roxanne-varza",
-      "to": "principle:roxanne-varza-station-f",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:roxanne-varza-station-f",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://en.wikipedia.org/wiki/Roxanne_Varza",
@@ -6477,8 +6505,8 @@
     },
     {
       "from": "entity:outsystems",
-      "to": "principle:outsystems-ai-apps",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:outsystems-ai-apps",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://www.outsystems.com/",
@@ -6489,8 +6517,8 @@
     },
     {
       "from": "entity:feedzai",
-      "to": "principle:feedzai-fraud-ml",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:feedzai-fraud-ml",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://en.wikipedia.org/wiki/Feedzai",
@@ -6501,8 +6529,8 @@
     },
     {
       "from": "entity:dataiku",
-      "to": "principle:dataiku-paris-origin",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:dataiku-paris-origin",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://www.dataiku.com/",
@@ -6513,8 +6541,8 @@
     },
     {
       "from": "entity:vivatech",
-      "to": "principle:vivatech-innovation-stage",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:vivatech-innovation-stage",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://en.wikipedia.org/wiki/Viva_Technology",
@@ -6525,8 +6553,8 @@
     },
     {
       "from": "entity:web-summit",
-      "to": "principle:web-summit-lisbon",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:web-summit-lisbon",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://websummit.com/",
@@ -6537,8 +6565,8 @@
     },
     {
       "from": "entity:mwc",
-      "to": "principle:mwc-mobile-industry",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:mwc-mobile-industry",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://en.wikipedia.org/wiki/MWC_Barcelona",
@@ -6549,8 +6577,8 @@
     },
     {
       "from": "entity:polytechnique",
-      "to": "principle:polytechnique-science-engineering",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:polytechnique-science-engineering",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://www.polytechnique.edu/",
@@ -6561,8 +6589,8 @@
     },
     {
       "from": "entity:eurazeo",
-      "to": "principle:eurazeo-aum-scale",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:eurazeo-aum-scale",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://www.eurazeo.com/",
@@ -6573,8 +6601,8 @@
     },
     {
       "from": "entity:techstars",
-      "to": "principle:techstars-mentor-capital",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:techstars-mentor-capital",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://www.techstars.com/",
@@ -6585,8 +6613,8 @@
     },
     {
       "from": "entity:contentsquare",
-      "to": "principle:contentsquare-behaviour-ai",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:contentsquare-behaviour-ai",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://www.contentsquare.com/",
@@ -6597,8 +6625,8 @@
     },
     {
       "from": "entity:mistral-ai",
-      "to": "principle:mistral-enterprise-platform",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:mistral-enterprise-platform",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://mistral.ai/",
@@ -6939,7 +6967,7 @@
     },
     {
       "from": "assumption:eu-gpai-obligations-live",
-      "to": "principle:ai-act-first-framework",
+      "to": "signal:ai-act-first-framework",
       "rel": "EVIDENCED_BY",
       "sources": [
         {
@@ -6951,7 +6979,7 @@
     },
     {
       "from": "assumption:eu-high-risk-aug-2026",
-      "to": "principle:ai-act-common-framework",
+      "to": "signal:ai-act-common-framework",
       "rel": "EVIDENCED_BY",
       "sources": [
         {
@@ -6963,7 +6991,7 @@
     },
     {
       "from": "assumption:mistral-eu-frontier-share",
-      "to": "principle:mistral-open-weight-europe",
+      "to": "signal:mistral-open-weight-europe",
       "rel": "SUPPORTS",
       "sources": [
         {
@@ -6980,7 +7008,7 @@
     },
     {
       "from": "assumption:kyutai-open-releases",
-      "to": "principle:kyutai-open-science-agi",
+      "to": "signal:kyutai-open-science-agi",
       "rel": "SUPPORTS",
       "sources": [
         {
@@ -6992,7 +7020,7 @@
     },
     {
       "from": "assumption:station-f-ai-density",
-      "to": "principle:station-f-density",
+      "to": "signal:station-f-density",
       "rel": "SUPPORTS",
       "sources": [
         {
@@ -7009,7 +7037,7 @@
     },
     {
       "from": "assumption:bpifrance-10b-ai-2029",
-      "to": "principle:bpifrance-public-capital",
+      "to": "signal:bpifrance-public-capital",
       "rel": "SUPPORTS",
       "sources": [
         {
@@ -7026,7 +7054,7 @@
     },
     {
       "from": "assumption:cnil-genai-enforcement",
-      "to": "principle:cnil-data-privacy",
+      "to": "signal:cnil-data-privacy",
       "rel": "SUPPORTS",
       "sources": [
         {
@@ -7038,7 +7066,7 @@
     },
     {
       "from": "assumption:h-company-scale-after-220m",
-      "to": "principle:h-company-automate-work",
+      "to": "signal:h-company-automate-work",
       "rel": "SUPPORTS",
       "sources": [
         {
@@ -7435,8 +7463,8 @@
     },
     {
       "from": "entity:clarity-ai",
-      "to": "principle:clarity-esg-ai",
-      "rel": "HOLDS_PRINCIPLE",
+      "to": "signal:clarity-esg-ai",
+      "rel": "OBSERVES_SIGNAL",
       "sources": [
         {
           "url": "https://clarity.ai/",

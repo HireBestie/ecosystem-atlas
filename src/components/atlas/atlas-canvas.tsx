@@ -14,11 +14,13 @@ import {
 import { AssumptionNode } from "@/components/atlas/nodes/assumption-node";
 import { EntityNode } from "@/components/atlas/nodes/entity-node";
 import { PrincipleNode } from "@/components/atlas/nodes/principle-node";
+import { SignalNode } from "@/components/atlas/nodes/signal-node";
 import { useAtlasStore } from "@/store/atlas-store";
 
 const nodeTypes: NodeTypes = {
   entity: EntityNode,
   assumption: AssumptionNode,
+  signal: SignalNode,
   principle: PrincipleNode,
 };
 
@@ -85,6 +87,7 @@ function AtlasCanvasInner() {
           className="!overflow-hidden !rounded-xl !border !border-border !bg-card/90"
           nodeColor={(n) => {
             if (n.type === "assumption") return "oklch(0.75 0.14 75)";
+            if (n.type === "signal") return "oklch(0.72 0.1 230)";
             if (n.type === "principle") return "oklch(0.72 0.12 15)";
             return "oklch(0.72 0.1 180)";
           }}

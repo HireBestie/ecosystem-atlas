@@ -7,9 +7,11 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import {
   ENTITY_TYPE_LABELS,
+  SIGNAL_TYPE_LABELS,
   isAssumption,
   isEntity,
   isPrinciple,
+  isSignal,
   type AtlasNode,
 } from "@/lib/atlas-types";
 import { useAtlasStore } from "@/store/atlas-store";
@@ -125,6 +127,28 @@ export function AtlasDetailSheet() {
             </>
           ) : null}
 
+          {isSignal(selected) ? (
+            <>
+              <MetaRow
+                label="Signal type"
+                value={
+                  SIGNAL_TYPE_LABELS[selected.signalType] ?? selected.signalType
+                }
+              />
+              {selected.quote ? (
+                <blockquote className="border-l-2 border-sky-300/50 pl-3 text-sm leading-relaxed italic text-foreground/90">
+                  “{selected.quote}”
+                </blockquote>
+              ) : null}
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {selected.statement}
+              </p>
+              {selected.inferred ? (
+                <Badge variant="outline">Inferred — not default view</Badge>
+              ) : null}
+            </>
+          ) : null}
+
           {isPrinciple(selected) ? (
             <>
               {selected.quote ? (
@@ -224,6 +248,13 @@ function KindBadge({ node }: { node: AtlasNode }) {
     return (
       <Badge className="bg-amber-500/15 text-amber-300 hover:bg-amber-500/20">
         Assumption
+      </Badge>
+    );
+  }
+  if (isSignal(node)) {
+    return (
+      <Badge className="bg-sky-500/15 text-sky-200 hover:bg-sky-500/20">
+        Signal
       </Badge>
     );
   }

@@ -121,8 +121,8 @@ export function AtlasFilters() {
           onClick={() => setHideInferred(!filters.hideInferred)}
         >
           {filters.hideInferred
-            ? "Hiding inferred principles"
-            : "Showing inferred principles"}
+            ? "Hiding inferred signals"
+            : "Showing inferred signals"}
         </button>
         <Button
           variant="ghost"
@@ -137,17 +137,19 @@ export function AtlasFilters() {
 
       <p className="font-mono text-[11px] text-muted-foreground">
         Showing {stats.visible} /{" "}
-        {stats.entities + stats.assumptions + stats.principles} nodes
+        {stats.entities + stats.assumptions + stats.signals + stats.principles}{" "}
+        nodes
       </p>
 
       <div className="mt-auto hidden rounded-xl border border-border/70 bg-card/50 p-3 text-xs leading-relaxed text-muted-foreground md:block">
         <p className="mb-1 font-medium text-foreground">How to read</p>
         <p>
           <span className="text-teal-300">Entities</span> are stakeholders.{" "}
-          <span className="text-amber-300">Assumptions</span> are dated
-          falsifiable bets.{" "}
-          <span className="text-rose-200">Principles</span> are quoted theses —
-          never vibes. Click any node for sources.
+          <span className="text-amber-300">Assumptions</span> are falsifiable
+          bets. <span className="text-sky-200">Signals</span> are public
+          positions or observed facts.{" "}
+          <span className="text-rose-200">Principles</span> are reserved for
+          real decision rules — not Wikipedia descriptions.
         </p>
       </div>
     </aside>

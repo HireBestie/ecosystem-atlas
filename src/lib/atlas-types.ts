@@ -17,7 +17,13 @@ export type EntityType =
   | "media"
   | "person";
 
-export type NodeKind = "entity" | "assumption" | "principle";
+/** Atlas knowledge kinds — principles reserved for real decision rules only. */
+export type NodeKind = "entity" | "assumption" | "signal" | "principle";
+
+export type SignalType =
+  | "public_position"
+  | "fund_thesis"
+  | "observed_signal";
 
 export type AtlasSource = SourceRef;
 
@@ -46,6 +52,18 @@ export type AssumptionNode = {
   sources: AtlasSource[];
 };
 
+/** Observed public fact / thesis / position — not an operating doctrine. */
+export type SignalNode = {
+  id: string;
+  kind: "signal";
+  signalType: SignalType;
+  statement: string;
+  quote?: string;
+  inferred?: boolean;
+  sources: AtlasSource[];
+};
+
+/** Actual decision rule held by an actor (rare). */
 export type PrincipleNode = {
   id: string;
   kind: "principle";
@@ -55,7 +73,11 @@ export type PrincipleNode = {
   sources: AtlasSource[];
 };
 
-export type AtlasNode = EntityNode | AssumptionNode | PrincipleNode;
+export type AtlasNode =
+  | EntityNode
+  | AssumptionNode
+  | SignalNode
+  | PrincipleNode;
 
 export type Relation =
   | "INVESTED_IN"
@@ -66,6 +88,7 @@ export type Relation =
   | "SPUN_OUT_OF"
   | "FUNDS"
   | "HOLDS_PRINCIPLE"
+  | "OBSERVES_SIGNAL"
   | "BETS_ON"
   | "EVIDENCED_BY"
   | "SUPPORTS"
@@ -99,7 +122,12 @@ export type AtlasFilters = {
   hideInferred: boolean;
 };
 
-export const ALL_KINDS: NodeKind[] = ["entity", "assumption", "principle"];
+export const ALL_KINDS: NodeKind[] = [
+  "entity",
+  "assumption",
+  "signal",
+  "principle",
+];
 
 export const ENTITY_TYPE_LABELS: Record<EntityType, string> = {
   frontier_lab: "Frontier lab",
@@ -118,7 +146,14 @@ export const ENTITY_TYPE_LABELS: Record<EntityType, string> = {
 export const KIND_LABELS: Record<NodeKind, string> = {
   entity: "Entities",
   assumption: "Assumptions",
+  signal: "Signals",
   principle: "Principles",
+};
+
+export const SIGNAL_TYPE_LABELS: Record<SignalType, string> = {
+  public_position: "Public position",
+  fund_thesis: "Fund thesis",
+  observed_signal: "Observed signal",
 };
 
 export function isEntity(node: AtlasNode): node is EntityNode {
@@ -129,12 +164,15 @@ export function isAssumption(node: AtlasNode): node is AssumptionNode {
   return node.kind === "assumption";
 }
 
+export function isSignal(node: AtlasNode): node is SignalNode {
+  return node.kind === "signal";
+}
+
 export function isPrinciple(node: AtlasNode): node is PrincipleNode {
   return node.kind === "principle";
 }
 
 export function nodeLabel(node: AtlasNode): string {
   if (isEntity(node)) return node.name;
-  if (isAssumption(node)) return node.statement;
   return node.statement;
 }

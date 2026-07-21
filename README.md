@@ -1,13 +1,32 @@
 # Ecosystem Atlas
 
-Interactive knowledge graph of the **France & Southern Europe AI** ecosystem — entities, assumptions (dated bets), and principles (quoted theses). Independent Next.js app; no monorepo dependencies.
+Role-specific **work sample** for Startup Partnerships (France & Southern Europe): how to acquire ecosystem knowledge and convert it into an evidence-based activation programme.
+
+**Not** a claim of existing Anthropic relationships or a completed VC portfolio-activation receipt.
+
+## Public surfaces
+
+| Tab | Purpose |
+|---|---|
+| **Operate** (landing) | Motier programme case: map → prioritise → programme → enable → measure |
+| **Cases** | Two worked spines: Motier (VC) + Station F (campus) |
+| **Graph / Timeline** | Public-source ecosystem graph (entities, assumptions, signals) |
+
+**Network is private preparation** — not exposed in the public UI.
+
+## Build with Claude kit
+
+Inspectable enablement pack:
+
+[`/enablement/build-with-claude/`](./public/enablement/build-with-claude/)
+
+Cohort design, qualification, briefing, eval template, rubric, cost worksheet, office hours, activation definition, 30-day follow-up, feedback + ROI.
 
 ## Stack
 
 - Next.js 16 · React 19 · TypeScript
-- [React Flow](https://reactflow.dev) (`@xyflow/react`) with **Zustand** for graph state
-- [shadcn/ui](https://ui.shadcn.com) · Tailwind CSS 4
-- Dagre layout
+- React Flow + Zustand
+- shadcn/ui · Tailwind CSS 4
 
 ## Run
 
@@ -16,38 +35,18 @@ bun install
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000) → lands on **Operate**.
 
-## Data
+## Ontology
 
-Graph lives in `src/data/atlas.json` (mirrored under `public/data/`). Every node/edge carries public sources. **No enrichment PII.**
-
-| Layer | Count (current seed) |
-|-------|----------------------|
-| Entities | ~119 |
-| Assumptions | 25 |
-| Principles | 27 |
-| Edges | 207 |
+- **Entity** — stakeholder
+- **Signal** — public position / observed fact / fund thesis (not a doctrine)
+- **Assumption** — falsifiable bet (support: supported / uncertain / weakly supported — no fake %)
+- **Principle** — reserved for real decision rules (rare)
 
 ## Rails
 
-1. Public sources only — click any node for URLs
-2. Zero emails / phones / scraped contacts
-3. Principles are quoted, not imagined
-4. Assumptions are falsifiable and dated
-5. This is an independent atlas — not an Anthropic/Claude product
-
-## UI
-
-- **Graph** — filter by kind / country / entity type; click node → sources panel
-- **Timeline** — assumptions ordered by anchoring event
-- **Mission** — one complete Mission Graph stress case (Motier): goal → milestones → rebuttals → evidence → operating theorem → intervention → metric, with worldview counterfactuals
-- Selection dims non-neighbors so relationships stay readable
-
-## Mission Graph (v0.2)
-
-`public/data/mission-motier.json` is a self-contained stress case:
-
-World model + objectives + interventions + decision policy — without letting intention corrupt belief.
-
-Switch worldviews in the Mission tab: the same facts produce different selected recommendations.
+1. Public sources only
+2. No emails / phones / enrichment PII
+3. No Anthropic official branding as if this were an Anthropic product
+4. Honesty > false completeness

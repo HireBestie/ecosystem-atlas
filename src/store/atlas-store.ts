@@ -25,14 +25,14 @@ type AtlasStore = {
   edges: AtlasFlowEdge[];
   selectedId: string | null;
   panelOpen: boolean;
-  view: "graph" | "timeline" | "mission" | "network";
+  view: "graph" | "timeline" | "mission" | "cases";
   filters: AtlasFilters;
   hydrate: (atlas: AtlasData) => void;
   onNodesChange: OnNodesChange<AtlasFlowNode>;
   onEdgesChange: OnEdgesChange<AtlasFlowEdge>;
   selectNode: (id: string | null) => void;
   setPanelOpen: (open: boolean) => void;
-  setView: (view: "graph" | "timeline" | "mission" | "network") => void;
+  setView: (view: "graph" | "timeline" | "mission" | "cases") => void;
   setQuery: (query: string) => void;
   toggleKind: (kind: NodeKind) => void;
   setKinds: (kinds: NodeKind[]) => void;
@@ -172,7 +172,7 @@ export const useAtlasStore = create<AtlasStore>((set, get) => ({
   edges: [],
   selectedId: null,
   panelOpen: false,
-  view: "network",
+  view: "mission",
   filters: defaultFilters,
 
   hydrate: (atlas) => {
@@ -345,6 +345,7 @@ export function useAtlasStats() {
       return {
         entities: 0,
         assumptions: 0,
+        signals: 0,
         principles: 0,
         edges: 0,
         visible: 0,
@@ -353,6 +354,7 @@ export function useAtlasStats() {
     return {
       entities: atlas.nodes.filter((n) => n.kind === "entity").length,
       assumptions: atlas.nodes.filter((n) => n.kind === "assumption").length,
+      signals: atlas.nodes.filter((n) => n.kind === "signal").length,
       principles: atlas.nodes.filter((n) => n.kind === "principle").length,
       edges: atlas.edges.length,
       visible,

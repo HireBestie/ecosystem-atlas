@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "title": "Two worked activation cases",
+    "generatedAt": "2026-07-20T00:00:00.000Z",
+    "disclaimer": "Public-source preparation for a Startup Partnerships work sample. Not a claim of existing Anthropic relationships or completed Motier/Station F programmes."
+  },
+  "cases": [
+    {
+      "id": "case:motier-portfolio",
+      "partner": "Motier Ventures",
+      "partnerType": "vc_portfolio",
+      "country": "FR",
+      "oneLiner": "Family-office VC with dense AI portfolio + La Maison founder venue — best fit for a repeatable evaluation cohort.",
+      "publicThesis": "Motier concentrates capital and community around AI founders (public: ~100 portfolio companies, nearly 40% AI; La Maison as venue for AI entrepreneurs).",
+      "operatingModel": "Portfolio access + founder community surface. Activation depends on a named programme owner who can recruit technical champions — not brand sponsorship alone.",
+      "relevantSegment": "AI-native or AI-enabled B2B product teams that need model/agent evaluation discipline before production spend.",
+      "decisionMakerVsOperator": "Decision-makers: Motier founding partners (e.g. Essayan / Houzé publicly associated). Programme operator: whoever owns La Maison / portfolio founder programmes — verify title before outreach. Do not conflate GP check-writing with mobilisation ownership.",
+      "claudeSpecificNeed": "Structured go/no-go on Claude for a real workflow (eval cases, baseline, cost/latency, security constraints) — not credits-only trials.",
+      "proposedProgramme": "Six-week Motier portfolio evaluation cohort using the Build with Claude kit: intake → representative cases → baseline → rubric → office hours → 30-day activation follow-up.",
+      "evidenceSupporting": [
+        "Public Motier portfolio density and AI share (motier.fr participations).",
+        "La Maison positioned as AI entrepreneur community venue (TechCrunch / Motier communications).",
+        "Role mandate explicitly requires portfolio engagement, enablement, activation and ROI."
+      ],
+      "counterarguments": [
+        "No accountable Motier programme owner → recruitment fragments.",
+        "Portfolio needs too heterogeneous for one cohort.",
+        "Credits create trials without evaluation discipline or sustained usage."
+      ],
+      "successMetric": "10 qualified champions → 8 completed evaluations → 5 sustained activations (30-day qualified usage) by end-2026.",
+      "killCriteria": "No named programme owner after two warm attempts; or discovery shows no shared technical need across ≥50% of recruited teams; or fatal security/procurement mismatch for majority.",
+      "unknownsBeforeSpeaking": [
+        "Who owns La Maison / portfolio founder programmes day-to-day?",
+        "Which 15 companies are technically relevant for Claude evaluation?",
+        "What shared blocker (eval, agents, RAG, cost) appears most often?"
+      ],
+      "sources": [
+        {
+          "url": "https://motier.fr/en/participations/",
+          "title": "Motier Holding — participations",
+          "accessed": "2026-07-20"
+        },
+        {
+          "url": "https://techcrunch.com/2024/10/02/motier-ventures-unveils-la-maison-a-community-space-for-the-french-tech-ecosystem/",
+          "title": "TechCrunch — La Maison",
+          "accessed": "2026-07-20"
+        },
+        {
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008",
+          "title": "Anthropic Startup Partnerships JD",
+          "accessed": "2026-07-20"
+        }
+      ]
+    },
+    {
+      "id": "case:station-f-accelerator",
+      "partner": "Station F",
+      "partnerType": "accelerator_community",
+      "country": "FR",
+      "oneLiner": "Largest startup campus — programme owners matter more than the logo for technical founder mobilisation.",
+      "publicThesis": "Physical density of startups can be an ecosystem advantage; Station F hosts programmes and communities that can convene technical founders at scale.",
+      "operatingModel": "Campus + programme tracks + community operators. Access is through programme leads who already mobilise cohorts — not through a single campus tour.",
+      "relevantSegment": "Technical founders in AI / deep-tech programmes who need evaluation literacy before scaling model spend.",
+      "decisionMakerVsOperator": "Public face: Roxanne Varza (Director). Activation path: programme / incubator leads who own cohort schedules and founder trust. Treat director intros as paths to operators, not as the enablement owner.",
+      "claudeSpecificNeed": "A campus-ready evaluation workshop that programme leads can reuse: short briefing, case template, rubric, office hours — without requiring Anthropic brand as the invite.",
+      "proposedProgramme": "Station F programme-hosted Build with Claude micro-cohort (8–12 teams): one shared need cluster, two office-hours, documented go/no-go, product-feedback notes to Anthropic.",
+      "evidenceSupporting": [
+        "Station F is a publicly documented high-density Paris startup campus.",
+        "Role mandate includes accelerator programmes and technical enablement.",
+        "Campus programmes already have recruitment mechanics; missing piece is Claude-specific evaluation discipline."
+      ],
+      "counterarguments": [
+        "Logo-only conversation with no programme-owner hop.",
+        "Founders want credits/swag, not evaluation work.",
+        "Campus heterogeneity makes a single workshop useless without segmentation."
+      ],
+      "successMetric": "One programme owner commits; 8 teams complete intake; ≥5 complete an evaluation record; ≥2 remain active at 30 days; ≥4 structured product-feedback notes.",
+      "killCriteria": "Conversation stays campus-tour / brand-only after one redirect ask; or no programme lead will own scheduling within two weeks of first contact.",
+      "unknownsBeforeSpeaking": [
+        "Which Station F programme has the densest AI/technical founders right now?",
+        "Who is the programme operator (not only the campus director)?",
+        "What prior AI vendor workshops worked or failed on campus?"
+      ],
+      "sources": [
+        {
+          "url": "https://stationf.co/",
+          "title": "Station F",
+          "accessed": "2026-07-20"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Station_F",
+          "title": "Wikipedia — Station F",
+          "accessed": "2026-07-20"
+        },
+        {
+          "url": "https://job-boards.greenhouse.io/anthropic/jobs/5131095008",
+          "title": "Anthropic Startup Partnerships JD",
+          "accessed": "2026-07-20"
+        }
+      ]
+    }
+  ]
+}
